@@ -1,0 +1,2638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="angebotserstellungModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="angebotserstellungModelStoreContainer">
+    <EntitySet Name="ab_artikelbezeichnung" EntityType="angebotserstellungModel.Store.ab_artikelbezeichnung" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="apos_anlagenposition" EntityType="angebotserstellungModel.Store.apos_anlagenposition" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="as_abteilungsstatus" EntityType="angebotserstellungModel.Store.as_abteilungsstatus" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="at_anlagentarif" EntityType="angebotserstellungModel.Store.at_anlagentarif" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="bh_bearbeitungshistorie" EntityType="angebotserstellungModel.Store.bh_bearbeitungshistorie" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="d_datei" EntityType="angebotserstellungModel.Store.d_datei" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="dp_drahtpreis" EntityType="angebotserstellungModel.Store.dp_drahtpreis" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="dpos_drahtposition" EntityType="angebotserstellungModel.Store.dpos_drahtposition" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ds_at_anlagendatensatz" EntityType="angebotserstellungModel.Store.ds_at_anlagendatensatz" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ds_dp_drahtpreisdatensatz" EntityType="angebotserstellungModel.Store.ds_dp_drahtpreisdatensatz" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ds_exd_dienstleistungsdatensatz" EntityType="angebotserstellungModel.Store.ds_exd_dienstleistungsdatensatz" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ds_ext_teildatensatz" EntityType="angebotserstellungModel.Store.ds_ext_teildatensatz" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ds_gk_gemeinkostendatensatz" EntityType="angebotserstellungModel.Store.ds_gk_gemeinkostendatensatz" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ds_sk_sonderkostendatensatz" EntityType="angebotserstellungModel.Store.ds_sk_sonderkostendatensatz" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ds_wz_werkzeugdatensatz" EntityType="angebotserstellungModel.Store.ds_wz_werkzeugdatensatz" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="e_einkaeufer" EntityType="angebotserstellungModel.Store.e_einkaeufer" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="exd_dienstleistungspreis" EntityType="angebotserstellungModel.Store.exd_dienstleistungspreis" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="exdpos_dienstleistungsposition" EntityType="angebotserstellungModel.Store.exdpos_dienstleistungsposition" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ext_teilpreis" EntityType="angebotserstellungModel.Store.ext_teilpreis" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="extpos_teilposition" EntityType="angebotserstellungModel.Store.extpos_teilposition" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="f_freigabe" EntityType="angebotserstellungModel.Store.f_freigabe" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="fb_freigabeberechtigung" EntityType="angebotserstellungModel.Store.fb_freigabeberechtigung" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="g_guete" EntityType="angebotserstellungModel.Store.g_guete" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="h_hersteller" EntityType="angebotserstellungModel.Store.h_hersteller" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="k_kunde" EntityType="angebotserstellungModel.Store.k_kunde" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="ka_kundenanfrage" EntityType="angebotserstellungModel.Store.ka_kundenanfrage" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="kg_kundengruppe" EntityType="angebotserstellungModel.Store.kg_kundengruppe" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="m_mengenpos" EntityType="angebotserstellungModel.Store.m_mengenpos" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="me_mengeneinheit" EntityType="angebotserstellungModel.Store.me_mengeneinheit" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="mv_mitarbeiter_vertrieb" EntityType="angebotserstellungModel.Store.mv_mitarbeiter_vertrieb" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="pg_produktgruppe" EntityType="angebotserstellungModel.Store.pg_produktgruppe" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="s_vertriebsstatus" EntityType="angebotserstellungModel.Store.s_vertriebsstatus" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="sk_sonderkostenpreis" EntityType="angebotserstellungModel.Store.sk_sonderkostenpreis" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="skpos_sonderkostenposition" EntityType="angebotserstellungModel.Store.skpos_sonderkostenposition" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="v_vertreter" EntityType="angebotserstellungModel.Store.v_vertreter" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="vk_apos" EntityType="angebotserstellungModel.Store.vk_apos" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="vk_dpos" EntityType="angebotserstellungModel.Store.vk_dpos" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="vk_exdpos" EntityType="angebotserstellungModel.Store.vk_exdpos" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="vk_extpos" EntityType="angebotserstellungModel.Store.vk_extpos" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="vk_skpos" EntityType="angebotserstellungModel.Store.vk_skpos" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="vk_te_mitarbeiter" EntityType="angebotserstellungModel.Store.vk_te_mitarbeiter" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="vk_vorkalkulation" EntityType="angebotserstellungModel.Store.vk_vorkalkulation" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="vk_wzpos" EntityType="angebotserstellungModel.Store.vk_wzpos" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="wz_werkzeugpreis" EntityType="angebotserstellungModel.Store.wz_werkzeugpreis" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="wzpos_werkzeugposition" EntityType="angebotserstellungModel.Store.wzpos_werkzeugposition" store:Type="Tables" Schema="angebotserstellung" />
+    <EntitySet Name="dt_vk_vertrieb_join" EntityType="angebotserstellungModel.Store.dt_vk_vertrieb_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="dt_vk_vertrieb_join">
+      <DefiningQuery>SELECT
+      `dt_vk_vertrieb_join`.`vk_vorkalkulation_ID`, 
+      `dt_vk_vertrieb_join`.`vk_mengenPos_ID`, 
+      `dt_vk_vertrieb_join`.`vk_angelegt_am`, 
+      `dt_vk_vertrieb_join`.`vk_angelegt_von`, 
+      `dt_vk_vertrieb_join`.`vk_bearbeitet_am`, 
+      `dt_vk_vertrieb_join`.`vk_bearbeitet_von`, 
+      `dt_vk_vertrieb_join`.`vk_abgelehnt_am`, 
+      `dt_vk_vertrieb_join`.`vk_abgelehnt_von`, 
+      `dt_vk_vertrieb_join`.`vk_status`, 
+      `dt_vk_vertrieb_join`.`vk_ungültig_am`, 
+      `dt_vk_vertrieb_join`.`vk_ungültig_von`, 
+      `dt_vk_vertrieb_join`.`vk_kommentar_vertrieb`, 
+      `dt_vk_vertrieb_join`.`vk_kommentar_te`, 
+      `dt_vk_vertrieb_join`.`vk_gueltigkeit_tage`, 
+      `dt_vk_vertrieb_join`.`vk_gueltigkeit_datum`, 
+      `dt_vk_vertrieb_join`.`vk_ta_te_anfrage_ID`, 
+      `dt_vk_vertrieb_join`.`vk_anlagendatensatz_ID`, 
+      `dt_vk_vertrieb_join`.`vk_lieferzeit_in_wochen`, 
+      `dt_vk_vertrieb_join`.`vk_rohstoffkosten`, 
+      `dt_vk_vertrieb_join`.`vk_dienstleistungskosten`, 
+      `dt_vk_vertrieb_join`.`vk_werkzeugkosten`, 
+      `dt_vk_vertrieb_join`.`vk_teilkosten`, 
+      `dt_vk_vertrieb_join`.`vk_materialkosten`, 
+      `dt_vk_vertrieb_join`.`vk_produktionskosten`, 
+      `dt_vk_vertrieb_join`.`vk_ruestkosten`, 
+      `dt_vk_vertrieb_join`.`vk_fertigungskosten`, 
+      `dt_vk_vertrieb_join`.`vk_grenzherstellkosten`, 
+      `dt_vk_vertrieb_join`.`vk_herstellkosten`, 
+      `dt_vk_vertrieb_join`.`vk_verwaltungsgemeinkosten`, 
+      `dt_vk_vertrieb_join`.`vk_selbstkosten`, 
+      `dt_vk_vertrieb_join`.`vk_sonderkosten`, 
+      `dt_vk_vertrieb_join`.`vk_drahtpreisdatensatz_ID`, 
+      `dt_vk_vertrieb_join`.`vk_gemeinkostendatensatz_ID`, 
+      `dt_vk_vertrieb_join`.`vk_dienstleistungsdatensatz_ID`, 
+      `dt_vk_vertrieb_join`.`vk_werkzeugdatensatz_ID`, 
+      `dt_vk_vertrieb_join`.`vk_teildatensatz_ID`, 
+      `dt_vk_vertrieb_join`.`vk_sonderkostendatensatz_ID`, 
+      `dt_vk_vertrieb_join`.`vk_dspr1`, 
+      `dt_vk_vertrieb_join`.`vk_dspr2`, 
+      `dt_vk_vertrieb_join`.`vk_dspr3`, 
+      `dt_vk_vertrieb_join`.`vk_dspr4`, 
+      `dt_vk_vertrieb_join`.`vk_dspr5`, 
+      `dt_vk_vertrieb_join`.`vk_dspr6`, 
+      `dt_vk_vertrieb_join`.`vk_dspr7`, 
+      `dt_vk_vertrieb_join`.`vk_dspr8`, 
+      `dt_vk_vertrieb_join`.`vk_geschlossen`, 
+      `dt_vk_vertrieb_join`.`vk_abgelehnt`, 
+      `dt_vk_vertrieb_join`.`vk_gf_freigabe`, 
+      `dt_vk_vertrieb_join`.`vk_freigegeben`, 
+      `dt_vk_vertrieb_join`.`vk_veroeffentlicht`, 
+      `dt_vk_vertrieb_join`.`m_nummer`, 
+      `dt_vk_vertrieb_join`.`m_mengenPos_ID`, 
+      `dt_vk_vertrieb_join`.`m_jahresmenge`, 
+      `dt_vk_vertrieb_join`.`m_anfragenummer`, 
+      `dt_vk_vertrieb_join`.`m_status`, 
+      `dt_vk_vertrieb_join`.`m_ungueltig_am`, 
+      `dt_vk_vertrieb_join`.`m_ungueltig_von`, 
+      `dt_vk_vertrieb_join`.`m_abgelehnt_am`, 
+      `dt_vk_vertrieb_join`.`m_abgelehnt_von`, 
+      `dt_vk_vertrieb_join`.`m_preis_vertrieb`, 
+      `dt_vk_vertrieb_join`.`m_marge`, 
+      `dt_vk_vertrieb_join`.`m_umsatz`, 
+      `dt_vk_vertrieb_join`.`m_werkzeugkosten`, 
+      `dt_vk_vertrieb_join`.`m_tonnenerloes`, 
+      `dt_vk_vertrieb_join`.`m_tonage`, 
+      `dt_vk_vertrieb_join`.`m_angelegt_am`, 
+      `dt_vk_vertrieb_join`.`m_angelegt_von`, 
+      `dt_vk_vertrieb_join`.`m_angeboten_am`, 
+      `dt_vk_vertrieb_join`.`m_auftrag_erhalten_am`, 
+      `dt_vk_vertrieb_join`.`m_preis_wettbewerber`, 
+      `dt_vk_vertrieb_join`.`m_SOP`, 
+      `dt_vk_vertrieb_join`.`m_ablehnungsgrund`, 
+      `dt_vk_vertrieb_join`.`m_kundenanfrage_ID`, 
+      `dt_vk_vertrieb_join`.`m_abteilungsstatus`, 
+      `dt_vk_vertrieb_join`.`m_vk_angefordert`, 
+      `dt_vk_vertrieb_join`.`m_wettbewerber`, 
+      `dt_vk_vertrieb_join`.`m_abgelehnt`, 
+      `dt_vk_vertrieb_join`.`m_ungueltig`, 
+      `dt_vk_vertrieb_join`.`m_angeboten`, 
+      `dt_vk_vertrieb_join`.`m_te_email`, 
+      `dt_vk_vertrieb_join`.`m_vk_kommentar`, 
+      `dt_vk_vertrieb_join`.`m_herstellbar`, 
+      `dt_vk_vertrieb_join`.`m_kapazitaet`, 
+      `dt_vk_vertrieb_join`.`m_auftrag`, 
+      `dt_vk_vertrieb_join`.`m_abgelehnt_kommentar`, 
+      `dt_vk_vertrieb_join`.`m_wettbewerber_kommentar`, 
+      `dt_vk_vertrieb_join`.`m_nachgefasst_kommentar`, 
+      `dt_vk_vertrieb_join`.`m_gesamtumsatz`, 
+      `dt_vk_vertrieb_join`.`m_angebotspreis`, 
+      `dt_vk_vertrieb_join`.`m_vertriebsstatus`, 
+      `dt_vk_vertrieb_join`.`ka_kundenanfrage_ID`, 
+      `dt_vk_vertrieb_join`.`ka_anfragenummer`, 
+      `dt_vk_vertrieb_join`.`ka_artikelnummer`, 
+      `dt_vk_vertrieb_join`.`ka_verwendung`, 
+      `dt_vk_vertrieb_join`.`ka_kommentar`, 
+      `dt_vk_vertrieb_join`.`ka_angefragt_am`, 
+      `dt_vk_vertrieb_join`.`ka_angebotsfrist`, 
+      `dt_vk_vertrieb_join`.`ka_hersteller`, 
+      `dt_vk_vertrieb_join`.`ka_zustaendig`, 
+      `dt_vk_vertrieb_join`.`ka_angelegt_am`, 
+      `dt_vk_vertrieb_join`.`ka_angelegt_von`, 
+      `dt_vk_vertrieb_join`.`ka_status`, 
+      `dt_vk_vertrieb_join`.`ka_ungueltig_am`, 
+      `dt_vk_vertrieb_join`.`ka_ungueltig_von`, 
+      `dt_vk_vertrieb_join`.`ka_modus`, 
+      `dt_vk_vertrieb_join`.`ka_kunde`, 
+      `dt_vk_vertrieb_join`.`ka_produktgruppe`, 
+      `dt_vk_vertrieb_join`.`ka_artikelbezeichnung`, 
+      `dt_vk_vertrieb_join`.`ka_guete`, 
+      `dt_vk_vertrieb_join`.`ka_zeichnungsnummer`, 
+      `dt_vk_vertrieb_join`.`ka_aenderungsindex`, 
+      `dt_vk_vertrieb_join`.`ka_durchmesser`, 
+      `dt_vk_vertrieb_join`.`ka_laenge`, 
+      `dt_vk_vertrieb_join`.`ka_gewindesteigung`, 
+      `dt_vk_vertrieb_join`.`ka_fertiggewicht`, 
+      `dt_vk_vertrieb_join`.`ka_einsatzgewicht`, 
+      `dt_vk_vertrieb_join`.`ka_abc_artikelnummer`, 
+      `dt_vk_vertrieb_join`.`ka_einkaeufer_name`, 
+      `dt_vk_vertrieb_join`.`ka_einkaeufer_email`, 
+      `dt_vk_vertrieb_join`.`ka_einkaeufer_telefon`, 
+      `dt_vk_vertrieb_join`.`ka_einkaeufer_fax`, 
+      `dt_vk_vertrieb_join`.`ka_einkaeufer_mobil`, 
+      `dt_vk_vertrieb_join`.`ka_einkaeufer_anrede`, 
+      `dt_vk_vertrieb_join`.`ka_kundengruppe`, 
+      `dt_vk_vertrieb_join`.`ka_vertreter`, 
+      `dt_vk_vertrieb_join`.`ka_kundenkommentar`, 
+      `dt_vk_vertrieb_join`.`ka_einkaeufer_ID`, 
+      `dt_vk_vertrieb_join`.`ka_offen_vertrieb`, 
+      `dt_vk_vertrieb_join`.`ka_offen_te`, 
+      `dt_vk_vertrieb_join`.`ka_vk_angefordert`, 
+      `dt_vk_vertrieb_join`.`ka_vk_kommentar`
+      FROM `dt_vk_vertrieb_join` AS `dt_vk_vertrieb_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ka_kundenanfrage_join" EntityType="angebotserstellungModel.Store.ka_kundenanfrage_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="ka_kundenanfrage_join">
+      <DefiningQuery>SELECT
+      `ka_kundenanfrage_join`.`ka_kundenanfrage_ID`, 
+      `ka_kundenanfrage_join`.`ka_anfragenummer`, 
+      `ka_kundenanfrage_join`.`ka_artikelnummer`, 
+      `ka_kundenanfrage_join`.`ka_verwendung`, 
+      `ka_kundenanfrage_join`.`ka_kommentar`, 
+      `ka_kundenanfrage_join`.`ka_angefragt_am`, 
+      `ka_kundenanfrage_join`.`ka_angebotsfrist`, 
+      `ka_kundenanfrage_join`.`ka_hersteller`, 
+      `ka_kundenanfrage_join`.`ka_zustaendig`, 
+      `ka_kundenanfrage_join`.`ka_angelegt_am`, 
+      `ka_kundenanfrage_join`.`ka_angelegt_von`, 
+      `ka_kundenanfrage_join`.`ka_status`, 
+      `ka_kundenanfrage_join`.`ka_ungueltig_am`, 
+      `ka_kundenanfrage_join`.`ka_ungueltig_von`, 
+      `ka_kundenanfrage_join`.`ka_modus`, 
+      `ka_kundenanfrage_join`.`ka_kunde`, 
+      `ka_kundenanfrage_join`.`ka_produktgruppe`, 
+      `ka_kundenanfrage_join`.`ka_artikelbezeichnung`, 
+      `ka_kundenanfrage_join`.`ka_guete`, 
+      `ka_kundenanfrage_join`.`ka_zeichnungsnummer`, 
+      `ka_kundenanfrage_join`.`ka_aenderungsindex`, 
+      `ka_kundenanfrage_join`.`ka_durchmesser`, 
+      `ka_kundenanfrage_join`.`ka_laenge`, 
+      `ka_kundenanfrage_join`.`ka_gewindesteigung`, 
+      `ka_kundenanfrage_join`.`ka_fertiggewicht`, 
+      `ka_kundenanfrage_join`.`ka_einsatzgewicht`, 
+      `ka_kundenanfrage_join`.`ka_abc_artikelnummer`, 
+      `ka_kundenanfrage_join`.`ka_einkaeufer_name`, 
+      `ka_kundenanfrage_join`.`ka_einkaeufer_email`, 
+      `ka_kundenanfrage_join`.`ka_einkaeufer_telefon`, 
+      `ka_kundenanfrage_join`.`ka_einkaeufer_fax`, 
+      `ka_kundenanfrage_join`.`ka_einkaeufer_mobil`, 
+      `ka_kundenanfrage_join`.`ka_einkaeufer_anrede`, 
+      `ka_kundenanfrage_join`.`ka_kundengruppe`, 
+      `ka_kundenanfrage_join`.`ka_vertreter`, 
+      `ka_kundenanfrage_join`.`ka_kundenkommentar`, 
+      `ka_kundenanfrage_join`.`ka_einkaeufer_ID`, 
+      `ka_kundenanfrage_join`.`ka_offen_vertrieb`, 
+      `ka_kundenanfrage_join`.`ka_offen_te`, 
+      `ka_kundenanfrage_join`.`ka_vk_angefordert`, 
+      `ka_kundenanfrage_join`.`ka_vk_kommentar`, 
+      `ka_kundenanfrage_join`.`k_kunde_ID`, 
+      `ka_kundenanfrage_join`.`k_kunde`, 
+      `ka_kundenanfrage_join`.`k_angelegt_am`, 
+      `ka_kundenanfrage_join`.`k_angelegt_von`, 
+      `ka_kundenanfrage_join`.`k_status`, 
+      `ka_kundenanfrage_join`.`k_kundengruppe`, 
+      `ka_kundenanfrage_join`.`k_vertreter`, 
+      `ka_kundenanfrage_join`.`k_ungueltig_am`, 
+      `ka_kundenanfrage_join`.`k_ungueltig_von`, 
+      `ka_kundenanfrage_join`.`k_kommentar`, 
+      `ka_kundenanfrage_join`.`e_einkaeufer_ID`, 
+      `ka_kundenanfrage_join`.`e_kunde_ID`, 
+      `ka_kundenanfrage_join`.`e_anrede`, 
+      `ka_kundenanfrage_join`.`e_einkaeufer`, 
+      `ka_kundenanfrage_join`.`e_email`, 
+      `ka_kundenanfrage_join`.`e_telefon`, 
+      `ka_kundenanfrage_join`.`e_mobil`, 
+      `ka_kundenanfrage_join`.`e_fax`, 
+      `ka_kundenanfrage_join`.`e_kommentar`, 
+      `ka_kundenanfrage_join`.`e_angelegt_am`, 
+      `ka_kundenanfrage_join`.`e_angelegt_von`, 
+      `ka_kundenanfrage_join`.`e_status`, 
+      `ka_kundenanfrage_join`.`e_ungueltig_am`, 
+      `ka_kundenanfrage_join`.`e_ungueltig_von`
+      FROM `ka_kundenanfrage_join` AS `ka_kundenanfrage_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ka_kundenanfrage_mengenpos_join" EntityType="angebotserstellungModel.Store.ka_kundenanfrage_mengenpos_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="ka_kundenanfrage_mengenpos_join">
+      <DefiningQuery>SELECT
+      `ka_kundenanfrage_mengenpos_join`.`ka_kundenanfrage_ID`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_anfragenummer`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_artikelnummer`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_verwendung`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_kommentar`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_angefragt_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_angebotsfrist`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_hersteller`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_zustaendig`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_angelegt_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_angelegt_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_status`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_ungueltig_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_ungueltig_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_modus`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_kunde`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_produktgruppe`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_artikelbezeichnung`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_guete`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_zeichnungsnummer`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_aenderungsindex`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_durchmesser`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_laenge`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_gewindesteigung`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_fertiggewicht`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_einsatzgewicht`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_abc_artikelnummer`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_einkaeufer_name`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_einkaeufer_email`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_einkaeufer_telefon`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_einkaeufer_fax`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_einkaeufer_mobil`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_einkaeufer_anrede`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_kundengruppe`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_vertreter`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_kundenkommentar`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_einkaeufer_ID`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_offen_vertrieb`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_offen_te`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_vk_angefordert`, 
+      `ka_kundenanfrage_mengenpos_join`.`ka_vk_kommentar`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_nummer`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_mengenPos_ID`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_jahresmenge`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_anfragenummer`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_status`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_ungueltig_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_ungueltig_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_abgelehnt_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_abgelehnt_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_preis_vertrieb`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_marge`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_umsatz`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_werkzeugkosten`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_tonnenerloes`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_tonage`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_angelegt_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_angelegt_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_angeboten_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_auftrag_erhalten_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_preis_wettbewerber`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_SOP`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_ablehnungsgrund`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_kundenanfrage_ID`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_abteilungsstatus`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_vk_angefordert`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_wettbewerber`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_abgelehnt`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_ungueltig`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_angeboten`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_te_email`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_vk_kommentar`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_herstellbar`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_kapazitaet`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_auftrag`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_abgelehnt_kommentar`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_wettbewerber_kommentar`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_nachgefasst_kommentar`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_gesamtumsatz`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_angebotspreis`, 
+      `ka_kundenanfrage_mengenpos_join`.`m_vertriebsstatus`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_einkaeufer_ID`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_kunde_ID`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_anrede`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_einkaeufer`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_email`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_telefon`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_mobil`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_fax`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_kommentar`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_angelegt_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_angelegt_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_status`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_ungueltig_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`e_ungueltig_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_kunde_ID`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_kunde`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_angelegt_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_angelegt_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_status`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_kundengruppe`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_vertreter`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_ungueltig_am`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_ungueltig_von`, 
+      `ka_kundenanfrage_mengenpos_join`.`k_kommentar`
+      FROM `ka_kundenanfrage_mengenpos_join` AS `ka_kundenanfrage_mengenpos_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="kunde_einkaeufer_join" EntityType="angebotserstellungModel.Store.kunde_einkaeufer_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="kunde_einkaeufer_join">
+      <DefiningQuery>SELECT
+      `kunde_einkaeufer_join`.`ka_kundenanfrage_ID`, 
+      `kunde_einkaeufer_join`.`ka_anfragenummer`, 
+      `kunde_einkaeufer_join`.`ka_artikelnummer`, 
+      `kunde_einkaeufer_join`.`ka_verwendung`, 
+      `kunde_einkaeufer_join`.`ka_kommentar`, 
+      `kunde_einkaeufer_join`.`ka_angefragt_am`, 
+      `kunde_einkaeufer_join`.`ka_angebotsfrist`, 
+      `kunde_einkaeufer_join`.`ka_hersteller`, 
+      `kunde_einkaeufer_join`.`ka_zustaendig`, 
+      `kunde_einkaeufer_join`.`ka_angelegt_am`, 
+      `kunde_einkaeufer_join`.`ka_angelegt_von`, 
+      `kunde_einkaeufer_join`.`ka_status`, 
+      `kunde_einkaeufer_join`.`ka_ungueltig_am`, 
+      `kunde_einkaeufer_join`.`ka_ungueltig_von`, 
+      `kunde_einkaeufer_join`.`ka_modus`, 
+      `kunde_einkaeufer_join`.`ka_kunde`, 
+      `kunde_einkaeufer_join`.`ka_produktgruppe`, 
+      `kunde_einkaeufer_join`.`ka_artikelbezeichnung`, 
+      `kunde_einkaeufer_join`.`ka_guete`, 
+      `kunde_einkaeufer_join`.`ka_zeichnungsnummer`, 
+      `kunde_einkaeufer_join`.`ka_aenderungsindex`, 
+      `kunde_einkaeufer_join`.`ka_durchmesser`, 
+      `kunde_einkaeufer_join`.`ka_laenge`, 
+      `kunde_einkaeufer_join`.`ka_gewindesteigung`, 
+      `kunde_einkaeufer_join`.`ka_fertiggewicht`, 
+      `kunde_einkaeufer_join`.`ka_einsatzgewicht`, 
+      `kunde_einkaeufer_join`.`ka_abc_artikelnummer`, 
+      `kunde_einkaeufer_join`.`ka_einkaeufer_name`, 
+      `kunde_einkaeufer_join`.`ka_einkaeufer_email`, 
+      `kunde_einkaeufer_join`.`ka_einkaeufer_telefon`, 
+      `kunde_einkaeufer_join`.`ka_einkaeufer_fax`, 
+      `kunde_einkaeufer_join`.`ka_einkaeufer_mobil`, 
+      `kunde_einkaeufer_join`.`ka_einkaeufer_anrede`, 
+      `kunde_einkaeufer_join`.`ka_kundengruppe`, 
+      `kunde_einkaeufer_join`.`ka_vertreter`, 
+      `kunde_einkaeufer_join`.`ka_kundenkommentar`, 
+      `kunde_einkaeufer_join`.`ka_einkaeufer_ID`, 
+      `kunde_einkaeufer_join`.`ka_offen_vertrieb`, 
+      `kunde_einkaeufer_join`.`ka_offen_te`, 
+      `kunde_einkaeufer_join`.`ka_vk_angefordert`, 
+      `kunde_einkaeufer_join`.`ka_vk_kommentar`, 
+      `kunde_einkaeufer_join`.`k_kunde_ID`, 
+      `kunde_einkaeufer_join`.`k_kunde`, 
+      `kunde_einkaeufer_join`.`k_angelegt_am`, 
+      `kunde_einkaeufer_join`.`k_angelegt_von`, 
+      `kunde_einkaeufer_join`.`k_status`, 
+      `kunde_einkaeufer_join`.`k_kundengruppe`, 
+      `kunde_einkaeufer_join`.`k_vertreter`, 
+      `kunde_einkaeufer_join`.`k_ungueltig_am`, 
+      `kunde_einkaeufer_join`.`k_ungueltig_von`, 
+      `kunde_einkaeufer_join`.`k_kommentar`, 
+      `kunde_einkaeufer_join`.`e_einkaeufer_ID`, 
+      `kunde_einkaeufer_join`.`e_kunde_ID`, 
+      `kunde_einkaeufer_join`.`e_anrede`, 
+      `kunde_einkaeufer_join`.`e_einkaeufer`, 
+      `kunde_einkaeufer_join`.`e_email`, 
+      `kunde_einkaeufer_join`.`e_telefon`, 
+      `kunde_einkaeufer_join`.`e_mobil`, 
+      `kunde_einkaeufer_join`.`e_fax`, 
+      `kunde_einkaeufer_join`.`e_kommentar`, 
+      `kunde_einkaeufer_join`.`e_angelegt_am`, 
+      `kunde_einkaeufer_join`.`e_angelegt_von`, 
+      `kunde_einkaeufer_join`.`e_status`, 
+      `kunde_einkaeufer_join`.`e_ungueltig_am`, 
+      `kunde_einkaeufer_join`.`e_ungueltig_von`
+      FROM `kunde_einkaeufer_join` AS `kunde_einkaeufer_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vk_apos_join" EntityType="angebotserstellungModel.Store.vk_apos_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="vk_apos_join">
+      <DefiningQuery>SELECT
+      `vk_apos_join`.`vk_apos_ID`, 
+      `vk_apos_join`.`vk_apos_vorkalkulation_ID`, 
+      `vk_apos_join`.`vk_apos_anlagenposition_ID`, 
+      `vk_apos_join`.`apos_anlagenposition_ID`, 
+      `vk_apos_join`.`apos_anlagennummer`, 
+      `vk_apos_join`.`apos_avonr`, 
+      `vk_apos_join`.`apos_anlagengruppe`, 
+      `vk_apos_join`.`apos_anlagenbezeichnung`, 
+      `vk_apos_join`.`apos_tarif_anlage_pro_std`, 
+      `vk_apos_join`.`apos_tarif_personal_pro_std`, 
+      `vk_apos_join`.`apos_nennleistung_in_me`, 
+      `vk_apos_join`.`apos_losgroesse_in_me`, 
+      `vk_apos_join`.`apos_ruestdauer_in_std`, 
+      `vk_apos_join`.`apos_anlagenverfuegbarkeit`, 
+      `vk_apos_join`.`apos_betreuungsaufwand_produktiv`, 
+      `vk_apos_join`.`apos_betreuungsaufwand_ruesten`, 
+      `vk_apos_join`.`apos_schichten`, 
+      `vk_apos_join`.`apos_ausschussquote`, 
+      `vk_apos_join`.`apos_angelegt_am`, 
+      `vk_apos_join`.`apos_angelegt_von`, 
+      `vk_apos_join`.`apos_status`, 
+      `vk_apos_join`.`apos_ungültig_von`, 
+      `vk_apos_join`.`apos_ruestkosten`, 
+      `vk_apos_join`.`apos_produktionskosten_pro_me`, 
+      `vk_apos_join`.`apos_ruestkosten_pro_st_kg`, 
+      `vk_apos_join`.`apos_ruestkosten_pro_los`, 
+      `vk_apos_join`.`apos_produktionskosten`, 
+      `vk_apos_join`.`apos_maschinenkosten_pro_me`, 
+      `vk_apos_join`.`apos_personalkosten_pro_me`, 
+      `vk_apos_join`.`apos_fgk_faktor`, 
+      `vk_apos_join`.`apos_mengeneinheit`, 
+      `vk_apos_join`.`apos_menge_in_me`, 
+      `vk_apos_join`.`apos_ds_ID`
+      FROM `vk_apos_join` AS `vk_apos_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vk_dpos_join" EntityType="angebotserstellungModel.Store.vk_dpos_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="vk_dpos_join">
+      <DefiningQuery>SELECT
+      `vk_dpos_join`.`vk_dpos_ID`, 
+      `vk_dpos_join`.`vk_dpos_vorkalkulation_ID`, 
+      `vk_dpos_join`.`vk_dpos_drahtposition_ID`, 
+      `vk_dpos_join`.`dpos_drahtposition_ID`, 
+      `vk_dpos_join`.`dpos_nummer`, 
+      `vk_dpos_join`.`dpos_ungültig_von`, 
+      `vk_dpos_join`.`dpos_gruppe`, 
+      `vk_dpos_join`.`dpos_bezeichnung`, 
+      `vk_dpos_join`.`dpos_lieferant`, 
+      `vk_dpos_join`.`dpos_preis_pro_tonne`, 
+      `vk_dpos_join`.`dpos_schrottfaktor`, 
+      `vk_dpos_join`.`dpos_schrotterloes_pro_tonne`, 
+      `vk_dpos_join`.`dpos_kosten`, 
+      `vk_dpos_join`.`dpos_status`, 
+      `vk_dpos_join`.`dpos_angelegt_am`, 
+      `vk_dpos_join`.`dpos_mgk_faktor`, 
+      `vk_dpos_join`.`dpos_einsatzgewicht_in_tonnen`, 
+      `vk_dpos_join`.`dpos_schrottgewicht_einsatzgewicht_in_tonnen`, 
+      `vk_dpos_join`.`dpos_gültigkeit`, 
+      `vk_dpos_join`.`dpos_schrottgewicht_diff_in_tonnen`, 
+      `vk_dpos_join`.`dpos_angelegt_von`, 
+      `vk_dpos_join`.`dpos_ds_ID`
+      FROM `vk_dpos_join` AS `vk_dpos_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vk_exdpos_join" EntityType="angebotserstellungModel.Store.vk_exdpos_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="vk_exdpos_join">
+      <DefiningQuery>SELECT
+      `vk_exdpos_join`.`vk_exdpos_ID`, 
+      `vk_exdpos_join`.`vk_exdpos_vorkalkulation_ID`, 
+      `vk_exdpos_join`.`vk_exdpos_dienstleistungsposition_ID`, 
+      `vk_exdpos_join`.`exdpos_dienstleistungsposition_ID`, 
+      `vk_exdpos_join`.`exdpos_nummer`, 
+      `vk_exdpos_join`.`exdpos_angelegt_am`, 
+      `vk_exdpos_join`.`exdpos_angelegt_von`, 
+      `vk_exdpos_join`.`exdpos_gruppe`, 
+      `vk_exdpos_join`.`exdpos_bezeichnung`, 
+      `vk_exdpos_join`.`exdpos_abmessung`, 
+      `vk_exdpos_join`.`exdpos_lieferant`, 
+      `vk_exdpos_join`.`exdpos_preis_pro_me`, 
+      `vk_exdpos_join`.`exdpos_kosten`, 
+      `vk_exdpos_join`.`exdpos_leistungsfaktor`, 
+      `vk_exdpos_join`.`exdpos_mengeneinheit`, 
+      `vk_exdpos_join`.`exdpos_mgk2_faktor`, 
+      `vk_exdpos_join`.`exdpos_setze_gk_0`, 
+      `vk_exdpos_join`.`exdpos_ds_ID`
+      FROM `vk_exdpos_join` AS `vk_exdpos_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vk_extpos_join" EntityType="angebotserstellungModel.Store.vk_extpos_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="vk_extpos_join">
+      <DefiningQuery>SELECT
+      `vk_extpos_join`.`vk_extpos_ID`, 
+      `vk_extpos_join`.`vk_extpos_vorkalkulation_ID`, 
+      `vk_extpos_join`.`vk_extpos_teilposition_ID`, 
+      `vk_extpos_join`.`extpos_teilposition_ID`, 
+      `vk_extpos_join`.`extpos_kundenanfrage_ID`, 
+      `vk_extpos_join`.`extpos_nummer`, 
+      `vk_extpos_join`.`extpos_gruppe`, 
+      `vk_extpos_join`.`extpos_bezeichnung`, 
+      `vk_extpos_join`.`extpos_abmessung`, 
+      `vk_extpos_join`.`extpos_mengeneinheit`, 
+      `vk_extpos_join`.`extpos_preis_pro_me`, 
+      `vk_extpos_join`.`extpos_menge_in_me`, 
+      `vk_extpos_join`.`extpos_lieferant`, 
+      `vk_extpos_join`.`extpos_leistungsfaktor`, 
+      `vk_extpos_join`.`extpos_mgk2_faktor`, 
+      `vk_extpos_join`.`extpos_kosten`, 
+      `vk_extpos_join`.`extpos_setze_gk_0`, 
+      `vk_extpos_join`.`extpos_ds_ID`, 
+      `vk_extpos_join`.`extpos_angelegt_von`
+      FROM `vk_extpos_join` AS `vk_extpos_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vk_skpos_join" EntityType="angebotserstellungModel.Store.vk_skpos_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="vk_skpos_join">
+      <DefiningQuery>SELECT
+      `vk_skpos_join`.`vk_skpos_ID`, 
+      `vk_skpos_join`.`vk_skpos_vorkalkulation_ID`, 
+      `vk_skpos_join`.`vk_skpos_sonderkostenposition_ID`, 
+      `vk_skpos_join`.`skpos_sonderkostenposition_ID`, 
+      `vk_skpos_join`.`skpos_nummer`, 
+      `vk_skpos_join`.`skpos_gruppe`, 
+      `vk_skpos_join`.`skpos_bezeichnung`, 
+      `vk_skpos_join`.`skpos_preis`, 
+      `vk_skpos_join`.`skpos_kosten`, 
+      `vk_skpos_join`.`skpos_ds_ID`, 
+      `vk_skpos_join`.`skpos_angelegt_am`, 
+      `vk_skpos_join`.`skpos_angelegt_von`
+      FROM `vk_skpos_join` AS `vk_skpos_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vk_vertrieb_join" EntityType="angebotserstellungModel.Store.vk_vertrieb_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="vk_vertrieb_join">
+      <DefiningQuery>SELECT
+      `vk_vertrieb_join`.`vk_vorkalkulation_ID`, 
+      `vk_vertrieb_join`.`vk_mengenPos_ID`, 
+      `vk_vertrieb_join`.`vk_angelegt_am`, 
+      `vk_vertrieb_join`.`vk_angelegt_von`, 
+      `vk_vertrieb_join`.`vk_bearbeitet_am`, 
+      `vk_vertrieb_join`.`vk_bearbeitet_von`, 
+      `vk_vertrieb_join`.`vk_abgelehnt_am`, 
+      `vk_vertrieb_join`.`vk_abgelehnt_von`, 
+      `vk_vertrieb_join`.`vk_status`, 
+      `vk_vertrieb_join`.`vk_ungültig_am`, 
+      `vk_vertrieb_join`.`vk_ungültig_von`, 
+      `vk_vertrieb_join`.`vk_kommentar_vertrieb`, 
+      `vk_vertrieb_join`.`vk_kommentar_te`, 
+      `vk_vertrieb_join`.`vk_gueltigkeit_tage`, 
+      `vk_vertrieb_join`.`vk_gueltigkeit_datum`, 
+      `vk_vertrieb_join`.`vk_ta_te_anfrage_ID`, 
+      `vk_vertrieb_join`.`vk_anlagendatensatz_ID`, 
+      `vk_vertrieb_join`.`vk_lieferzeit_in_wochen`, 
+      `vk_vertrieb_join`.`vk_rohstoffkosten`, 
+      `vk_vertrieb_join`.`vk_dienstleistungskosten`, 
+      `vk_vertrieb_join`.`vk_werkzeugkosten`, 
+      `vk_vertrieb_join`.`vk_teilkosten`, 
+      `vk_vertrieb_join`.`vk_materialkosten`, 
+      `vk_vertrieb_join`.`vk_produktionskosten`, 
+      `vk_vertrieb_join`.`vk_ruestkosten`, 
+      `vk_vertrieb_join`.`vk_fertigungskosten`, 
+      `vk_vertrieb_join`.`vk_grenzherstellkosten`, 
+      `vk_vertrieb_join`.`vk_herstellkosten`, 
+      `vk_vertrieb_join`.`vk_verwaltungsgemeinkosten`, 
+      `vk_vertrieb_join`.`vk_selbstkosten`, 
+      `vk_vertrieb_join`.`vk_sonderkosten`, 
+      `vk_vertrieb_join`.`vk_drahtpreisdatensatz_ID`, 
+      `vk_vertrieb_join`.`vk_gemeinkostendatensatz_ID`, 
+      `vk_vertrieb_join`.`vk_dienstleistungsdatensatz_ID`, 
+      `vk_vertrieb_join`.`vk_werkzeugdatensatz_ID`, 
+      `vk_vertrieb_join`.`vk_teildatensatz_ID`, 
+      `vk_vertrieb_join`.`vk_sonderkostendatensatz_ID`, 
+      `vk_vertrieb_join`.`vk_dspr1`, 
+      `vk_vertrieb_join`.`vk_dspr2`, 
+      `vk_vertrieb_join`.`vk_dspr3`, 
+      `vk_vertrieb_join`.`vk_dspr4`, 
+      `vk_vertrieb_join`.`vk_dspr5`, 
+      `vk_vertrieb_join`.`vk_dspr6`, 
+      `vk_vertrieb_join`.`vk_dspr7`, 
+      `vk_vertrieb_join`.`vk_dspr8`, 
+      `vk_vertrieb_join`.`vk_geschlossen`, 
+      `vk_vertrieb_join`.`vk_abgelehnt`, 
+      `vk_vertrieb_join`.`vk_gf_freigabe`, 
+      `vk_vertrieb_join`.`vk_freigegeben`, 
+      `vk_vertrieb_join`.`vk_veroeffentlicht`, 
+      `vk_vertrieb_join`.`m_nummer`, 
+      `vk_vertrieb_join`.`m_mengenPos_ID`, 
+      `vk_vertrieb_join`.`m_jahresmenge`, 
+      `vk_vertrieb_join`.`m_anfragenummer`, 
+      `vk_vertrieb_join`.`m_status`, 
+      `vk_vertrieb_join`.`m_ungueltig_am`, 
+      `vk_vertrieb_join`.`m_ungueltig_von`, 
+      `vk_vertrieb_join`.`m_abgelehnt_am`, 
+      `vk_vertrieb_join`.`m_abgelehnt_von`, 
+      `vk_vertrieb_join`.`m_preis_vertrieb`, 
+      `vk_vertrieb_join`.`m_marge`, 
+      `vk_vertrieb_join`.`m_umsatz`, 
+      `vk_vertrieb_join`.`m_werkzeugkosten`, 
+      `vk_vertrieb_join`.`m_tonnenerloes`, 
+      `vk_vertrieb_join`.`m_tonage`, 
+      `vk_vertrieb_join`.`m_angelegt_am`, 
+      `vk_vertrieb_join`.`m_angelegt_von`, 
+      `vk_vertrieb_join`.`m_angeboten_am`, 
+      `vk_vertrieb_join`.`m_auftrag_erhalten_am`, 
+      `vk_vertrieb_join`.`m_preis_wettbewerber`, 
+      `vk_vertrieb_join`.`m_SOP`, 
+      `vk_vertrieb_join`.`m_ablehnungsgrund`, 
+      `vk_vertrieb_join`.`m_kundenanfrage_ID`, 
+      `vk_vertrieb_join`.`m_abteilungsstatus`, 
+      `vk_vertrieb_join`.`m_vk_angefordert`, 
+      `vk_vertrieb_join`.`m_wettbewerber`, 
+      `vk_vertrieb_join`.`m_abgelehnt`, 
+      `vk_vertrieb_join`.`m_ungueltig`, 
+      `vk_vertrieb_join`.`m_angeboten`, 
+      `vk_vertrieb_join`.`m_te_email`, 
+      `vk_vertrieb_join`.`m_vk_kommentar`, 
+      `vk_vertrieb_join`.`m_herstellbar`, 
+      `vk_vertrieb_join`.`m_kapazitaet`, 
+      `vk_vertrieb_join`.`m_auftrag`, 
+      `vk_vertrieb_join`.`m_abgelehnt_kommentar`, 
+      `vk_vertrieb_join`.`m_wettbewerber_kommentar`, 
+      `vk_vertrieb_join`.`m_nachgefasst_kommentar`, 
+      `vk_vertrieb_join`.`m_gesamtumsatz`, 
+      `vk_vertrieb_join`.`m_angebotspreis`, 
+      `vk_vertrieb_join`.`m_vertriebsstatus`, 
+      `vk_vertrieb_join`.`ka_kundenanfrage_ID`, 
+      `vk_vertrieb_join`.`ka_anfragenummer`, 
+      `vk_vertrieb_join`.`ka_artikelnummer`, 
+      `vk_vertrieb_join`.`ka_verwendung`, 
+      `vk_vertrieb_join`.`ka_kommentar`, 
+      `vk_vertrieb_join`.`ka_angefragt_am`, 
+      `vk_vertrieb_join`.`ka_angebotsfrist`, 
+      `vk_vertrieb_join`.`ka_hersteller`, 
+      `vk_vertrieb_join`.`ka_zustaendig`, 
+      `vk_vertrieb_join`.`ka_angelegt_am`, 
+      `vk_vertrieb_join`.`ka_angelegt_von`, 
+      `vk_vertrieb_join`.`ka_status`, 
+      `vk_vertrieb_join`.`ka_ungueltig_am`, 
+      `vk_vertrieb_join`.`ka_ungueltig_von`, 
+      `vk_vertrieb_join`.`ka_modus`, 
+      `vk_vertrieb_join`.`ka_kunde`, 
+      `vk_vertrieb_join`.`ka_produktgruppe`, 
+      `vk_vertrieb_join`.`ka_artikelbezeichnung`, 
+      `vk_vertrieb_join`.`ka_guete`, 
+      `vk_vertrieb_join`.`ka_zeichnungsnummer`, 
+      `vk_vertrieb_join`.`ka_aenderungsindex`, 
+      `vk_vertrieb_join`.`ka_durchmesser`, 
+      `vk_vertrieb_join`.`ka_laenge`, 
+      `vk_vertrieb_join`.`ka_gewindesteigung`, 
+      `vk_vertrieb_join`.`ka_fertiggewicht`, 
+      `vk_vertrieb_join`.`ka_einsatzgewicht`, 
+      `vk_vertrieb_join`.`ka_abc_artikelnummer`, 
+      `vk_vertrieb_join`.`ka_einkaeufer_name`, 
+      `vk_vertrieb_join`.`ka_einkaeufer_email`, 
+      `vk_vertrieb_join`.`ka_einkaeufer_telefon`, 
+      `vk_vertrieb_join`.`ka_einkaeufer_fax`, 
+      `vk_vertrieb_join`.`ka_einkaeufer_mobil`, 
+      `vk_vertrieb_join`.`ka_einkaeufer_anrede`, 
+      `vk_vertrieb_join`.`ka_kundengruppe`, 
+      `vk_vertrieb_join`.`ka_vertreter`, 
+      `vk_vertrieb_join`.`ka_kundenkommentar`, 
+      `vk_vertrieb_join`.`ka_einkaeufer_ID`, 
+      `vk_vertrieb_join`.`ka_offen_vertrieb`, 
+      `vk_vertrieb_join`.`ka_offen_te`, 
+      `vk_vertrieb_join`.`ka_vk_angefordert`, 
+      `vk_vertrieb_join`.`ka_vk_kommentar`
+      FROM `vk_vertrieb_join` AS `vk_vertrieb_join`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vk_wzpos_join" EntityType="angebotserstellungModel.Store.vk_wzpos_join" store:Type="Views" store:Schema="angebotserstellung" store:Name="vk_wzpos_join">
+      <DefiningQuery>SELECT
+      `vk_wzpos_join`.`vk_wzpos_ID`, 
+      `vk_wzpos_join`.`vk_wzpos_vorkalkulation_ID`, 
+      `vk_wzpos_join`.`vk_wzpos_werkzeugposition_ID`, 
+      `vk_wzpos_join`.`wzpos_werkzeugposition_ID`, 
+      `vk_wzpos_join`.`wzpos_nummer`, 
+      `vk_wzpos_join`.`wzpos_werkzeugpositioncol`, 
+      `vk_wzpos_join`.`wzpos_gruppe`, 
+      `vk_wzpos_join`.`wzpos_bezeichnung`, 
+      `vk_wzpos_join`.`wzpos_stufe`, 
+      `vk_wzpos_join`.`wzpos_standzeit`, 
+      `vk_wzpos_join`.`wzpos_preis`, 
+      `vk_wzpos_join`.`wzpos_mgk3_faktor`, 
+      `vk_wzpos_join`.`wzpos_anzahl`, 
+      `vk_wzpos_join`.`wzpos_kosten`, 
+      `vk_wzpos_join`.`wzpos_anzahl_bereinigt`, 
+      `vk_wzpos_join`.`wzpos_ds_ID`, 
+      `vk_wzpos_join`.`wzpos_angelegt_von`, 
+      `vk_wzpos_join`.`wzpos_angelegt_am`
+      FROM `vk_wzpos_join` AS `vk_wzpos_join`</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="anlagendatensatz_ID" Association="angebotserstellungModel.Store.anlagendatensatz_ID">
+      <End Role="ds_at_anlagendatensatz" EntitySet="ds_at_anlagendatensatz" />
+      <End Role="at_anlagentarif" EntitySet="at_anlagentarif" />
+    </AssociationSet>
+    <AssociationSet Name="anlagendatensatz_ID_FK0" Association="angebotserstellungModel.Store.anlagendatensatz_ID_FK0">
+      <End Role="ds_at_anlagendatensatz" EntitySet="ds_at_anlagendatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="apos_ID_FK" Association="angebotserstellungModel.Store.apos_ID_FK">
+      <End Role="apos_anlagenposition" EntitySet="apos_anlagenposition" />
+      <End Role="vk_apos" EntitySet="vk_apos" />
+    </AssociationSet>
+    <AssociationSet Name="dpos_ID_FK" Association="angebotserstellungModel.Store.dpos_ID_FK">
+      <End Role="dpos_drahtposition" EntitySet="dpos_drahtposition" />
+      <End Role="vk_dpos" EntitySet="vk_dpos" />
+    </AssociationSet>
+    <AssociationSet Name="drahtpreisdatensatz_ID_FK" Association="angebotserstellungModel.Store.drahtpreisdatensatz_ID_FK">
+      <End Role="ds_dp_drahtpreisdatensatz" EntitySet="ds_dp_drahtpreisdatensatz" />
+      <End Role="dp_drahtpreis" EntitySet="dp_drahtpreis" />
+    </AssociationSet>
+    <AssociationSet Name="drahtpreisdatensatz_ID0" Association="angebotserstellungModel.Store.drahtpreisdatensatz_ID0">
+      <End Role="ds_dp_drahtpreisdatensatz" EntitySet="ds_dp_drahtpreisdatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="Einkäufer_ID" Association="angebotserstellungModel.Store.Einkäufer_ID">
+      <End Role="e_einkaeufer" EntitySet="e_einkaeufer" />
+      <End Role="ka_kundenanfrage" EntitySet="ka_kundenanfrage" />
+    </AssociationSet>
+    <AssociationSet Name="exdpos_ID_FK" Association="angebotserstellungModel.Store.exdpos_ID_FK">
+      <End Role="exdpos_dienstleistungsposition" EntitySet="exdpos_dienstleistungsposition" />
+      <End Role="vk_exdpos" EntitySet="vk_exdpos" />
+    </AssociationSet>
+    <AssociationSet Name="extpos_ID_FK" Association="angebotserstellungModel.Store.extpos_ID_FK">
+      <End Role="extpos_teilposition" EntitySet="extpos_teilposition" />
+      <End Role="vk_extpos" EntitySet="vk_extpos" />
+    </AssociationSet>
+    <AssociationSet Name="gemeinkostendatensatz_ID0" Association="angebotserstellungModel.Store.gemeinkostendatensatz_ID0">
+      <End Role="ds_gk_gemeinkostendatensatz" EntitySet="ds_gk_gemeinkostendatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="kunde_ID_FK3" Association="angebotserstellungModel.Store.kunde_ID_FK3">
+      <End Role="k_kunde" EntitySet="k_kunde" />
+      <End Role="e_einkaeufer" EntitySet="e_einkaeufer" />
+    </AssociationSet>
+    <AssociationSet Name="kundenanfrage_ID" Association="angebotserstellungModel.Store.kundenanfrage_ID">
+      <End Role="ka_kundenanfrage" EntitySet="ka_kundenanfrage" />
+      <End Role="m_mengenpos" EntitySet="m_mengenpos" />
+    </AssociationSet>
+    <AssociationSet Name="kundenanfrage_ID_FK01" Association="angebotserstellungModel.Store.kundenanfrage_ID_FK01">
+      <End Role="ka_kundenanfrage" EntitySet="ka_kundenanfrage" />
+      <End Role="extpos_teilposition" EntitySet="extpos_teilposition" />
+    </AssociationSet>
+    <AssociationSet Name="kundenanfrage_ID_FK200" Association="angebotserstellungModel.Store.kundenanfrage_ID_FK200">
+      <End Role="ka_kundenanfrage" EntitySet="ka_kundenanfrage" />
+      <End Role="d_datei" EntitySet="d_datei" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK_11" Association="angebotserstellungModel.Store.mengeneinheit_FK_11">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="exdpos_dienstleistungsposition" EntitySet="exdpos_dienstleistungsposition" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK_231" Association="angebotserstellungModel.Store.mengeneinheit_FK_231">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="ext_teilpreis" EntitySet="ext_teilpreis" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK_343" Association="angebotserstellungModel.Store.mengeneinheit_FK_343">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="exd_dienstleistungspreis" EntitySet="exd_dienstleistungspreis" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK1" Association="angebotserstellungModel.Store.mengeneinheit_FK1">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="apos_anlagenposition" EntitySet="apos_anlagenposition" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK5" Association="angebotserstellungModel.Store.mengeneinheit_FK5">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="extpos_teilposition" EntitySet="extpos_teilposition" />
+    </AssociationSet>
+    <AssociationSet Name="mengenPos_ID_FK10" Association="angebotserstellungModel.Store.mengenPos_ID_FK10">
+      <End Role="m_mengenpos" EntitySet="m_mengenpos" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="skpos_ID_FK" Association="angebotserstellungModel.Store.skpos_ID_FK">
+      <End Role="skpos_sonderkostenposition" EntitySet="skpos_sonderkostenposition" />
+      <End Role="vk_skpos" EntitySet="vk_skpos" />
+    </AssociationSet>
+    <AssociationSet Name="sonderkostendatensatz_ID_FK_99" Association="angebotserstellungModel.Store.sonderkostendatensatz_ID_FK_99">
+      <End Role="ds_sk_sonderkostendatensatz" EntitySet="ds_sk_sonderkostendatensatz" />
+      <End Role="sk_sonderkostenpreis" EntitySet="sk_sonderkostenpreis" />
+    </AssociationSet>
+    <AssociationSet Name="sonderkostendatensatz_ID_FK550" Association="angebotserstellungModel.Store.sonderkostendatensatz_ID_FK550">
+      <End Role="ds_sk_sonderkostendatensatz" EntitySet="ds_sk_sonderkostendatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="veredelungsdatensatz_ID_FK" Association="angebotserstellungModel.Store.veredelungsdatensatz_ID_FK">
+      <End Role="ds_exd_dienstleistungsdatensatz" EntitySet="ds_exd_dienstleistungsdatensatz" />
+      <End Role="exd_dienstleistungspreis" EntitySet="exd_dienstleistungspreis" />
+    </AssociationSet>
+    <AssociationSet Name="vorkalkulation_ID_FK_1231" Association="angebotserstellungModel.Store.vorkalkulation_ID_FK_1231">
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+      <End Role="f_freigabe" EntitySet="f_freigabe" />
+    </AssociationSet>
+    <AssociationSet Name="werkzeugdatensatz_ID_FK3" Association="angebotserstellungModel.Store.werkzeugdatensatz_ID_FK3">
+      <End Role="ds_wz_werkzeugdatensatz" EntitySet="ds_wz_werkzeugdatensatz" />
+      <End Role="wz_werkzeugpreis" EntitySet="wz_werkzeugpreis" />
+    </AssociationSet>
+    <AssociationSet Name="werkzeugdatensatz_ID0" Association="angebotserstellungModel.Store.werkzeugdatensatz_ID0">
+      <End Role="ds_wz_werkzeugdatensatz" EntitySet="ds_wz_werkzeugdatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="wzpos_ID_FK" Association="angebotserstellungModel.Store.wzpos_ID_FK">
+      <End Role="wzpos_werkzeugposition" EntitySet="wzpos_werkzeugposition" />
+      <End Role="vk_wzpos" EntitySet="vk_wzpos" />
+    </AssociationSet>
+    <AssociationSet Name="zukaufdatensatz_ID_FK1" Association="angebotserstellungModel.Store.zukaufdatensatz_ID_FK1">
+      <End Role="ds_ext_teildatensatz" EntitySet="ds_ext_teildatensatz" />
+      <End Role="ext_teilpreis" EntitySet="ext_teilpreis" />
+    </AssociationSet>
+    <AssociationSet Name="zukaufdatensatz_ID0" Association="angebotserstellungModel.Store.zukaufdatensatz_ID0">
+      <End Role="ds_ext_teildatensatz" EntitySet="ds_ext_teildatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ab_artikelbezeichnung">
+    <Key>
+      <PropertyRef Name="ab_artikelbezeichnung_ID" />
+    </Key>
+    <Property Name="ab_artikelbezeichnung_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ab_artikelbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="ab_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ab_angelegt_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="apos_anlagenposition">
+    <Key>
+      <PropertyRef Name="apos_anlagenposition_ID" />
+    </Key>
+    <Property Name="apos_anlagenposition_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="apos_anlagennummer" Type="varchar" MaxLength="45" />
+    <Property Name="apos_avonr" Type="int" />
+    <Property Name="apos_anlagengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="apos_anlagenbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="apos_tarif_anlage_pro_std" Type="float" />
+    <Property Name="apos_tarif_personal_pro_std" Type="float" />
+    <Property Name="apos_nennleistung_in_me" Type="float" />
+    <Property Name="apos_losgroesse_in_me" Type="int" />
+    <Property Name="apos_ruestdauer_in_std" Type="float" />
+    <Property Name="apos_anlagenverfuegbarkeit" Type="float" />
+    <Property Name="apos_betreuungsaufwand_produktiv" Type="float" />
+    <Property Name="apos_betreuungsaufwand_ruesten" Type="float" />
+    <Property Name="apos_schichten" Type="int" />
+    <Property Name="apos_ausschussquote" Type="float" />
+    <Property Name="apos_angelegt_am" Type="timestamp" />
+    <Property Name="apos_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="apos_status" Type="enum" />
+    <Property Name="apos_ungültig_von" Type="enum" />
+    <Property Name="apos_ruestkosten" Type="float" />
+    <Property Name="apos_produktionskosten_pro_me" Type="float" />
+    <Property Name="apos_ruestkosten_pro_st_kg" Type="float" />
+    <Property Name="apos_ruestkosten_pro_los" Type="float" />
+    <Property Name="apos_produktionskosten" Type="float" />
+    <Property Name="apos_maschinenkosten_pro_me" Type="float" />
+    <Property Name="apos_personalkosten_pro_me" Type="float" />
+    <Property Name="apos_fgk_faktor" Type="float" />
+    <Property Name="apos_mengeneinheit" Type="varchar" MaxLength="3" />
+    <Property Name="apos_menge_in_me" Type="float" />
+    <Property Name="apos_ds_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="as_abteilungsstatus">
+    <Key>
+      <PropertyRef Name="as_abteilungsstatus_ID" />
+    </Key>
+    <Property Name="as_abteilungsstatus_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="as_bezeichnung" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="at_anlagentarif">
+    <Key>
+      <PropertyRef Name="at_anlagentarif_ID" />
+    </Key>
+    <Property Name="at_anlagentarif_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="at_anlagendatensatz_ID" Type="int" />
+    <Property Name="at_anlagennummer" Type="varchar" MaxLength="45" />
+    <Property Name="at_anlagengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="at_anlagenbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="at_tarif_anlage_pro_stunde" Type="float" />
+    <Property Name="at_tarif_personal_pro_stunde" Type="float" />
+    <Property Name="at_nennleistung_in_me" Type="float" />
+    <Property Name="at_losgroesse_in_me" Type="int" />
+    <Property Name="at_ruestdauer_in_std" Type="float" />
+    <Property Name="at_anlagenverfuegbarkeit" Type="float" />
+    <Property Name="at_betreuungsaufwand_produktiv" Type="float" />
+    <Property Name="at_betreuungsaufwand_ruesten" Type="float" />
+    <Property Name="at_schichten" Type="int" />
+    <Property Name="at_mengeneinheit" Type="varchar" MaxLength="45" />
+    <Property Name="at_ausschussquote" Type="float" />
+    <Property Name="at_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="at_angelegt_am" Type="timestamp" />
+  </EntityType>
+  <EntityType Name="bh_bearbeitungshistorie">
+    <Key>
+      <PropertyRef Name="bh_ID" />
+    </Key>
+    <Property Name="bh_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="bh_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="bh_am" Type="timestamp" Nullable="false" />
+    <Property Name="bh_sql" Type="varchar" Nullable="false" />
+    <Property Name="bh_vorkalkulation_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="d_datei">
+    <Key>
+      <PropertyRef Name="d_datei_ID" />
+    </Key>
+    <Property Name="d_datei_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="d_pfad" Type="varchar" MaxLength="200" />
+    <Property Name="d_name" Type="varchar" MaxLength="200" />
+    <Property Name="d_beschreibung" Type="varchar" MaxLength="45" />
+    <Property Name="d_vorkalkulation_ID" Type="int" />
+    <Property Name="d_kundenanfrage_ID" Type="int" />
+    <Property Name="d_status" Type="enum" Nullable="false" />
+    <Property Name="d_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="d_ungueltig_am" Type="datetime" />
+    <Property Name="d_angelegt_am" Type="timestamp" />
+    <Property Name="d_angelegt_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="dp_drahtpreis">
+    <Key>
+      <PropertyRef Name="dp_drahtpreis_ID" />
+    </Key>
+    <Property Name="dp_drahtpreis_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dp_nummer" Type="int" />
+    <Property Name="dp_gruppe" Type="varchar" MaxLength="45" />
+    <Property Name="dp_bezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="dp_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="dp_preis_pro_tonne" Type="float" />
+    <Property Name="dp_schrottfaktor" Type="float" />
+    <Property Name="dp_schrotterloes_pro_tonne" Type="float" />
+    <Property Name="dp_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="dp_drahtpreisdatensatz_ID" Type="int" Nullable="false" />
+    <Property Name="dp_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="dpos_drahtposition">
+    <Key>
+      <PropertyRef Name="dpos_drahtposition_ID" />
+    </Key>
+    <Property Name="dpos_drahtposition_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dpos_nummer" Type="int" />
+    <Property Name="dpos_ungültig_von" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_gruppe" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_bezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_preis_pro_tonne" Type="float" />
+    <Property Name="dpos_schrottfaktor" Type="float" />
+    <Property Name="dpos_schrotterloes_pro_tonne" Type="float" />
+    <Property Name="dpos_kosten" Type="float" />
+    <Property Name="dpos_status" Type="enum" />
+    <Property Name="dpos_angelegt_am" Type="timestamp" />
+    <Property Name="dpos_mgk_faktor" Type="float" />
+    <Property Name="dpos_einsatzgewicht_in_tonnen" Type="float" />
+    <Property Name="dpos_schrottgewicht_einsatzgewicht_in_tonnen" Type="float" />
+    <Property Name="dpos_gültigkeit" Type="date" />
+    <Property Name="dpos_schrottgewicht_diff_in_tonnen" Type="float" />
+    <Property Name="dpos_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_ds_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="ds_at_anlagendatensatz">
+    <Key>
+      <PropertyRef Name="ds_at_anlagendatensatz_ID" />
+    </Key>
+    <Property Name="ds_at_anlagendatensatz_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ds_at_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ds_at_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="ds_dp_drahtpreisdatensatz">
+    <Key>
+      <PropertyRef Name="ds_dp_drahtpreisdatensatz_ID" />
+    </Key>
+    <Property Name="ds_dp_drahtpreisdatensatz_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ds_dp_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ds_dp_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="ds_exd_dienstleistungsdatensatz">
+    <Key>
+      <PropertyRef Name="ds_exd_dienstleistungsdatensatz_ID" />
+    </Key>
+    <Property Name="ds_exd_dienstleistungsdatensatz_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ds_exd_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ds_exd_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="ds_ext_teildatensatz">
+    <Key>
+      <PropertyRef Name="ds_ext_teildatensatz_ID" />
+    </Key>
+    <Property Name="ds_ext_teildatensatz_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ds_ext_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ds_ext_angelegt_am" Type="timestamp" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ds_gk_gemeinkostendatensatz">
+    <Key>
+      <PropertyRef Name="ds_gk_gemeinkostendatensatz_ID" />
+    </Key>
+    <Property Name="ds_gk_gemeinkostendatensatz_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ds_gk_mgk1" Type="float" />
+    <Property Name="ds_gk_mgk2" Type="float" />
+    <Property Name="ds_gk_mgk3" Type="float" />
+    <Property Name="ds_gk_fgk" Type="float" />
+    <Property Name="ds_gk_vwgk" Type="float" />
+    <Property Name="ds_gk_angelegt_am" Type="timestamp" />
+    <Property Name="ds_gk_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="ds_sk_sonderkostendatensatz">
+    <Key>
+      <PropertyRef Name="ds_sk_sonderkostendatensatz_ID" />
+    </Key>
+    <Property Name="ds_sk_sonderkostendatensatz_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ds_sk_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ds_sk_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="ds_wz_werkzeugdatensatz">
+    <Key>
+      <PropertyRef Name="ds_wz_werkzeugdatensatz_ID" />
+    </Key>
+    <Property Name="ds_wz_werkzeugdatensatz_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ds_wz_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ds_wz_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="e_einkaeufer">
+    <Key>
+      <PropertyRef Name="e_einkaeufer_ID" />
+    </Key>
+    <Property Name="e_einkaeufer_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="e_kunde_ID" Type="int" Nullable="false" />
+    <Property Name="e_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="e_einkaeufer" Type="varchar" MaxLength="45" />
+    <Property Name="e_email" Type="varchar" MaxLength="45" />
+    <Property Name="e_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="e_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="e_fax" Type="varchar" MaxLength="45" />
+    <Property Name="e_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="e_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="e_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="e_status" Type="enum" />
+    <Property Name="e_ungueltig_am" Type="timestamp" />
+    <Property Name="e_ungueltig_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="exd_dienstleistungspreis">
+    <Key>
+      <PropertyRef Name="exd_dienstleistungspreis_ID" />
+    </Key>
+    <Property Name="exd_dienstleistungspreis_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="exd_nummer" Type="int" />
+    <Property Name="exd_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="exd_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="exd_abmessung" Type="varchar" MaxLength="45" />
+    <Property Name="exd_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="exd_mengeneinheit" Type="varchar" MaxLength="3" />
+    <Property Name="exd_preis_pro_me" Type="float" />
+    <Property Name="exd_leistungsfaktor" Type="float" />
+    <Property Name="exd_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="exd_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="exd_dienstleistungsdatensatz_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="exdpos_dienstleistungsposition">
+    <Key>
+      <PropertyRef Name="exdpos_dienstleistungsposition_ID" />
+    </Key>
+    <Property Name="exdpos_dienstleistungsposition_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="exdpos_nummer" Type="int" />
+    <Property Name="exdpos_angelegt_am" Type="timestamp" />
+    <Property Name="exdpos_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="exdpos_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="exdpos_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="exdpos_abmessung" Type="varchar" MaxLength="45" />
+    <Property Name="exdpos_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="exdpos_preis_pro_me" Type="float" />
+    <Property Name="exdpos_kosten" Type="float" />
+    <Property Name="exdpos_leistungsfaktor" Type="float" />
+    <Property Name="exdpos_mengeneinheit" Type="varchar" MaxLength="3" />
+    <Property Name="exdpos_mgk2_faktor" Type="float" />
+    <Property Name="exdpos_setze_gk_0" Type="int" />
+    <Property Name="exdpos_ds_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="ext_teilpreis">
+    <Key>
+      <PropertyRef Name="ext_teilpreis_ID" />
+    </Key>
+    <Property Name="ext_teilpreis_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ext_teildatensatz_ID" Type="int" />
+    <Property Name="ext_nummer" Type="int" />
+    <Property Name="ext_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="ext_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="ext_abmessung" Type="varchar" MaxLength="45" />
+    <Property Name="ext_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="ext_mengeneinheit" Type="varchar" MaxLength="3" />
+    <Property Name="ext_preis_pro_me" Type="float" />
+    <Property Name="ext_leistungsfaktor" Type="float" />
+    <Property Name="ext_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ext_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ext_teilpreiscol" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="extpos_teilposition">
+    <Key>
+      <PropertyRef Name="extpos_teilposition_ID" />
+    </Key>
+    <Property Name="extpos_teilposition_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="extpos_kundenanfrage_ID" Type="int" />
+    <Property Name="extpos_nummer" Type="int" />
+    <Property Name="extpos_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="extpos_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="extpos_abmessung" Type="varchar" MaxLength="45" />
+    <Property Name="extpos_mengeneinheit" Type="varchar" MaxLength="3" />
+    <Property Name="extpos_preis_pro_me" Type="float" />
+    <Property Name="extpos_menge_in_me" Type="float" />
+    <Property Name="extpos_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="extpos_leistungsfaktor" Type="float" />
+    <Property Name="extpos_mgk2_faktor" Type="float" />
+    <Property Name="extpos_kosten" Type="float" />
+    <Property Name="extpos_setze_gk_0" Type="int" />
+    <Property Name="extpos_ds_ID" Type="int" />
+    <Property Name="extpos_angelegt_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="f_freigabe">
+    <Key>
+      <PropertyRef Name="f_freigabe_ID" />
+    </Key>
+    <Property Name="f_freigabe_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="f_vorkalkulation_ID" Type="int" Nullable="false" />
+    <Property Name="f_kommentar" Type="varchar" />
+    <Property Name="f_status" Type="enum" Nullable="false" />
+    <Property Name="f_ungueltig_am" Type="date" />
+    <Property Name="f_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="f_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="f_ungueltig_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="fb_freigabeberechtigung">
+    <Key>
+      <PropertyRef Name="fb_freigabeberechtigung_ID" />
+    </Key>
+    <Property Name="fb_freigabeberechtigung_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fb_login" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="fb_email" Type="varchar" MaxLength="45" />
+    <Property Name="fb_name" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="g_guete">
+    <Key>
+      <PropertyRef Name="g_guete_ID" />
+    </Key>
+    <Property Name="g_guete_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="g_guete" Type="varchar" MaxLength="45" />
+    <Property Name="g_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="g_angelegt_am" Type="timestamp" Nullable="false" />
+  </EntityType>
+  <EntityType Name="h_hersteller">
+    <Key>
+      <PropertyRef Name="h_hersteller_ID" />
+    </Key>
+    <Property Name="h_hersteller_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="h_hersteller" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="k_kunde">
+    <Key>
+      <PropertyRef Name="k_kunde_ID" />
+    </Key>
+    <Property Name="k_kunde_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="k_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="k_angelegt_am" Type="datetime" Nullable="false" />
+    <Property Name="k_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="k_status" Type="enum" />
+    <Property Name="k_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="k_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="k_ungueltig_am" Type="datetime" Nullable="false" />
+    <Property Name="k_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="k_kommentar" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="ka_kundenanfrage">
+    <Key>
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+    </Key>
+    <Property Name="ka_kundenanfrage_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ka_anfragenummer" Type="int" />
+    <Property Name="ka_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_verwendung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="ka_angefragt_am" Type="date" />
+    <Property Name="ka_angebotsfrist" Type="date" />
+    <Property Name="ka_hersteller" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zustaendig" Type="varchar" MaxLength="45" />
+    <Property Name="ka_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ka_status" Type="enum" />
+    <Property Name="ka_ungueltig_am" Type="timestamp" />
+    <Property Name="ka_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="ka_modus" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="ka_produktgruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_artikelbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_guete" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zeichnungsnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_aenderungsindex" Type="varchar" MaxLength="45" />
+    <Property Name="ka_durchmesser" Type="float" />
+    <Property Name="ka_laenge" Type="float" />
+    <Property Name="ka_gewindesteigung" Type="float" />
+    <Property Name="ka_fertiggewicht" Type="float" />
+    <Property Name="ka_einsatzgewicht" Type="float" />
+    <Property Name="ka_abc_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_name" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_email" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_fax" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundenkommentar" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_ID" Type="int" />
+    <Property Name="ka_offen_vertrieb" Type="int" />
+    <Property Name="ka_offen_te" Type="int" />
+    <Property Name="ka_vk_angefordert" Type="int" />
+    <Property Name="ka_vk_kommentar" Type="varchar" MaxLength="45" />
+    <Property Name="ka_potenzial" Type="enum" />
+  </EntityType>
+  <EntityType Name="kg_kundengruppe">
+    <Key>
+      <PropertyRef Name="kg_kundengruppe_ID" />
+    </Key>
+    <Property Name="kg_kundengruppe_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="kg_bezeichnung" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="m_mengenpos">
+    <Key>
+      <PropertyRef Name="m_mengenPos_ID" />
+    </Key>
+    <Property Name="m_nummer" Type="int" />
+    <Property Name="m_mengenPos_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="m_jahresmenge" Type="int" />
+    <Property Name="m_anfragenummer" Type="varchar" MaxLength="45" />
+    <Property Name="m_status" Type="enum" />
+    <Property Name="m_ungueltig_am" Type="timestamp" />
+    <Property Name="m_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="m_abgelehnt_am" Type="date" />
+    <Property Name="m_abgelehnt_von" Type="varchar" MaxLength="45" />
+    <Property Name="m_preis_vertrieb" Type="float" />
+    <Property Name="m_marge" Type="float" />
+    <Property Name="m_umsatz" Type="float" />
+    <Property Name="m_werkzeugkosten" Type="float" />
+    <Property Name="m_tonnenerloes" Type="float" />
+    <Property Name="m_tonage" Type="float" />
+    <Property Name="m_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="m_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="m_angeboten_am" Type="date" />
+    <Property Name="m_auftrag_erhalten_am" Type="date" />
+    <Property Name="m_preis_wettbewerber" Type="float" />
+    <Property Name="m_SOP" Type="date" />
+    <Property Name="m_ablehnungsgrund" Type="varchar" MaxLength="45" />
+    <Property Name="m_kundenanfrage_ID" Type="int" />
+    <Property Name="m_abteilungsstatus" Type="varchar" MaxLength="100" />
+    <Property Name="m_vk_angefordert" Type="int" />
+    <Property Name="m_wettbewerber" Type="int" />
+    <Property Name="m_abgelehnt" Type="int" />
+    <Property Name="m_ungueltig" Type="int" />
+    <Property Name="m_angeboten" Type="int" />
+    <Property Name="m_te_email" Type="varchar" MaxLength="45" />
+    <Property Name="m_vk_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_herstellbar" Type="int" />
+    <Property Name="m_kapazitaet" Type="int" />
+    <Property Name="m_auftrag" Type="int" />
+    <Property Name="m_abgelehnt_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_wettbewerber_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_nachgefasst_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_gesamtumsatz" Type="float" />
+    <Property Name="m_angebotspreis" Type="float" />
+    <Property Name="m_vertriebsstatus" Type="enum" />
+  </EntityType>
+  <EntityType Name="me_mengeneinheit">
+    <Key>
+      <PropertyRef Name="me_mengeneinheit" />
+    </Key>
+    <Property Name="me_mengeneinheit" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="me_faktor" Type="float" />
+    <Property Name="me_leistungsbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="me_losgroesseneinheit" Type="varchar" MaxLength="45" />
+    <Property Name="me_nummer" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="mv_mitarbeiter_vertrieb">
+    <Key>
+      <PropertyRef Name="mv_mitarbeiter_ID" />
+    </Key>
+    <Property Name="mv_mitarbeiter_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="mv_email" Type="varchar" MaxLength="100" />
+    <Property Name="mv_name" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="pg_produktgruppe">
+    <Key>
+      <PropertyRef Name="pg_produktgruppe_ID" />
+    </Key>
+    <Property Name="pg_produktgruppe_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="pg_bezeichnung" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="s_vertriebsstatus">
+    <Key>
+      <PropertyRef Name="s_vertriebsstatus_ID" />
+    </Key>
+    <Property Name="s_vertriebsstatus_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="s_bezeichnung" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="sk_sonderkostenpreis">
+    <Key>
+      <PropertyRef Name="sk_sonderkostenpreis_ID" />
+    </Key>
+    <Property Name="sk_sonderkostenpreis_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sk_sonderkostendatensatz_ID" Type="int" Nullable="false" />
+    <Property Name="sk_nummer" Type="int" />
+    <Property Name="sk_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="sk_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="sk_preis" Type="float" />
+    <Property Name="sk_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="sk_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="skpos_sonderkostenposition">
+    <Key>
+      <PropertyRef Name="skpos_sonderkostenposition_ID" />
+    </Key>
+    <Property Name="skpos_sonderkostenposition_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="skpos_nummer" Type="int" />
+    <Property Name="skpos_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="skpos_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="skpos_preis" Type="float" />
+    <Property Name="skpos_kosten" Type="float" />
+    <Property Name="skpos_ds_ID" Type="int" />
+    <Property Name="skpos_angelegt_am" Type="timestamp" />
+    <Property Name="skpos_angelegt_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="v_vertreter">
+    <Key>
+      <PropertyRef Name="v_vertreter_ID" />
+    </Key>
+    <Property Name="v_vertreter_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="v_name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="vk_apos">
+    <Key>
+      <PropertyRef Name="vk_apos_ID" />
+    </Key>
+    <Property Name="vk_apos_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vk_apos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_apos_anlagenposition_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="vk_dpos">
+    <Key>
+      <PropertyRef Name="vk_dpos_ID" />
+    </Key>
+    <Property Name="vk_dpos_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vk_dpos_vorkalkulation_ID" Type="int" Nullable="false" />
+    <Property Name="vk_dpos_drahtposition_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vk_exdpos">
+    <Key>
+      <PropertyRef Name="vk_exdpos_ID" />
+    </Key>
+    <Property Name="vk_exdpos_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vk_exdpos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_exdpos_dienstleistungsposition_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="vk_extpos">
+    <Key>
+      <PropertyRef Name="vk_extpos_ID" />
+    </Key>
+    <Property Name="vk_extpos_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vk_extpos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_extpos_teilposition_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="vk_skpos">
+    <Key>
+      <PropertyRef Name="vk_skpos_ID" />
+    </Key>
+    <Property Name="vk_skpos_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vk_skpos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_skpos_sonderkostenposition_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="vk_te_mitarbeiter">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vorname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Nachname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="IsActive" Type="enum" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vk_vorkalkulation">
+    <Key>
+      <PropertyRef Name="vk_vorkalkulation_ID" />
+    </Key>
+    <Property Name="vk_vorkalkulation_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vk_mengenPos_ID" Type="int" />
+    <Property Name="vk_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="vk_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="vk_bearbeitet_am" Type="timestamp" />
+    <Property Name="vk_bearbeitet_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_abgelehnt_am" Type="timestamp" />
+    <Property Name="vk_abgelehnt_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_status" Type="varchar" MaxLength="45" />
+    <Property Name="vk_ungültig_am" Type="varchar" MaxLength="45" />
+    <Property Name="vk_ungültig_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_kommentar_vertrieb" Type="varchar" MaxLength="2000" />
+    <Property Name="vk_kommentar_te" Type="varchar" MaxLength="2000" />
+    <Property Name="vk_gueltigkeit_tage" Type="int" />
+    <Property Name="vk_gueltigkeit_datum" Type="date" />
+    <Property Name="vk_ta_te_anfrage_ID" Type="int" />
+    <Property Name="vk_anlagendatensatz_ID" Type="int" />
+    <Property Name="vk_lieferzeit_in_wochen" Type="float" />
+    <Property Name="vk_rohstoffkosten" Type="float" />
+    <Property Name="vk_dienstleistungskosten" Type="float" />
+    <Property Name="vk_werkzeugkosten" Type="float" />
+    <Property Name="vk_teilkosten" Type="float" />
+    <Property Name="vk_materialkosten" Type="float" />
+    <Property Name="vk_produktionskosten" Type="float" />
+    <Property Name="vk_ruestkosten" Type="float" />
+    <Property Name="vk_fertigungskosten" Type="float" />
+    <Property Name="vk_grenzherstellkosten" Type="float" />
+    <Property Name="vk_herstellkosten" Type="float" />
+    <Property Name="vk_verwaltungsgemeinkosten" Type="float" />
+    <Property Name="vk_selbstkosten" Type="float" />
+    <Property Name="vk_sonderkosten" Type="float" />
+    <Property Name="vk_drahtpreisdatensatz_ID" Type="int" />
+    <Property Name="vk_gemeinkostendatensatz_ID" Type="int" />
+    <Property Name="vk_dienstleistungsdatensatz_ID" Type="int" />
+    <Property Name="vk_werkzeugdatensatz_ID" Type="int" />
+    <Property Name="vk_teildatensatz_ID" Type="int" />
+    <Property Name="vk_sonderkostendatensatz_ID" Type="int" />
+    <Property Name="vk_dspr1" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr2" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr3" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr4" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr5" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr6" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr7" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr8" Type="bool" Nullable="false" />
+    <Property Name="vk_geschlossen" Type="int" />
+    <Property Name="vk_abgelehnt" Type="int" />
+    <Property Name="vk_gf_freigabe" Type="int" />
+    <Property Name="vk_freigegeben" Type="int" />
+    <Property Name="vk_veroeffentlicht" Type="int" />
+  </EntityType>
+  <EntityType Name="vk_wzpos">
+    <Key>
+      <PropertyRef Name="vk_wzpos_ID" />
+    </Key>
+    <Property Name="vk_wzpos_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vk_wzpos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_wzpos_werkzeugposition_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="wz_werkzeugpreis">
+    <Key>
+      <PropertyRef Name="wz_werkzeugpreis_ID" />
+    </Key>
+    <Property Name="wz_werkzeugpreis_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="wz_werkzeugdatensatz_ID" Type="int" Nullable="false" />
+    <Property Name="wz_nummer" Type="int" />
+    <Property Name="wz_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="wz_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="wz_standzeit" Type="float" />
+    <Property Name="wz_preis" Type="float" />
+    <Property Name="wz_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="wz_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="wzpos_werkzeugposition">
+    <Key>
+      <PropertyRef Name="wzpos_werkzeugposition_ID" />
+    </Key>
+    <Property Name="wzpos_werkzeugposition_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="wzpos_nummer" Type="int" />
+    <Property Name="wzpos_werkzeugpositioncol" Type="varchar" MaxLength="45" />
+    <Property Name="wzpos_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="wzpos_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="wzpos_stufe" Type="int" />
+    <Property Name="wzpos_standzeit" Type="float" />
+    <Property Name="wzpos_preis" Type="float" />
+    <Property Name="wzpos_mgk3_faktor" Type="float" />
+    <Property Name="wzpos_anzahl" Type="int" />
+    <Property Name="wzpos_kosten" Type="float" />
+    <Property Name="wzpos_anzahl_bereinigt" Type="int" />
+    <Property Name="wzpos_ds_ID" Type="int" />
+    <Property Name="wzpos_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="wzpos_angelegt_am" Type="timestamp" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.dt_vk_vertrieb_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dt_vk_vertrieb_join">
+    <Key>
+      <PropertyRef Name="vk_vorkalkulation_ID" />
+      <PropertyRef Name="vk_angelegt_am" />
+      <PropertyRef Name="vk_angelegt_von" />
+      <PropertyRef Name="vk_dspr1" />
+      <PropertyRef Name="vk_dspr2" />
+      <PropertyRef Name="vk_dspr3" />
+      <PropertyRef Name="vk_dspr4" />
+      <PropertyRef Name="vk_dspr5" />
+      <PropertyRef Name="vk_dspr6" />
+      <PropertyRef Name="vk_dspr7" />
+      <PropertyRef Name="vk_dspr8" />
+      <PropertyRef Name="m_mengenPos_ID" />
+      <PropertyRef Name="m_angelegt_am" />
+      <PropertyRef Name="m_angelegt_von" />
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+    </Key>
+    <Property Name="vk_vorkalkulation_ID" Type="int" Nullable="false" />
+    <Property Name="vk_mengenPos_ID" Type="int" />
+    <Property Name="vk_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="vk_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="vk_bearbeitet_am" Type="timestamp" />
+    <Property Name="vk_bearbeitet_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_abgelehnt_am" Type="timestamp" />
+    <Property Name="vk_abgelehnt_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_status" Type="varchar" MaxLength="45" />
+    <Property Name="vk_ungültig_am" Type="varchar" MaxLength="45" />
+    <Property Name="vk_ungültig_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_kommentar_vertrieb" Type="varchar" MaxLength="2000" />
+    <Property Name="vk_kommentar_te" Type="varchar" MaxLength="2000" />
+    <Property Name="vk_gueltigkeit_tage" Type="int" />
+    <Property Name="vk_gueltigkeit_datum" Type="date" />
+    <Property Name="vk_ta_te_anfrage_ID" Type="int" />
+    <Property Name="vk_anlagendatensatz_ID" Type="int" />
+    <Property Name="vk_lieferzeit_in_wochen" Type="float" />
+    <Property Name="vk_rohstoffkosten" Type="float" />
+    <Property Name="vk_dienstleistungskosten" Type="float" />
+    <Property Name="vk_werkzeugkosten" Type="float" />
+    <Property Name="vk_teilkosten" Type="float" />
+    <Property Name="vk_materialkosten" Type="float" />
+    <Property Name="vk_produktionskosten" Type="float" />
+    <Property Name="vk_ruestkosten" Type="float" />
+    <Property Name="vk_fertigungskosten" Type="float" />
+    <Property Name="vk_grenzherstellkosten" Type="float" />
+    <Property Name="vk_herstellkosten" Type="float" />
+    <Property Name="vk_verwaltungsgemeinkosten" Type="float" />
+    <Property Name="vk_selbstkosten" Type="float" />
+    <Property Name="vk_sonderkosten" Type="float" />
+    <Property Name="vk_drahtpreisdatensatz_ID" Type="int" />
+    <Property Name="vk_gemeinkostendatensatz_ID" Type="int" />
+    <Property Name="vk_dienstleistungsdatensatz_ID" Type="int" />
+    <Property Name="vk_werkzeugdatensatz_ID" Type="int" />
+    <Property Name="vk_teildatensatz_ID" Type="int" />
+    <Property Name="vk_sonderkostendatensatz_ID" Type="int" />
+    <Property Name="vk_dspr1" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr2" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr3" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr4" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr5" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr6" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr7" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr8" Type="bool" Nullable="false" />
+    <Property Name="vk_geschlossen" Type="int" />
+    <Property Name="vk_abgelehnt" Type="int" />
+    <Property Name="vk_gf_freigabe" Type="int" />
+    <Property Name="vk_freigegeben" Type="int" />
+    <Property Name="vk_veroeffentlicht" Type="int" />
+    <Property Name="m_nummer" Type="int" />
+    <Property Name="m_mengenPos_ID" Type="int" Nullable="false" />
+    <Property Name="m_jahresmenge" Type="int" />
+    <Property Name="m_anfragenummer" Type="varchar" MaxLength="45" />
+    <Property Name="m_status" Type="enum" />
+    <Property Name="m_ungueltig_am" Type="timestamp" />
+    <Property Name="m_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="m_abgelehnt_am" Type="date" />
+    <Property Name="m_abgelehnt_von" Type="varchar" MaxLength="45" />
+    <Property Name="m_preis_vertrieb" Type="float" />
+    <Property Name="m_marge" Type="float" />
+    <Property Name="m_umsatz" Type="float" />
+    <Property Name="m_werkzeugkosten" Type="float" />
+    <Property Name="m_tonnenerloes" Type="float" />
+    <Property Name="m_tonage" Type="float" />
+    <Property Name="m_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="m_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="m_angeboten_am" Type="date" />
+    <Property Name="m_auftrag_erhalten_am" Type="date" />
+    <Property Name="m_preis_wettbewerber" Type="float" />
+    <Property Name="m_SOP" Type="date" />
+    <Property Name="m_ablehnungsgrund" Type="varchar" MaxLength="45" />
+    <Property Name="m_kundenanfrage_ID" Type="int" />
+    <Property Name="m_abteilungsstatus" Type="varchar" MaxLength="100" />
+    <Property Name="m_vk_angefordert" Type="int" />
+    <Property Name="m_wettbewerber" Type="int" />
+    <Property Name="m_abgelehnt" Type="int" />
+    <Property Name="m_ungueltig" Type="int" />
+    <Property Name="m_angeboten" Type="int" />
+    <Property Name="m_te_email" Type="varchar" MaxLength="45" />
+    <Property Name="m_vk_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_herstellbar" Type="int" />
+    <Property Name="m_kapazitaet" Type="int" />
+    <Property Name="m_auftrag" Type="int" />
+    <Property Name="m_abgelehnt_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_wettbewerber_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_nachgefasst_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_gesamtumsatz" Type="float" />
+    <Property Name="m_angebotspreis" Type="float" />
+    <Property Name="m_vertriebsstatus" Type="enum" />
+    <Property Name="ka_kundenanfrage_ID" Type="int" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="int" />
+    <Property Name="ka_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_verwendung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="ka_angefragt_am" Type="date" />
+    <Property Name="ka_angebotsfrist" Type="date" />
+    <Property Name="ka_hersteller" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zustaendig" Type="varchar" MaxLength="45" />
+    <Property Name="ka_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ka_status" Type="enum" />
+    <Property Name="ka_ungueltig_am" Type="timestamp" />
+    <Property Name="ka_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="ka_modus" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="ka_produktgruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_artikelbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_guete" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zeichnungsnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_aenderungsindex" Type="varchar" MaxLength="45" />
+    <Property Name="ka_durchmesser" Type="float" />
+    <Property Name="ka_laenge" Type="float" />
+    <Property Name="ka_gewindesteigung" Type="float" />
+    <Property Name="ka_fertiggewicht" Type="float" />
+    <Property Name="ka_einsatzgewicht" Type="float" />
+    <Property Name="ka_abc_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_name" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_email" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_fax" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundenkommentar" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_ID" Type="int" />
+    <Property Name="ka_offen_vertrieb" Type="int" />
+    <Property Name="ka_offen_te" Type="int" />
+    <Property Name="ka_vk_angefordert" Type="int" />
+    <Property Name="ka_vk_kommentar" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.ka_kundenanfrage_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ka_kundenanfrage_join">
+    <Key>
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+      <PropertyRef Name="k_kunde_ID" />
+      <PropertyRef Name="k_angelegt_am" />
+      <PropertyRef Name="k_angelegt_von" />
+      <PropertyRef Name="k_ungueltig_am" />
+      <PropertyRef Name="e_einkaeufer_ID" />
+      <PropertyRef Name="e_kunde_ID" />
+      <PropertyRef Name="e_angelegt_am" />
+      <PropertyRef Name="e_angelegt_von" />
+    </Key>
+    <Property Name="ka_kundenanfrage_ID" Type="int" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="int" />
+    <Property Name="ka_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_verwendung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="ka_angefragt_am" Type="date" />
+    <Property Name="ka_angebotsfrist" Type="date" />
+    <Property Name="ka_hersteller" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zustaendig" Type="varchar" MaxLength="45" />
+    <Property Name="ka_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ka_status" Type="enum" />
+    <Property Name="ka_ungueltig_am" Type="timestamp" />
+    <Property Name="ka_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="ka_modus" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="ka_produktgruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_artikelbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_guete" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zeichnungsnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_aenderungsindex" Type="varchar" MaxLength="45" />
+    <Property Name="ka_durchmesser" Type="float" />
+    <Property Name="ka_laenge" Type="float" />
+    <Property Name="ka_gewindesteigung" Type="float" />
+    <Property Name="ka_fertiggewicht" Type="float" />
+    <Property Name="ka_einsatzgewicht" Type="float" />
+    <Property Name="ka_abc_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_name" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_email" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_fax" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundenkommentar" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_ID" Type="int" />
+    <Property Name="ka_offen_vertrieb" Type="int" />
+    <Property Name="ka_offen_te" Type="int" />
+    <Property Name="ka_vk_angefordert" Type="int" />
+    <Property Name="ka_vk_kommentar" Type="varchar" MaxLength="45" />
+    <Property Name="k_kunde_ID" Type="int" Nullable="false" />
+    <Property Name="k_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="k_angelegt_am" Type="datetime" Nullable="false" />
+    <Property Name="k_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="k_status" Type="enum" />
+    <Property Name="k_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="k_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="k_ungueltig_am" Type="datetime" Nullable="false" />
+    <Property Name="k_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="k_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="e_einkaeufer_ID" Type="int" Nullable="false" />
+    <Property Name="e_kunde_ID" Type="int" Nullable="false" />
+    <Property Name="e_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="e_einkaeufer" Type="varchar" MaxLength="45" />
+    <Property Name="e_email" Type="varchar" MaxLength="45" />
+    <Property Name="e_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="e_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="e_fax" Type="varchar" MaxLength="45" />
+    <Property Name="e_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="e_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="e_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="e_status" Type="enum" />
+    <Property Name="e_ungueltig_am" Type="timestamp" />
+    <Property Name="e_ungueltig_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.ka_kundenanfrage_mengenpos_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ka_kundenanfrage_mengenpos_join">
+    <Key>
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+      <PropertyRef Name="m_mengenPos_ID" />
+      <PropertyRef Name="m_angelegt_am" />
+      <PropertyRef Name="m_angelegt_von" />
+      <PropertyRef Name="e_einkaeufer_ID" />
+      <PropertyRef Name="e_kunde_ID" />
+      <PropertyRef Name="e_angelegt_am" />
+      <PropertyRef Name="e_angelegt_von" />
+      <PropertyRef Name="k_kunde_ID" />
+      <PropertyRef Name="k_angelegt_am" />
+      <PropertyRef Name="k_angelegt_von" />
+      <PropertyRef Name="k_ungueltig_am" />
+    </Key>
+    <Property Name="ka_kundenanfrage_ID" Type="int" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="int" />
+    <Property Name="ka_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_verwendung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="ka_angefragt_am" Type="date" />
+    <Property Name="ka_angebotsfrist" Type="date" />
+    <Property Name="ka_hersteller" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zustaendig" Type="varchar" MaxLength="45" />
+    <Property Name="ka_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ka_status" Type="enum" />
+    <Property Name="ka_ungueltig_am" Type="timestamp" />
+    <Property Name="ka_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="ka_modus" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="ka_produktgruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_artikelbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_guete" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zeichnungsnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_aenderungsindex" Type="varchar" MaxLength="45" />
+    <Property Name="ka_durchmesser" Type="float" />
+    <Property Name="ka_laenge" Type="float" />
+    <Property Name="ka_gewindesteigung" Type="float" />
+    <Property Name="ka_fertiggewicht" Type="float" />
+    <Property Name="ka_einsatzgewicht" Type="float" />
+    <Property Name="ka_abc_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_name" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_email" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_fax" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundenkommentar" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_ID" Type="int" />
+    <Property Name="ka_offen_vertrieb" Type="int" />
+    <Property Name="ka_offen_te" Type="int" />
+    <Property Name="ka_vk_angefordert" Type="int" />
+    <Property Name="ka_vk_kommentar" Type="varchar" MaxLength="45" />
+    <Property Name="m_nummer" Type="int" />
+    <Property Name="m_mengenPos_ID" Type="int" Nullable="false" />
+    <Property Name="m_jahresmenge" Type="int" />
+    <Property Name="m_anfragenummer" Type="varchar" MaxLength="45" />
+    <Property Name="m_status" Type="enum" />
+    <Property Name="m_ungueltig_am" Type="timestamp" />
+    <Property Name="m_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="m_abgelehnt_am" Type="date" />
+    <Property Name="m_abgelehnt_von" Type="varchar" MaxLength="45" />
+    <Property Name="m_preis_vertrieb" Type="float" />
+    <Property Name="m_marge" Type="float" />
+    <Property Name="m_umsatz" Type="float" />
+    <Property Name="m_werkzeugkosten" Type="float" />
+    <Property Name="m_tonnenerloes" Type="float" />
+    <Property Name="m_tonage" Type="float" />
+    <Property Name="m_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="m_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="m_angeboten_am" Type="date" />
+    <Property Name="m_auftrag_erhalten_am" Type="date" />
+    <Property Name="m_preis_wettbewerber" Type="float" />
+    <Property Name="m_SOP" Type="date" />
+    <Property Name="m_ablehnungsgrund" Type="varchar" MaxLength="45" />
+    <Property Name="m_kundenanfrage_ID" Type="int" />
+    <Property Name="m_abteilungsstatus" Type="varchar" MaxLength="100" />
+    <Property Name="m_vk_angefordert" Type="int" />
+    <Property Name="m_wettbewerber" Type="int" />
+    <Property Name="m_abgelehnt" Type="int" />
+    <Property Name="m_ungueltig" Type="int" />
+    <Property Name="m_angeboten" Type="int" />
+    <Property Name="m_te_email" Type="varchar" MaxLength="45" />
+    <Property Name="m_vk_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_herstellbar" Type="int" />
+    <Property Name="m_kapazitaet" Type="int" />
+    <Property Name="m_auftrag" Type="int" />
+    <Property Name="m_abgelehnt_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_wettbewerber_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_nachgefasst_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_gesamtumsatz" Type="float" />
+    <Property Name="m_angebotspreis" Type="float" />
+    <Property Name="m_vertriebsstatus" Type="enum" />
+    <Property Name="e_einkaeufer_ID" Type="int" Nullable="false" />
+    <Property Name="e_kunde_ID" Type="int" Nullable="false" />
+    <Property Name="e_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="e_einkaeufer" Type="varchar" MaxLength="45" />
+    <Property Name="e_email" Type="varchar" MaxLength="45" />
+    <Property Name="e_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="e_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="e_fax" Type="varchar" MaxLength="45" />
+    <Property Name="e_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="e_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="e_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="e_status" Type="enum" />
+    <Property Name="e_ungueltig_am" Type="timestamp" />
+    <Property Name="e_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="k_kunde_ID" Type="int" Nullable="false" />
+    <Property Name="k_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="k_angelegt_am" Type="datetime" Nullable="false" />
+    <Property Name="k_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="k_status" Type="enum" />
+    <Property Name="k_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="k_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="k_ungueltig_am" Type="datetime" Nullable="false" />
+    <Property Name="k_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="k_kommentar" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.kunde_einkaeufer_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="kunde_einkaeufer_join">
+    <Key>
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+      <PropertyRef Name="k_kunde_ID" />
+      <PropertyRef Name="k_angelegt_am" />
+      <PropertyRef Name="k_angelegt_von" />
+      <PropertyRef Name="k_ungueltig_am" />
+      <PropertyRef Name="e_einkaeufer_ID" />
+      <PropertyRef Name="e_kunde_ID" />
+      <PropertyRef Name="e_angelegt_am" />
+      <PropertyRef Name="e_angelegt_von" />
+    </Key>
+    <Property Name="ka_kundenanfrage_ID" Type="int" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="int" />
+    <Property Name="ka_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_verwendung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="ka_angefragt_am" Type="date" />
+    <Property Name="ka_angebotsfrist" Type="date" />
+    <Property Name="ka_hersteller" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zustaendig" Type="varchar" MaxLength="45" />
+    <Property Name="ka_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ka_status" Type="enum" />
+    <Property Name="ka_ungueltig_am" Type="timestamp" />
+    <Property Name="ka_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="ka_modus" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="ka_produktgruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_artikelbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_guete" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zeichnungsnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_aenderungsindex" Type="varchar" MaxLength="45" />
+    <Property Name="ka_durchmesser" Type="float" />
+    <Property Name="ka_laenge" Type="float" />
+    <Property Name="ka_gewindesteigung" Type="float" />
+    <Property Name="ka_fertiggewicht" Type="float" />
+    <Property Name="ka_einsatzgewicht" Type="float" />
+    <Property Name="ka_abc_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_name" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_email" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_fax" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundenkommentar" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_ID" Type="int" />
+    <Property Name="ka_offen_vertrieb" Type="int" />
+    <Property Name="ka_offen_te" Type="int" />
+    <Property Name="ka_vk_angefordert" Type="int" />
+    <Property Name="ka_vk_kommentar" Type="varchar" MaxLength="45" />
+    <Property Name="k_kunde_ID" Type="int" Nullable="false" />
+    <Property Name="k_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="k_angelegt_am" Type="datetime" Nullable="false" />
+    <Property Name="k_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="k_status" Type="enum" />
+    <Property Name="k_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="k_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="k_ungueltig_am" Type="datetime" Nullable="false" />
+    <Property Name="k_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="k_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="e_einkaeufer_ID" Type="int" Nullable="false" />
+    <Property Name="e_kunde_ID" Type="int" Nullable="false" />
+    <Property Name="e_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="e_einkaeufer" Type="varchar" MaxLength="45" />
+    <Property Name="e_email" Type="varchar" MaxLength="45" />
+    <Property Name="e_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="e_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="e_fax" Type="varchar" MaxLength="45" />
+    <Property Name="e_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="e_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="e_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="e_status" Type="enum" />
+    <Property Name="e_ungueltig_am" Type="timestamp" />
+    <Property Name="e_ungueltig_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.vk_apos_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vk_apos_join">
+    <Key>
+      <PropertyRef Name="vk_apos_ID" />
+      <PropertyRef Name="apos_anlagenposition_ID" />
+    </Key>
+    <Property Name="vk_apos_ID" Type="int" Nullable="false" />
+    <Property Name="vk_apos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_apos_anlagenposition_ID" Type="int" />
+    <Property Name="apos_anlagenposition_ID" Type="int" Nullable="false" />
+    <Property Name="apos_anlagennummer" Type="varchar" MaxLength="45" />
+    <Property Name="apos_avonr" Type="int" />
+    <Property Name="apos_anlagengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="apos_anlagenbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="apos_tarif_anlage_pro_std" Type="float" />
+    <Property Name="apos_tarif_personal_pro_std" Type="float" />
+    <Property Name="apos_nennleistung_in_me" Type="float" />
+    <Property Name="apos_losgroesse_in_me" Type="int" />
+    <Property Name="apos_ruestdauer_in_std" Type="float" />
+    <Property Name="apos_anlagenverfuegbarkeit" Type="float" />
+    <Property Name="apos_betreuungsaufwand_produktiv" Type="float" />
+    <Property Name="apos_betreuungsaufwand_ruesten" Type="float" />
+    <Property Name="apos_schichten" Type="int" />
+    <Property Name="apos_ausschussquote" Type="float" />
+    <Property Name="apos_angelegt_am" Type="timestamp" />
+    <Property Name="apos_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="apos_status" Type="enum" />
+    <Property Name="apos_ungültig_von" Type="enum" />
+    <Property Name="apos_ruestkosten" Type="float" />
+    <Property Name="apos_produktionskosten_pro_me" Type="float" />
+    <Property Name="apos_ruestkosten_pro_st_kg" Type="float" />
+    <Property Name="apos_ruestkosten_pro_los" Type="float" />
+    <Property Name="apos_produktionskosten" Type="float" />
+    <Property Name="apos_maschinenkosten_pro_me" Type="float" />
+    <Property Name="apos_personalkosten_pro_me" Type="float" />
+    <Property Name="apos_fgk_faktor" Type="float" />
+    <Property Name="apos_mengeneinheit" Type="varchar" MaxLength="3" />
+    <Property Name="apos_menge_in_me" Type="float" />
+    <Property Name="apos_ds_ID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.vk_dpos_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vk_dpos_join">
+    <Key>
+      <PropertyRef Name="vk_dpos_ID" />
+      <PropertyRef Name="vk_dpos_vorkalkulation_ID" />
+      <PropertyRef Name="vk_dpos_drahtposition_ID" />
+      <PropertyRef Name="dpos_drahtposition_ID" />
+    </Key>
+    <Property Name="vk_dpos_ID" Type="int" Nullable="false" />
+    <Property Name="vk_dpos_vorkalkulation_ID" Type="int" Nullable="false" />
+    <Property Name="vk_dpos_drahtposition_ID" Type="int" Nullable="false" />
+    <Property Name="dpos_drahtposition_ID" Type="int" Nullable="false" />
+    <Property Name="dpos_nummer" Type="int" />
+    <Property Name="dpos_ungültig_von" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_gruppe" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_bezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_preis_pro_tonne" Type="float" />
+    <Property Name="dpos_schrottfaktor" Type="float" />
+    <Property Name="dpos_schrotterloes_pro_tonne" Type="float" />
+    <Property Name="dpos_kosten" Type="float" />
+    <Property Name="dpos_status" Type="enum" />
+    <Property Name="dpos_angelegt_am" Type="timestamp" />
+    <Property Name="dpos_mgk_faktor" Type="float" />
+    <Property Name="dpos_einsatzgewicht_in_tonnen" Type="float" />
+    <Property Name="dpos_schrottgewicht_einsatzgewicht_in_tonnen" Type="float" />
+    <Property Name="dpos_gültigkeit" Type="date" />
+    <Property Name="dpos_schrottgewicht_diff_in_tonnen" Type="float" />
+    <Property Name="dpos_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="dpos_ds_ID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.vk_exdpos_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vk_exdpos_join">
+    <Key>
+      <PropertyRef Name="vk_exdpos_ID" />
+      <PropertyRef Name="exdpos_dienstleistungsposition_ID" />
+    </Key>
+    <Property Name="vk_exdpos_ID" Type="int" Nullable="false" />
+    <Property Name="vk_exdpos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_exdpos_dienstleistungsposition_ID" Type="int" />
+    <Property Name="exdpos_dienstleistungsposition_ID" Type="int" Nullable="false" />
+    <Property Name="exdpos_nummer" Type="int" />
+    <Property Name="exdpos_angelegt_am" Type="timestamp" />
+    <Property Name="exdpos_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="exdpos_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="exdpos_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="exdpos_abmessung" Type="varchar" MaxLength="45" />
+    <Property Name="exdpos_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="exdpos_preis_pro_me" Type="float" />
+    <Property Name="exdpos_kosten" Type="float" />
+    <Property Name="exdpos_leistungsfaktor" Type="float" />
+    <Property Name="exdpos_mengeneinheit" Type="varchar" MaxLength="3" />
+    <Property Name="exdpos_mgk2_faktor" Type="float" />
+    <Property Name="exdpos_setze_gk_0" Type="int" />
+    <Property Name="exdpos_ds_ID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.vk_extpos_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vk_extpos_join">
+    <Key>
+      <PropertyRef Name="vk_extpos_ID" />
+      <PropertyRef Name="extpos_teilposition_ID" />
+    </Key>
+    <Property Name="vk_extpos_ID" Type="int" Nullable="false" />
+    <Property Name="vk_extpos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_extpos_teilposition_ID" Type="int" />
+    <Property Name="extpos_teilposition_ID" Type="int" Nullable="false" />
+    <Property Name="extpos_kundenanfrage_ID" Type="int" />
+    <Property Name="extpos_nummer" Type="int" />
+    <Property Name="extpos_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="extpos_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="extpos_abmessung" Type="varchar" MaxLength="45" />
+    <Property Name="extpos_mengeneinheit" Type="varchar" MaxLength="3" />
+    <Property Name="extpos_preis_pro_me" Type="float" />
+    <Property Name="extpos_menge_in_me" Type="float" />
+    <Property Name="extpos_lieferant" Type="varchar" MaxLength="45" />
+    <Property Name="extpos_leistungsfaktor" Type="float" />
+    <Property Name="extpos_mgk2_faktor" Type="float" />
+    <Property Name="extpos_kosten" Type="float" />
+    <Property Name="extpos_setze_gk_0" Type="int" />
+    <Property Name="extpos_ds_ID" Type="int" />
+    <Property Name="extpos_angelegt_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.vk_skpos_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vk_skpos_join">
+    <Key>
+      <PropertyRef Name="vk_skpos_ID" />
+      <PropertyRef Name="skpos_sonderkostenposition_ID" />
+    </Key>
+    <Property Name="vk_skpos_ID" Type="int" Nullable="false" />
+    <Property Name="vk_skpos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_skpos_sonderkostenposition_ID" Type="int" />
+    <Property Name="skpos_sonderkostenposition_ID" Type="int" Nullable="false" />
+    <Property Name="skpos_nummer" Type="int" />
+    <Property Name="skpos_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="skpos_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="skpos_preis" Type="float" />
+    <Property Name="skpos_kosten" Type="float" />
+    <Property Name="skpos_ds_ID" Type="int" />
+    <Property Name="skpos_angelegt_am" Type="timestamp" />
+    <Property Name="skpos_angelegt_von" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.vk_vertrieb_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vk_vertrieb_join">
+    <Key>
+      <PropertyRef Name="vk_vorkalkulation_ID" />
+      <PropertyRef Name="vk_angelegt_am" />
+      <PropertyRef Name="vk_angelegt_von" />
+      <PropertyRef Name="vk_dspr1" />
+      <PropertyRef Name="vk_dspr2" />
+      <PropertyRef Name="vk_dspr3" />
+      <PropertyRef Name="vk_dspr4" />
+      <PropertyRef Name="vk_dspr5" />
+      <PropertyRef Name="vk_dspr6" />
+      <PropertyRef Name="vk_dspr7" />
+      <PropertyRef Name="vk_dspr8" />
+      <PropertyRef Name="m_mengenPos_ID" />
+      <PropertyRef Name="m_angelegt_am" />
+      <PropertyRef Name="m_angelegt_von" />
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+    </Key>
+    <Property Name="vk_vorkalkulation_ID" Type="int" Nullable="false" />
+    <Property Name="vk_mengenPos_ID" Type="int" />
+    <Property Name="vk_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="vk_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="vk_bearbeitet_am" Type="timestamp" />
+    <Property Name="vk_bearbeitet_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_abgelehnt_am" Type="timestamp" />
+    <Property Name="vk_abgelehnt_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_status" Type="varchar" MaxLength="45" />
+    <Property Name="vk_ungültig_am" Type="varchar" MaxLength="45" />
+    <Property Name="vk_ungültig_von" Type="varchar" MaxLength="45" />
+    <Property Name="vk_kommentar_vertrieb" Type="varchar" MaxLength="2000" />
+    <Property Name="vk_kommentar_te" Type="varchar" MaxLength="2000" />
+    <Property Name="vk_gueltigkeit_tage" Type="int" />
+    <Property Name="vk_gueltigkeit_datum" Type="date" />
+    <Property Name="vk_ta_te_anfrage_ID" Type="int" />
+    <Property Name="vk_anlagendatensatz_ID" Type="int" />
+    <Property Name="vk_lieferzeit_in_wochen" Type="float" />
+    <Property Name="vk_rohstoffkosten" Type="float" />
+    <Property Name="vk_dienstleistungskosten" Type="float" />
+    <Property Name="vk_werkzeugkosten" Type="float" />
+    <Property Name="vk_teilkosten" Type="float" />
+    <Property Name="vk_materialkosten" Type="float" />
+    <Property Name="vk_produktionskosten" Type="float" />
+    <Property Name="vk_ruestkosten" Type="float" />
+    <Property Name="vk_fertigungskosten" Type="float" />
+    <Property Name="vk_grenzherstellkosten" Type="float" />
+    <Property Name="vk_herstellkosten" Type="float" />
+    <Property Name="vk_verwaltungsgemeinkosten" Type="float" />
+    <Property Name="vk_selbstkosten" Type="float" />
+    <Property Name="vk_sonderkosten" Type="float" />
+    <Property Name="vk_drahtpreisdatensatz_ID" Type="int" />
+    <Property Name="vk_gemeinkostendatensatz_ID" Type="int" />
+    <Property Name="vk_dienstleistungsdatensatz_ID" Type="int" />
+    <Property Name="vk_werkzeugdatensatz_ID" Type="int" />
+    <Property Name="vk_teildatensatz_ID" Type="int" />
+    <Property Name="vk_sonderkostendatensatz_ID" Type="int" />
+    <Property Name="vk_dspr1" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr2" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr3" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr4" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr5" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr6" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr7" Type="bool" Nullable="false" />
+    <Property Name="vk_dspr8" Type="bool" Nullable="false" />
+    <Property Name="vk_geschlossen" Type="int" />
+    <Property Name="vk_abgelehnt" Type="int" />
+    <Property Name="vk_gf_freigabe" Type="int" />
+    <Property Name="vk_freigegeben" Type="int" />
+    <Property Name="vk_veroeffentlicht" Type="int" />
+    <Property Name="m_nummer" Type="int" />
+    <Property Name="m_mengenPos_ID" Type="int" Nullable="false" />
+    <Property Name="m_jahresmenge" Type="int" />
+    <Property Name="m_anfragenummer" Type="varchar" MaxLength="45" />
+    <Property Name="m_status" Type="enum" />
+    <Property Name="m_ungueltig_am" Type="timestamp" />
+    <Property Name="m_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="m_abgelehnt_am" Type="date" />
+    <Property Name="m_abgelehnt_von" Type="varchar" MaxLength="45" />
+    <Property Name="m_preis_vertrieb" Type="float" />
+    <Property Name="m_marge" Type="float" />
+    <Property Name="m_umsatz" Type="float" />
+    <Property Name="m_werkzeugkosten" Type="float" />
+    <Property Name="m_tonnenerloes" Type="float" />
+    <Property Name="m_tonage" Type="float" />
+    <Property Name="m_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="m_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="m_angeboten_am" Type="date" />
+    <Property Name="m_auftrag_erhalten_am" Type="date" />
+    <Property Name="m_preis_wettbewerber" Type="float" />
+    <Property Name="m_SOP" Type="date" />
+    <Property Name="m_ablehnungsgrund" Type="varchar" MaxLength="45" />
+    <Property Name="m_kundenanfrage_ID" Type="int" />
+    <Property Name="m_abteilungsstatus" Type="varchar" MaxLength="100" />
+    <Property Name="m_vk_angefordert" Type="int" />
+    <Property Name="m_wettbewerber" Type="int" />
+    <Property Name="m_abgelehnt" Type="int" />
+    <Property Name="m_ungueltig" Type="int" />
+    <Property Name="m_angeboten" Type="int" />
+    <Property Name="m_te_email" Type="varchar" MaxLength="45" />
+    <Property Name="m_vk_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_herstellbar" Type="int" />
+    <Property Name="m_kapazitaet" Type="int" />
+    <Property Name="m_auftrag" Type="int" />
+    <Property Name="m_abgelehnt_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_wettbewerber_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_nachgefasst_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="m_gesamtumsatz" Type="float" />
+    <Property Name="m_angebotspreis" Type="float" />
+    <Property Name="m_vertriebsstatus" Type="enum" />
+    <Property Name="ka_kundenanfrage_ID" Type="int" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="int" />
+    <Property Name="ka_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_verwendung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kommentar" Type="varchar" MaxLength="500" />
+    <Property Name="ka_angefragt_am" Type="date" />
+    <Property Name="ka_angebotsfrist" Type="date" />
+    <Property Name="ka_hersteller" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zustaendig" Type="varchar" MaxLength="45" />
+    <Property Name="ka_angelegt_am" Type="timestamp" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="varchar" Nullable="false" MaxLength="45" />
+    <Property Name="ka_status" Type="enum" />
+    <Property Name="ka_ungueltig_am" Type="timestamp" />
+    <Property Name="ka_ungueltig_von" Type="varchar" MaxLength="45" />
+    <Property Name="ka_modus" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kunde" Type="varchar" MaxLength="45" />
+    <Property Name="ka_produktgruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_artikelbezeichnung" Type="varchar" MaxLength="45" />
+    <Property Name="ka_guete" Type="varchar" MaxLength="45" />
+    <Property Name="ka_zeichnungsnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_aenderungsindex" Type="varchar" MaxLength="45" />
+    <Property Name="ka_durchmesser" Type="float" />
+    <Property Name="ka_laenge" Type="float" />
+    <Property Name="ka_gewindesteigung" Type="float" />
+    <Property Name="ka_fertiggewicht" Type="float" />
+    <Property Name="ka_einsatzgewicht" Type="float" />
+    <Property Name="ka_abc_artikelnummer" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_name" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_email" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_telefon" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_fax" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_mobil" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_anrede" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundengruppe" Type="varchar" MaxLength="45" />
+    <Property Name="ka_vertreter" Type="varchar" MaxLength="45" />
+    <Property Name="ka_kundenkommentar" Type="varchar" MaxLength="45" />
+    <Property Name="ka_einkaeufer_ID" Type="int" />
+    <Property Name="ka_offen_vertrieb" Type="int" />
+    <Property Name="ka_offen_te" Type="int" />
+    <Property Name="ka_vk_angefordert" Type="int" />
+    <Property Name="ka_vk_kommentar" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'def.angebotserstellung.vk_wzpos_join' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vk_wzpos_join">
+    <Key>
+      <PropertyRef Name="vk_wzpos_ID" />
+      <PropertyRef Name="wzpos_werkzeugposition_ID" />
+    </Key>
+    <Property Name="vk_wzpos_ID" Type="int" Nullable="false" />
+    <Property Name="vk_wzpos_vorkalkulation_ID" Type="int" />
+    <Property Name="vk_wzpos_werkzeugposition_ID" Type="int" />
+    <Property Name="wzpos_werkzeugposition_ID" Type="int" Nullable="false" />
+    <Property Name="wzpos_nummer" Type="int" />
+    <Property Name="wzpos_werkzeugpositioncol" Type="varchar" MaxLength="45" />
+    <Property Name="wzpos_gruppe" Type="varchar" MaxLength="150" />
+    <Property Name="wzpos_bezeichnung" Type="varchar" MaxLength="150" />
+    <Property Name="wzpos_stufe" Type="int" />
+    <Property Name="wzpos_standzeit" Type="float" />
+    <Property Name="wzpos_preis" Type="float" />
+    <Property Name="wzpos_mgk3_faktor" Type="float" />
+    <Property Name="wzpos_anzahl" Type="int" />
+    <Property Name="wzpos_kosten" Type="float" />
+    <Property Name="wzpos_anzahl_bereinigt" Type="int" />
+    <Property Name="wzpos_ds_ID" Type="int" />
+    <Property Name="wzpos_angelegt_von" Type="varchar" MaxLength="45" />
+    <Property Name="wzpos_angelegt_am" Type="timestamp" />
+  </EntityType>
+  <Association Name="anlagendatensatz_ID">
+    <End Role="ds_at_anlagendatensatz" Type="angebotserstellungModel.Store.ds_at_anlagendatensatz" Multiplicity="0..1" />
+    <End Role="at_anlagentarif" Type="angebotserstellungModel.Store.at_anlagentarif" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_at_anlagendatensatz">
+        <PropertyRef Name="ds_at_anlagendatensatz_ID" />
+      </Principal>
+      <Dependent Role="at_anlagentarif">
+        <PropertyRef Name="at_anlagendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="anlagendatensatz_ID_FK0">
+    <End Role="ds_at_anlagendatensatz" Type="angebotserstellungModel.Store.ds_at_anlagendatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.Store.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_at_anlagendatensatz">
+        <PropertyRef Name="ds_at_anlagendatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_anlagendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="apos_ID_FK">
+    <End Role="apos_anlagenposition" Type="angebotserstellungModel.Store.apos_anlagenposition" Multiplicity="0..1" />
+    <End Role="vk_apos" Type="angebotserstellungModel.Store.vk_apos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="apos_anlagenposition">
+        <PropertyRef Name="apos_anlagenposition_ID" />
+      </Principal>
+      <Dependent Role="vk_apos">
+        <PropertyRef Name="vk_apos_anlagenposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="dpos_ID_FK">
+    <End Role="dpos_drahtposition" Type="angebotserstellungModel.Store.dpos_drahtposition" Multiplicity="1" />
+    <End Role="vk_dpos" Type="angebotserstellungModel.Store.vk_dpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dpos_drahtposition">
+        <PropertyRef Name="dpos_drahtposition_ID" />
+      </Principal>
+      <Dependent Role="vk_dpos">
+        <PropertyRef Name="vk_dpos_drahtposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="drahtpreisdatensatz_ID_FK">
+    <End Role="ds_dp_drahtpreisdatensatz" Type="angebotserstellungModel.Store.ds_dp_drahtpreisdatensatz" Multiplicity="1" />
+    <End Role="dp_drahtpreis" Type="angebotserstellungModel.Store.dp_drahtpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_dp_drahtpreisdatensatz">
+        <PropertyRef Name="ds_dp_drahtpreisdatensatz_ID" />
+      </Principal>
+      <Dependent Role="dp_drahtpreis">
+        <PropertyRef Name="dp_drahtpreisdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="drahtpreisdatensatz_ID0">
+    <End Role="ds_dp_drahtpreisdatensatz" Type="angebotserstellungModel.Store.ds_dp_drahtpreisdatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.Store.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_dp_drahtpreisdatensatz">
+        <PropertyRef Name="ds_dp_drahtpreisdatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_drahtpreisdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Einkäufer_ID">
+    <End Role="e_einkaeufer" Type="angebotserstellungModel.Store.e_einkaeufer" Multiplicity="0..1" />
+    <End Role="ka_kundenanfrage" Type="angebotserstellungModel.Store.ka_kundenanfrage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="e_einkaeufer">
+        <PropertyRef Name="e_einkaeufer_ID" />
+      </Principal>
+      <Dependent Role="ka_kundenanfrage">
+        <PropertyRef Name="ka_einkaeufer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="exdpos_ID_FK">
+    <End Role="exdpos_dienstleistungsposition" Type="angebotserstellungModel.Store.exdpos_dienstleistungsposition" Multiplicity="0..1" />
+    <End Role="vk_exdpos" Type="angebotserstellungModel.Store.vk_exdpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exdpos_dienstleistungsposition">
+        <PropertyRef Name="exdpos_dienstleistungsposition_ID" />
+      </Principal>
+      <Dependent Role="vk_exdpos">
+        <PropertyRef Name="vk_exdpos_dienstleistungsposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="extpos_ID_FK">
+    <End Role="extpos_teilposition" Type="angebotserstellungModel.Store.extpos_teilposition" Multiplicity="0..1" />
+    <End Role="vk_extpos" Type="angebotserstellungModel.Store.vk_extpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="extpos_teilposition">
+        <PropertyRef Name="extpos_teilposition_ID" />
+      </Principal>
+      <Dependent Role="vk_extpos">
+        <PropertyRef Name="vk_extpos_teilposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="gemeinkostendatensatz_ID0">
+    <End Role="ds_gk_gemeinkostendatensatz" Type="angebotserstellungModel.Store.ds_gk_gemeinkostendatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.Store.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_gk_gemeinkostendatensatz">
+        <PropertyRef Name="ds_gk_gemeinkostendatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_gemeinkostendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kunde_ID_FK3">
+    <End Role="k_kunde" Type="angebotserstellungModel.Store.k_kunde" Multiplicity="1" />
+    <End Role="e_einkaeufer" Type="angebotserstellungModel.Store.e_einkaeufer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="k_kunde">
+        <PropertyRef Name="k_kunde_ID" />
+      </Principal>
+      <Dependent Role="e_einkaeufer">
+        <PropertyRef Name="e_kunde_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kundenanfrage_ID">
+    <End Role="ka_kundenanfrage" Type="angebotserstellungModel.Store.ka_kundenanfrage" Multiplicity="0..1" />
+    <End Role="m_mengenpos" Type="angebotserstellungModel.Store.m_mengenpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ka_kundenanfrage">
+        <PropertyRef Name="ka_kundenanfrage_ID" />
+      </Principal>
+      <Dependent Role="m_mengenpos">
+        <PropertyRef Name="m_kundenanfrage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kundenanfrage_ID_FK01">
+    <End Role="ka_kundenanfrage" Type="angebotserstellungModel.Store.ka_kundenanfrage" Multiplicity="0..1" />
+    <End Role="extpos_teilposition" Type="angebotserstellungModel.Store.extpos_teilposition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ka_kundenanfrage">
+        <PropertyRef Name="ka_kundenanfrage_ID" />
+      </Principal>
+      <Dependent Role="extpos_teilposition">
+        <PropertyRef Name="extpos_kundenanfrage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kundenanfrage_ID_FK200">
+    <End Role="ka_kundenanfrage" Type="angebotserstellungModel.Store.ka_kundenanfrage" Multiplicity="0..1" />
+    <End Role="d_datei" Type="angebotserstellungModel.Store.d_datei" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ka_kundenanfrage">
+        <PropertyRef Name="ka_kundenanfrage_ID" />
+      </Principal>
+      <Dependent Role="d_datei">
+        <PropertyRef Name="d_kundenanfrage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK_11">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.Store.me_mengeneinheit" Multiplicity="0..1" />
+    <End Role="exdpos_dienstleistungsposition" Type="angebotserstellungModel.Store.exdpos_dienstleistungsposition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit" />
+      </Principal>
+      <Dependent Role="exdpos_dienstleistungsposition">
+        <PropertyRef Name="exdpos_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK_231">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.Store.me_mengeneinheit" Multiplicity="0..1" />
+    <End Role="ext_teilpreis" Type="angebotserstellungModel.Store.ext_teilpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit" />
+      </Principal>
+      <Dependent Role="ext_teilpreis">
+        <PropertyRef Name="ext_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK_343">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.Store.me_mengeneinheit" Multiplicity="0..1" />
+    <End Role="exd_dienstleistungspreis" Type="angebotserstellungModel.Store.exd_dienstleistungspreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit" />
+      </Principal>
+      <Dependent Role="exd_dienstleistungspreis">
+        <PropertyRef Name="exd_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK1">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.Store.me_mengeneinheit" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="apos_anlagenposition" Type="angebotserstellungModel.Store.apos_anlagenposition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit" />
+      </Principal>
+      <Dependent Role="apos_anlagenposition">
+        <PropertyRef Name="apos_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK5">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.Store.me_mengeneinheit" Multiplicity="0..1" />
+    <End Role="extpos_teilposition" Type="angebotserstellungModel.Store.extpos_teilposition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit" />
+      </Principal>
+      <Dependent Role="extpos_teilposition">
+        <PropertyRef Name="extpos_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengenPos_ID_FK10">
+    <End Role="m_mengenpos" Type="angebotserstellungModel.Store.m_mengenpos" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.Store.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="m_mengenpos">
+        <PropertyRef Name="m_mengenPos_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_mengenPos_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="skpos_ID_FK">
+    <End Role="skpos_sonderkostenposition" Type="angebotserstellungModel.Store.skpos_sonderkostenposition" Multiplicity="0..1" />
+    <End Role="vk_skpos" Type="angebotserstellungModel.Store.vk_skpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="skpos_sonderkostenposition">
+        <PropertyRef Name="skpos_sonderkostenposition_ID" />
+      </Principal>
+      <Dependent Role="vk_skpos">
+        <PropertyRef Name="vk_skpos_sonderkostenposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sonderkostendatensatz_ID_FK_99">
+    <End Role="ds_sk_sonderkostendatensatz" Type="angebotserstellungModel.Store.ds_sk_sonderkostendatensatz" Multiplicity="1" />
+    <End Role="sk_sonderkostenpreis" Type="angebotserstellungModel.Store.sk_sonderkostenpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_sk_sonderkostendatensatz">
+        <PropertyRef Name="ds_sk_sonderkostendatensatz_ID" />
+      </Principal>
+      <Dependent Role="sk_sonderkostenpreis">
+        <PropertyRef Name="sk_sonderkostendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sonderkostendatensatz_ID_FK550">
+    <End Role="ds_sk_sonderkostendatensatz" Type="angebotserstellungModel.Store.ds_sk_sonderkostendatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.Store.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_sk_sonderkostendatensatz">
+        <PropertyRef Name="ds_sk_sonderkostendatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_sonderkostendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="veredelungsdatensatz_ID_FK">
+    <End Role="ds_exd_dienstleistungsdatensatz" Type="angebotserstellungModel.Store.ds_exd_dienstleistungsdatensatz" Multiplicity="1" />
+    <End Role="exd_dienstleistungspreis" Type="angebotserstellungModel.Store.exd_dienstleistungspreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_exd_dienstleistungsdatensatz">
+        <PropertyRef Name="ds_exd_dienstleistungsdatensatz_ID" />
+      </Principal>
+      <Dependent Role="exd_dienstleistungspreis">
+        <PropertyRef Name="exd_dienstleistungsdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vorkalkulation_ID_FK_1231">
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.Store.vk_vorkalkulation" Multiplicity="1" />
+    <End Role="f_freigabe" Type="angebotserstellungModel.Store.f_freigabe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_vorkalkulation_ID" />
+      </Principal>
+      <Dependent Role="f_freigabe">
+        <PropertyRef Name="f_vorkalkulation_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="werkzeugdatensatz_ID_FK3">
+    <End Role="ds_wz_werkzeugdatensatz" Type="angebotserstellungModel.Store.ds_wz_werkzeugdatensatz" Multiplicity="1" />
+    <End Role="wz_werkzeugpreis" Type="angebotserstellungModel.Store.wz_werkzeugpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_wz_werkzeugdatensatz">
+        <PropertyRef Name="ds_wz_werkzeugdatensatz_ID" />
+      </Principal>
+      <Dependent Role="wz_werkzeugpreis">
+        <PropertyRef Name="wz_werkzeugdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="werkzeugdatensatz_ID0">
+    <End Role="ds_wz_werkzeugdatensatz" Type="angebotserstellungModel.Store.ds_wz_werkzeugdatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.Store.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_wz_werkzeugdatensatz">
+        <PropertyRef Name="ds_wz_werkzeugdatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_werkzeugdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="wzpos_ID_FK">
+    <End Role="wzpos_werkzeugposition" Type="angebotserstellungModel.Store.wzpos_werkzeugposition" Multiplicity="0..1" />
+    <End Role="vk_wzpos" Type="angebotserstellungModel.Store.vk_wzpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="wzpos_werkzeugposition">
+        <PropertyRef Name="wzpos_werkzeugposition_ID" />
+      </Principal>
+      <Dependent Role="vk_wzpos">
+        <PropertyRef Name="vk_wzpos_werkzeugposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="zukaufdatensatz_ID_FK1">
+    <End Role="ds_ext_teildatensatz" Type="angebotserstellungModel.Store.ds_ext_teildatensatz" Multiplicity="0..1" />
+    <End Role="ext_teilpreis" Type="angebotserstellungModel.Store.ext_teilpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_ext_teildatensatz">
+        <PropertyRef Name="ds_ext_teildatensatz_ID" />
+      </Principal>
+      <Dependent Role="ext_teilpreis">
+        <PropertyRef Name="ext_teildatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="zukaufdatensatz_ID0">
+    <End Role="ds_ext_teildatensatz" Type="angebotserstellungModel.Store.ds_ext_teildatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.Store.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_ext_teildatensatz">
+        <PropertyRef Name="ds_ext_teildatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_teildatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

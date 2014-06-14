@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a38d837c8f0840bba3c33bb15313486b" Name="Diagram1" ZoomLevel="83">
+        <EntityTypeShape EntityType="angebotserstellungModel.ab_artikelbezeichnung" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.apos_anlagenposition" Width="1.5" PointX="13" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.as_abteilungsstatus" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.at_anlagentarif" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.bh_bearbeitungshistorie" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.d_datei" Width="1.5" PointX="3.75" PointY="36.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.dp_drahtpreis" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.dpos_drahtposition" Width="1.5" PointX="5.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ds_at_anlagendatensatz" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ds_dp_drahtpreisdatensatz" Width="1.5" PointX="3.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ds_exd_dienstleistungsdatensatz" Width="1.5" PointX="13.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ds_ext_teildatensatz" Width="1.5" PointX="3.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ds_gk_gemeinkostendatensatz" Width="1.5" PointX="3.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ds_sk_sonderkostendatensatz" Width="1.5" PointX="3.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ds_wz_werkzeugdatensatz" Width="1.5" PointX="3.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.e_einkaeufer" Width="1.5" PointX="1.5" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.exd_dienstleistungspreis" Width="1.5" PointX="16" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.exdpos_dienstleistungsposition" Width="1.5" PointX="13" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ext_teilpreis" Width="1.5" PointX="18" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.extpos_teilposition" Width="1.5" PointX="13" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.f_freigabe" Width="1.5" PointX="8.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.fb_freigabeberechtigung" Width="1.5" PointX="2.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.g_guete" Width="1.5" PointX="10.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.h_hersteller" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.k_kunde" Width="1.5" PointX="1.5" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ka_kundenanfrage" Width="1.5" PointX="1.5" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.kg_kundengruppe" Width="1.5" PointX="12.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.m_mengenpos" Width="1.5" PointX="3.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.me_mengeneinheit" Width="1.5" PointX="10.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.mv_mitarbeiter_vertrieb" Width="1.5" PointX="14.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.pg_produktgruppe" Width="1.5" PointX="7.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.s_vertriebsstatus" Width="1.5" PointX="16.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.sk_sonderkostenpreis" Width="1.5" PointX="6" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.skpos_sonderkostenposition" Width="1.5" PointX="13.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.v_vertreter" Width="1.5" PointX="10.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_apos" Width="1.5" PointX="15.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_dpos" Width="1.5" PointX="8" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_exdpos" Width="1.5" PointX="15.25" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_extpos" Width="1.5" PointX="15.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_skpos" Width="1.5" PointX="16" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_vorkalkulation" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_wzpos" Width="1.5" PointX="11" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.wz_werkzeugpreis" Width="1.5" PointX="6" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.wzpos_werkzeugposition" Width="1.5" PointX="8.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.dt_vk_vertrieb_join" Width="1.5" PointX="17.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ka_kundenanfrage_join" Width="1.5" PointX="19.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.ka_kundenanfrage_mengenpos_join" Width="1.5" PointX="8.75" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.kunde_einkaeufer_join" Width="1.5" PointX="20.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_apos_join" Width="1.5" PointX="21.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_dpos_join" Width="1.5" PointX="21.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_exdpos_join" Width="1.5" PointX="22.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_extpos_join" Width="1.5" PointX="22.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_skpos_join" Width="1.5" PointX="23.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_vertrieb_join" Width="1.5" PointX="23.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_wzpos_join" Width="1.5" PointX="24.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="angebotserstellungModel.apos_ID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.mengeneinheit_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.anlagendatensatz_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.kundenanfrage_ID_FK200" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.drahtpreisdatensatz_ID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.dpos_ID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.anlagendatensatz_ID_FK0" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.drahtpreisdatensatz_ID0" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.veredelungsdatensatz_ID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.zukaufdatensatz_ID_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.zukaufdatensatz_ID0" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.gemeinkostendatensatz_ID0" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.sonderkostendatensatz_ID_FK_99" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.sonderkostendatensatz_ID_FK550" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.werkzeugdatensatz_ID_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.werkzeugdatensatz_ID0" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.Einkäufer_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.kunde_ID_FK3" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.mengeneinheit_FK_343" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.exdpos_ID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.mengeneinheit_FK_11" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.mengeneinheit_FK_231" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.extpos_ID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.kundenanfrage_ID_FK01" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.mengeneinheit_FK5" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.vorkalkulation_ID_FK_1231" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.kundenanfrage_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.mengenPos_ID_FK10" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.skpos_ID_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="angebotserstellungModel.wzpos_ID_FK" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="angebotserstellungModel.vk_te_mitarbeiter" Width="1.5" PointX="2.7486614988877722" PointY="28.933003334762997" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

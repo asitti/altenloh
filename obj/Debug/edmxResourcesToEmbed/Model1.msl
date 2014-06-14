@@ -1,0 +1,1396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="angebotserstellungModelStoreContainer" CdmEntityContainer="angebotserstellungEntities">
+    <EntitySetMapping Name="ab_artikelbezeichnung">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ab_artikelbezeichnung">
+        <MappingFragment StoreEntitySet="ab_artikelbezeichnung">
+          <ScalarProperty Name="ab_artikelbezeichnung_ID" ColumnName="ab_artikelbezeichnung_ID" />
+          <ScalarProperty Name="ab_artikelbezeichnung1" ColumnName="ab_artikelbezeichnung" />
+          <ScalarProperty Name="ab_angelegt_am" ColumnName="ab_angelegt_am" />
+          <ScalarProperty Name="ab_angelegt_von" ColumnName="ab_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="apos_anlagenposition">
+      <EntityTypeMapping TypeName="angebotserstellungModel.apos_anlagenposition">
+        <MappingFragment StoreEntitySet="apos_anlagenposition">
+          <ScalarProperty Name="apos_anlagenposition_ID" ColumnName="apos_anlagenposition_ID" />
+          <ScalarProperty Name="apos_anlagennummer" ColumnName="apos_anlagennummer" />
+          <ScalarProperty Name="apos_avonr" ColumnName="apos_avonr" />
+          <ScalarProperty Name="apos_anlagengruppe" ColumnName="apos_anlagengruppe" />
+          <ScalarProperty Name="apos_anlagenbezeichnung" ColumnName="apos_anlagenbezeichnung" />
+          <ScalarProperty Name="apos_tarif_anlage_pro_std" ColumnName="apos_tarif_anlage_pro_std" />
+          <ScalarProperty Name="apos_tarif_personal_pro_std" ColumnName="apos_tarif_personal_pro_std" />
+          <ScalarProperty Name="apos_nennleistung_in_me" ColumnName="apos_nennleistung_in_me" />
+          <ScalarProperty Name="apos_losgroesse_in_me" ColumnName="apos_losgroesse_in_me" />
+          <ScalarProperty Name="apos_ruestdauer_in_std" ColumnName="apos_ruestdauer_in_std" />
+          <ScalarProperty Name="apos_anlagenverfuegbarkeit" ColumnName="apos_anlagenverfuegbarkeit" />
+          <ScalarProperty Name="apos_betreuungsaufwand_produktiv" ColumnName="apos_betreuungsaufwand_produktiv" />
+          <ScalarProperty Name="apos_betreuungsaufwand_ruesten" ColumnName="apos_betreuungsaufwand_ruesten" />
+          <ScalarProperty Name="apos_schichten" ColumnName="apos_schichten" />
+          <ScalarProperty Name="apos_ausschussquote" ColumnName="apos_ausschussquote" />
+          <ScalarProperty Name="apos_angelegt_am" ColumnName="apos_angelegt_am" />
+          <ScalarProperty Name="apos_angelegt_von" ColumnName="apos_angelegt_von" />
+          <ScalarProperty Name="apos_status" ColumnName="apos_status" />
+          <ScalarProperty Name="apos_ungültig_von" ColumnName="apos_ungültig_von" />
+          <ScalarProperty Name="apos_ruestkosten" ColumnName="apos_ruestkosten" />
+          <ScalarProperty Name="apos_produktionskosten_pro_me" ColumnName="apos_produktionskosten_pro_me" />
+          <ScalarProperty Name="apos_ruestkosten_pro_st_kg" ColumnName="apos_ruestkosten_pro_st_kg" />
+          <ScalarProperty Name="apos_ruestkosten_pro_los" ColumnName="apos_ruestkosten_pro_los" />
+          <ScalarProperty Name="apos_produktionskosten" ColumnName="apos_produktionskosten" />
+          <ScalarProperty Name="apos_maschinenkosten_pro_me" ColumnName="apos_maschinenkosten_pro_me" />
+          <ScalarProperty Name="apos_personalkosten_pro_me" ColumnName="apos_personalkosten_pro_me" />
+          <ScalarProperty Name="apos_fgk_faktor" ColumnName="apos_fgk_faktor" />
+          <ScalarProperty Name="apos_mengeneinheit" ColumnName="apos_mengeneinheit" />
+          <ScalarProperty Name="apos_menge_in_me" ColumnName="apos_menge_in_me" />
+          <ScalarProperty Name="apos_ds_ID" ColumnName="apos_ds_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="as_abteilungsstatus">
+      <EntityTypeMapping TypeName="angebotserstellungModel.as_abteilungsstatus">
+        <MappingFragment StoreEntitySet="as_abteilungsstatus">
+          <ScalarProperty Name="as_abteilungsstatus_ID" ColumnName="as_abteilungsstatus_ID" />
+          <ScalarProperty Name="as_bezeichnung" ColumnName="as_bezeichnung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="at_anlagentarif">
+      <EntityTypeMapping TypeName="angebotserstellungModel.at_anlagentarif">
+        <MappingFragment StoreEntitySet="at_anlagentarif">
+          <ScalarProperty Name="at_anlagentarif_ID" ColumnName="at_anlagentarif_ID" />
+          <ScalarProperty Name="at_anlagendatensatz_ID" ColumnName="at_anlagendatensatz_ID" />
+          <ScalarProperty Name="at_anlagennummer" ColumnName="at_anlagennummer" />
+          <ScalarProperty Name="at_anlagengruppe" ColumnName="at_anlagengruppe" />
+          <ScalarProperty Name="at_anlagenbezeichnung" ColumnName="at_anlagenbezeichnung" />
+          <ScalarProperty Name="at_tarif_anlage_pro_stunde" ColumnName="at_tarif_anlage_pro_stunde" />
+          <ScalarProperty Name="at_tarif_personal_pro_stunde" ColumnName="at_tarif_personal_pro_stunde" />
+          <ScalarProperty Name="at_nennleistung_in_me" ColumnName="at_nennleistung_in_me" />
+          <ScalarProperty Name="at_losgroesse_in_me" ColumnName="at_losgroesse_in_me" />
+          <ScalarProperty Name="at_ruestdauer_in_std" ColumnName="at_ruestdauer_in_std" />
+          <ScalarProperty Name="at_anlagenverfuegbarkeit" ColumnName="at_anlagenverfuegbarkeit" />
+          <ScalarProperty Name="at_betreuungsaufwand_produktiv" ColumnName="at_betreuungsaufwand_produktiv" />
+          <ScalarProperty Name="at_betreuungsaufwand_ruesten" ColumnName="at_betreuungsaufwand_ruesten" />
+          <ScalarProperty Name="at_schichten" ColumnName="at_schichten" />
+          <ScalarProperty Name="at_mengeneinheit" ColumnName="at_mengeneinheit" />
+          <ScalarProperty Name="at_ausschussquote" ColumnName="at_ausschussquote" />
+          <ScalarProperty Name="at_angelegt_von" ColumnName="at_angelegt_von" />
+          <ScalarProperty Name="at_angelegt_am" ColumnName="at_angelegt_am" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bh_bearbeitungshistorie">
+      <EntityTypeMapping TypeName="angebotserstellungModel.bh_bearbeitungshistorie">
+        <MappingFragment StoreEntitySet="bh_bearbeitungshistorie">
+          <ScalarProperty Name="bh_ID" ColumnName="bh_ID" />
+          <ScalarProperty Name="bh_von" ColumnName="bh_von" />
+          <ScalarProperty Name="bh_am" ColumnName="bh_am" />
+          <ScalarProperty Name="bh_sql" ColumnName="bh_sql" />
+          <ScalarProperty Name="bh_vorkalkulation_ID" ColumnName="bh_vorkalkulation_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="d_datei">
+      <EntityTypeMapping TypeName="angebotserstellungModel.d_datei">
+        <MappingFragment StoreEntitySet="d_datei">
+          <ScalarProperty Name="d_datei_ID" ColumnName="d_datei_ID" />
+          <ScalarProperty Name="d_pfad" ColumnName="d_pfad" />
+          <ScalarProperty Name="d_name" ColumnName="d_name" />
+          <ScalarProperty Name="d_beschreibung" ColumnName="d_beschreibung" />
+          <ScalarProperty Name="d_vorkalkulation_ID" ColumnName="d_vorkalkulation_ID" />
+          <ScalarProperty Name="d_kundenanfrage_ID" ColumnName="d_kundenanfrage_ID" />
+          <ScalarProperty Name="d_status" ColumnName="d_status" />
+          <ScalarProperty Name="d_ungueltig_von" ColumnName="d_ungueltig_von" />
+          <ScalarProperty Name="d_ungueltig_am" ColumnName="d_ungueltig_am" />
+          <ScalarProperty Name="d_angelegt_am" ColumnName="d_angelegt_am" />
+          <ScalarProperty Name="d_angelegt_von" ColumnName="d_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dp_drahtpreis">
+      <EntityTypeMapping TypeName="angebotserstellungModel.dp_drahtpreis">
+        <MappingFragment StoreEntitySet="dp_drahtpreis">
+          <ScalarProperty Name="dp_drahtpreis_ID" ColumnName="dp_drahtpreis_ID" />
+          <ScalarProperty Name="dp_nummer" ColumnName="dp_nummer" />
+          <ScalarProperty Name="dp_gruppe" ColumnName="dp_gruppe" />
+          <ScalarProperty Name="dp_bezeichnung" ColumnName="dp_bezeichnung" />
+          <ScalarProperty Name="dp_lieferant" ColumnName="dp_lieferant" />
+          <ScalarProperty Name="dp_preis_pro_tonne" ColumnName="dp_preis_pro_tonne" />
+          <ScalarProperty Name="dp_schrottfaktor" ColumnName="dp_schrottfaktor" />
+          <ScalarProperty Name="dp_schrotterloes_pro_tonne" ColumnName="dp_schrotterloes_pro_tonne" />
+          <ScalarProperty Name="dp_angelegt_am" ColumnName="dp_angelegt_am" />
+          <ScalarProperty Name="dp_drahtpreisdatensatz_ID" ColumnName="dp_drahtpreisdatensatz_ID" />
+          <ScalarProperty Name="dp_angelegt_von" ColumnName="dp_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dpos_drahtposition">
+      <EntityTypeMapping TypeName="angebotserstellungModel.dpos_drahtposition">
+        <MappingFragment StoreEntitySet="dpos_drahtposition">
+          <ScalarProperty Name="dpos_drahtposition_ID" ColumnName="dpos_drahtposition_ID" />
+          <ScalarProperty Name="dpos_nummer" ColumnName="dpos_nummer" />
+          <ScalarProperty Name="dpos_ungültig_von" ColumnName="dpos_ungültig_von" />
+          <ScalarProperty Name="dpos_gruppe" ColumnName="dpos_gruppe" />
+          <ScalarProperty Name="dpos_bezeichnung" ColumnName="dpos_bezeichnung" />
+          <ScalarProperty Name="dpos_lieferant" ColumnName="dpos_lieferant" />
+          <ScalarProperty Name="dpos_preis_pro_tonne" ColumnName="dpos_preis_pro_tonne" />
+          <ScalarProperty Name="dpos_schrottfaktor" ColumnName="dpos_schrottfaktor" />
+          <ScalarProperty Name="dpos_schrotterloes_pro_tonne" ColumnName="dpos_schrotterloes_pro_tonne" />
+          <ScalarProperty Name="dpos_kosten" ColumnName="dpos_kosten" />
+          <ScalarProperty Name="dpos_status" ColumnName="dpos_status" />
+          <ScalarProperty Name="dpos_angelegt_am" ColumnName="dpos_angelegt_am" />
+          <ScalarProperty Name="dpos_mgk_faktor" ColumnName="dpos_mgk_faktor" />
+          <ScalarProperty Name="dpos_einsatzgewicht_in_tonnen" ColumnName="dpos_einsatzgewicht_in_tonnen" />
+          <ScalarProperty Name="dpos_schrottgewicht_einsatzgewicht_in_tonnen" ColumnName="dpos_schrottgewicht_einsatzgewicht_in_tonnen" />
+          <ScalarProperty Name="dpos_gültigkeit" ColumnName="dpos_gültigkeit" />
+          <ScalarProperty Name="dpos_schrottgewicht_diff_in_tonnen" ColumnName="dpos_schrottgewicht_diff_in_tonnen" />
+          <ScalarProperty Name="dpos_angelegt_von" ColumnName="dpos_angelegt_von" />
+          <ScalarProperty Name="dpos_ds_ID" ColumnName="dpos_ds_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ds_at_anlagendatensatz">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ds_at_anlagendatensatz">
+        <MappingFragment StoreEntitySet="ds_at_anlagendatensatz">
+          <ScalarProperty Name="ds_at_anlagendatensatz_ID" ColumnName="ds_at_anlagendatensatz_ID" />
+          <ScalarProperty Name="ds_at_angelegt_am" ColumnName="ds_at_angelegt_am" />
+          <ScalarProperty Name="ds_at_angelegt_von" ColumnName="ds_at_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ds_dp_drahtpreisdatensatz">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ds_dp_drahtpreisdatensatz">
+        <MappingFragment StoreEntitySet="ds_dp_drahtpreisdatensatz">
+          <ScalarProperty Name="ds_dp_drahtpreisdatensatz_ID" ColumnName="ds_dp_drahtpreisdatensatz_ID" />
+          <ScalarProperty Name="ds_dp_angelegt_am" ColumnName="ds_dp_angelegt_am" />
+          <ScalarProperty Name="ds_dp_angelegt_von" ColumnName="ds_dp_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ds_exd_dienstleistungsdatensatz">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ds_exd_dienstleistungsdatensatz">
+        <MappingFragment StoreEntitySet="ds_exd_dienstleistungsdatensatz">
+          <ScalarProperty Name="ds_exd_dienstleistungsdatensatz_ID" ColumnName="ds_exd_dienstleistungsdatensatz_ID" />
+          <ScalarProperty Name="ds_exd_angelegt_am" ColumnName="ds_exd_angelegt_am" />
+          <ScalarProperty Name="ds_exd_angelegt_von" ColumnName="ds_exd_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ds_ext_teildatensatz">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ds_ext_teildatensatz">
+        <MappingFragment StoreEntitySet="ds_ext_teildatensatz">
+          <ScalarProperty Name="ds_ext_teildatensatz_ID" ColumnName="ds_ext_teildatensatz_ID" />
+          <ScalarProperty Name="ds_ext_angelegt_von" ColumnName="ds_ext_angelegt_von" />
+          <ScalarProperty Name="ds_ext_angelegt_am" ColumnName="ds_ext_angelegt_am" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ds_gk_gemeinkostendatensatz">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ds_gk_gemeinkostendatensatz">
+        <MappingFragment StoreEntitySet="ds_gk_gemeinkostendatensatz">
+          <ScalarProperty Name="ds_gk_gemeinkostendatensatz_ID" ColumnName="ds_gk_gemeinkostendatensatz_ID" />
+          <ScalarProperty Name="ds_gk_mgk1" ColumnName="ds_gk_mgk1" />
+          <ScalarProperty Name="ds_gk_mgk2" ColumnName="ds_gk_mgk2" />
+          <ScalarProperty Name="ds_gk_mgk3" ColumnName="ds_gk_mgk3" />
+          <ScalarProperty Name="ds_gk_fgk" ColumnName="ds_gk_fgk" />
+          <ScalarProperty Name="ds_gk_vwgk" ColumnName="ds_gk_vwgk" />
+          <ScalarProperty Name="ds_gk_angelegt_am" ColumnName="ds_gk_angelegt_am" />
+          <ScalarProperty Name="ds_gk_angelegt_von" ColumnName="ds_gk_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ds_sk_sonderkostendatensatz">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ds_sk_sonderkostendatensatz">
+        <MappingFragment StoreEntitySet="ds_sk_sonderkostendatensatz">
+          <ScalarProperty Name="ds_sk_sonderkostendatensatz_ID" ColumnName="ds_sk_sonderkostendatensatz_ID" />
+          <ScalarProperty Name="ds_sk_angelegt_am" ColumnName="ds_sk_angelegt_am" />
+          <ScalarProperty Name="ds_sk_angelegt_von" ColumnName="ds_sk_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ds_wz_werkzeugdatensatz">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ds_wz_werkzeugdatensatz">
+        <MappingFragment StoreEntitySet="ds_wz_werkzeugdatensatz">
+          <ScalarProperty Name="ds_wz_werkzeugdatensatz_ID" ColumnName="ds_wz_werkzeugdatensatz_ID" />
+          <ScalarProperty Name="ds_wz_angelegt_am" ColumnName="ds_wz_angelegt_am" />
+          <ScalarProperty Name="ds_wz_angelegt_von" ColumnName="ds_wz_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="e_einkaeufer">
+      <EntityTypeMapping TypeName="angebotserstellungModel.e_einkaeufer">
+        <MappingFragment StoreEntitySet="e_einkaeufer">
+          <ScalarProperty Name="e_einkaeufer_ID" ColumnName="e_einkaeufer_ID" />
+          <ScalarProperty Name="e_kunde_ID" ColumnName="e_kunde_ID" />
+          <ScalarProperty Name="e_anrede" ColumnName="e_anrede" />
+          <ScalarProperty Name="e_einkaeufer1" ColumnName="e_einkaeufer" />
+          <ScalarProperty Name="e_email" ColumnName="e_email" />
+          <ScalarProperty Name="e_telefon" ColumnName="e_telefon" />
+          <ScalarProperty Name="e_mobil" ColumnName="e_mobil" />
+          <ScalarProperty Name="e_fax" ColumnName="e_fax" />
+          <ScalarProperty Name="e_kommentar" ColumnName="e_kommentar" />
+          <ScalarProperty Name="e_angelegt_am" ColumnName="e_angelegt_am" />
+          <ScalarProperty Name="e_angelegt_von" ColumnName="e_angelegt_von" />
+          <ScalarProperty Name="e_status" ColumnName="e_status" />
+          <ScalarProperty Name="e_ungueltig_am" ColumnName="e_ungueltig_am" />
+          <ScalarProperty Name="e_ungueltig_von" ColumnName="e_ungueltig_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exd_dienstleistungspreis">
+      <EntityTypeMapping TypeName="angebotserstellungModel.exd_dienstleistungspreis">
+        <MappingFragment StoreEntitySet="exd_dienstleistungspreis">
+          <ScalarProperty Name="exd_dienstleistungspreis_ID" ColumnName="exd_dienstleistungspreis_ID" />
+          <ScalarProperty Name="exd_nummer" ColumnName="exd_nummer" />
+          <ScalarProperty Name="exd_gruppe" ColumnName="exd_gruppe" />
+          <ScalarProperty Name="exd_bezeichnung" ColumnName="exd_bezeichnung" />
+          <ScalarProperty Name="exd_abmessung" ColumnName="exd_abmessung" />
+          <ScalarProperty Name="exd_lieferant" ColumnName="exd_lieferant" />
+          <ScalarProperty Name="exd_mengeneinheit" ColumnName="exd_mengeneinheit" />
+          <ScalarProperty Name="exd_preis_pro_me" ColumnName="exd_preis_pro_me" />
+          <ScalarProperty Name="exd_leistungsfaktor" ColumnName="exd_leistungsfaktor" />
+          <ScalarProperty Name="exd_angelegt_am" ColumnName="exd_angelegt_am" />
+          <ScalarProperty Name="exd_angelegt_von" ColumnName="exd_angelegt_von" />
+          <ScalarProperty Name="exd_dienstleistungsdatensatz_ID" ColumnName="exd_dienstleistungsdatensatz_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exdpos_dienstleistungsposition">
+      <EntityTypeMapping TypeName="angebotserstellungModel.exdpos_dienstleistungsposition">
+        <MappingFragment StoreEntitySet="exdpos_dienstleistungsposition">
+          <ScalarProperty Name="exdpos_dienstleistungsposition_ID" ColumnName="exdpos_dienstleistungsposition_ID" />
+          <ScalarProperty Name="exdpos_nummer" ColumnName="exdpos_nummer" />
+          <ScalarProperty Name="exdpos_angelegt_am" ColumnName="exdpos_angelegt_am" />
+          <ScalarProperty Name="exdpos_angelegt_von" ColumnName="exdpos_angelegt_von" />
+          <ScalarProperty Name="exdpos_gruppe" ColumnName="exdpos_gruppe" />
+          <ScalarProperty Name="exdpos_bezeichnung" ColumnName="exdpos_bezeichnung" />
+          <ScalarProperty Name="exdpos_abmessung" ColumnName="exdpos_abmessung" />
+          <ScalarProperty Name="exdpos_lieferant" ColumnName="exdpos_lieferant" />
+          <ScalarProperty Name="exdpos_preis_pro_me" ColumnName="exdpos_preis_pro_me" />
+          <ScalarProperty Name="exdpos_kosten" ColumnName="exdpos_kosten" />
+          <ScalarProperty Name="exdpos_leistungsfaktor" ColumnName="exdpos_leistungsfaktor" />
+          <ScalarProperty Name="exdpos_mengeneinheit" ColumnName="exdpos_mengeneinheit" />
+          <ScalarProperty Name="exdpos_mgk2_faktor" ColumnName="exdpos_mgk2_faktor" />
+          <ScalarProperty Name="exdpos_setze_gk_0" ColumnName="exdpos_setze_gk_0" />
+          <ScalarProperty Name="exdpos_ds_ID" ColumnName="exdpos_ds_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ext_teilpreis">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ext_teilpreis">
+        <MappingFragment StoreEntitySet="ext_teilpreis">
+          <ScalarProperty Name="ext_teilpreis_ID" ColumnName="ext_teilpreis_ID" />
+          <ScalarProperty Name="ext_teildatensatz_ID" ColumnName="ext_teildatensatz_ID" />
+          <ScalarProperty Name="ext_nummer" ColumnName="ext_nummer" />
+          <ScalarProperty Name="ext_gruppe" ColumnName="ext_gruppe" />
+          <ScalarProperty Name="ext_bezeichnung" ColumnName="ext_bezeichnung" />
+          <ScalarProperty Name="ext_abmessung" ColumnName="ext_abmessung" />
+          <ScalarProperty Name="ext_lieferant" ColumnName="ext_lieferant" />
+          <ScalarProperty Name="ext_mengeneinheit" ColumnName="ext_mengeneinheit" />
+          <ScalarProperty Name="ext_preis_pro_me" ColumnName="ext_preis_pro_me" />
+          <ScalarProperty Name="ext_leistungsfaktor" ColumnName="ext_leistungsfaktor" />
+          <ScalarProperty Name="ext_angelegt_von" ColumnName="ext_angelegt_von" />
+          <ScalarProperty Name="ext_angelegt_am" ColumnName="ext_angelegt_am" />
+          <ScalarProperty Name="ext_teilpreiscol" ColumnName="ext_teilpreiscol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="extpos_teilposition">
+      <EntityTypeMapping TypeName="angebotserstellungModel.extpos_teilposition">
+        <MappingFragment StoreEntitySet="extpos_teilposition">
+          <ScalarProperty Name="extpos_teilposition_ID" ColumnName="extpos_teilposition_ID" />
+          <ScalarProperty Name="extpos_kundenanfrage_ID" ColumnName="extpos_kundenanfrage_ID" />
+          <ScalarProperty Name="extpos_nummer" ColumnName="extpos_nummer" />
+          <ScalarProperty Name="extpos_gruppe" ColumnName="extpos_gruppe" />
+          <ScalarProperty Name="extpos_bezeichnung" ColumnName="extpos_bezeichnung" />
+          <ScalarProperty Name="extpos_abmessung" ColumnName="extpos_abmessung" />
+          <ScalarProperty Name="extpos_mengeneinheit" ColumnName="extpos_mengeneinheit" />
+          <ScalarProperty Name="extpos_preis_pro_me" ColumnName="extpos_preis_pro_me" />
+          <ScalarProperty Name="extpos_menge_in_me" ColumnName="extpos_menge_in_me" />
+          <ScalarProperty Name="extpos_lieferant" ColumnName="extpos_lieferant" />
+          <ScalarProperty Name="extpos_leistungsfaktor" ColumnName="extpos_leistungsfaktor" />
+          <ScalarProperty Name="extpos_mgk2_faktor" ColumnName="extpos_mgk2_faktor" />
+          <ScalarProperty Name="extpos_kosten" ColumnName="extpos_kosten" />
+          <ScalarProperty Name="extpos_setze_gk_0" ColumnName="extpos_setze_gk_0" />
+          <ScalarProperty Name="extpos_ds_ID" ColumnName="extpos_ds_ID" />
+          <ScalarProperty Name="extpos_angelegt_von" ColumnName="extpos_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="f_freigabe">
+      <EntityTypeMapping TypeName="angebotserstellungModel.f_freigabe">
+        <MappingFragment StoreEntitySet="f_freigabe">
+          <ScalarProperty Name="f_freigabe_ID" ColumnName="f_freigabe_ID" />
+          <ScalarProperty Name="f_vorkalkulation_ID" ColumnName="f_vorkalkulation_ID" />
+          <ScalarProperty Name="f_kommentar" ColumnName="f_kommentar" />
+          <ScalarProperty Name="f_status" ColumnName="f_status" />
+          <ScalarProperty Name="f_ungueltig_am" ColumnName="f_ungueltig_am" />
+          <ScalarProperty Name="f_angelegt_von" ColumnName="f_angelegt_von" />
+          <ScalarProperty Name="f_angelegt_am" ColumnName="f_angelegt_am" />
+          <ScalarProperty Name="f_ungueltig_von" ColumnName="f_ungueltig_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fb_freigabeberechtigung">
+      <EntityTypeMapping TypeName="angebotserstellungModel.fb_freigabeberechtigung">
+        <MappingFragment StoreEntitySet="fb_freigabeberechtigung">
+          <ScalarProperty Name="fb_freigabeberechtigung_ID" ColumnName="fb_freigabeberechtigung_ID" />
+          <ScalarProperty Name="fb_login" ColumnName="fb_login" />
+          <ScalarProperty Name="fb_email" ColumnName="fb_email" />
+          <ScalarProperty Name="fb_name" ColumnName="fb_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="g_guete">
+      <EntityTypeMapping TypeName="angebotserstellungModel.g_guete">
+        <MappingFragment StoreEntitySet="g_guete">
+          <ScalarProperty Name="g_guete_ID" ColumnName="g_guete_ID" />
+          <ScalarProperty Name="g_guete1" ColumnName="g_guete" />
+          <ScalarProperty Name="g_angelegt_von" ColumnName="g_angelegt_von" />
+          <ScalarProperty Name="g_angelegt_am" ColumnName="g_angelegt_am" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="h_hersteller">
+      <EntityTypeMapping TypeName="angebotserstellungModel.h_hersteller">
+        <MappingFragment StoreEntitySet="h_hersteller">
+          <ScalarProperty Name="h_hersteller_ID" ColumnName="h_hersteller_ID" />
+          <ScalarProperty Name="h_hersteller1" ColumnName="h_hersteller" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="k_kunde">
+      <EntityTypeMapping TypeName="angebotserstellungModel.k_kunde">
+        <MappingFragment StoreEntitySet="k_kunde">
+          <ScalarProperty Name="k_kunde_ID" ColumnName="k_kunde_ID" />
+          <ScalarProperty Name="k_kunde1" ColumnName="k_kunde" />
+          <ScalarProperty Name="k_angelegt_am" ColumnName="k_angelegt_am" />
+          <ScalarProperty Name="k_angelegt_von" ColumnName="k_angelegt_von" />
+          <ScalarProperty Name="k_status" ColumnName="k_status" />
+          <ScalarProperty Name="k_kundengruppe" ColumnName="k_kundengruppe" />
+          <ScalarProperty Name="k_vertreter" ColumnName="k_vertreter" />
+          <ScalarProperty Name="k_ungueltig_am" ColumnName="k_ungueltig_am" />
+          <ScalarProperty Name="k_ungueltig_von" ColumnName="k_ungueltig_von" />
+          <ScalarProperty Name="k_kommentar" ColumnName="k_kommentar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ka_kundenanfrage">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ka_kundenanfrage">
+        <MappingFragment StoreEntitySet="ka_kundenanfrage">
+          <ScalarProperty Name="ka_potenzial" ColumnName="ka_potenzial" />
+          <ScalarProperty Name="ka_kundenanfrage_ID" ColumnName="ka_kundenanfrage_ID" />
+          <ScalarProperty Name="ka_anfragenummer" ColumnName="ka_anfragenummer" />
+          <ScalarProperty Name="ka_artikelnummer" ColumnName="ka_artikelnummer" />
+          <ScalarProperty Name="ka_verwendung" ColumnName="ka_verwendung" />
+          <ScalarProperty Name="ka_kommentar" ColumnName="ka_kommentar" />
+          <ScalarProperty Name="ka_angefragt_am" ColumnName="ka_angefragt_am" />
+          <ScalarProperty Name="ka_angebotsfrist" ColumnName="ka_angebotsfrist" />
+          <ScalarProperty Name="ka_hersteller" ColumnName="ka_hersteller" />
+          <ScalarProperty Name="ka_zustaendig" ColumnName="ka_zustaendig" />
+          <ScalarProperty Name="ka_angelegt_am" ColumnName="ka_angelegt_am" />
+          <ScalarProperty Name="ka_angelegt_von" ColumnName="ka_angelegt_von" />
+          <ScalarProperty Name="ka_status" ColumnName="ka_status" />
+          <ScalarProperty Name="ka_ungueltig_am" ColumnName="ka_ungueltig_am" />
+          <ScalarProperty Name="ka_ungueltig_von" ColumnName="ka_ungueltig_von" />
+          <ScalarProperty Name="ka_modus" ColumnName="ka_modus" />
+          <ScalarProperty Name="ka_kunde" ColumnName="ka_kunde" />
+          <ScalarProperty Name="ka_produktgruppe" ColumnName="ka_produktgruppe" />
+          <ScalarProperty Name="ka_artikelbezeichnung" ColumnName="ka_artikelbezeichnung" />
+          <ScalarProperty Name="ka_guete" ColumnName="ka_guete" />
+          <ScalarProperty Name="ka_zeichnungsnummer" ColumnName="ka_zeichnungsnummer" />
+          <ScalarProperty Name="ka_aenderungsindex" ColumnName="ka_aenderungsindex" />
+          <ScalarProperty Name="ka_durchmesser" ColumnName="ka_durchmesser" />
+          <ScalarProperty Name="ka_laenge" ColumnName="ka_laenge" />
+          <ScalarProperty Name="ka_gewindesteigung" ColumnName="ka_gewindesteigung" />
+          <ScalarProperty Name="ka_fertiggewicht" ColumnName="ka_fertiggewicht" />
+          <ScalarProperty Name="ka_einsatzgewicht" ColumnName="ka_einsatzgewicht" />
+          <ScalarProperty Name="ka_abc_artikelnummer" ColumnName="ka_abc_artikelnummer" />
+          <ScalarProperty Name="ka_einkaeufer_name" ColumnName="ka_einkaeufer_name" />
+          <ScalarProperty Name="ka_einkaeufer_email" ColumnName="ka_einkaeufer_email" />
+          <ScalarProperty Name="ka_einkaeufer_telefon" ColumnName="ka_einkaeufer_telefon" />
+          <ScalarProperty Name="ka_einkaeufer_fax" ColumnName="ka_einkaeufer_fax" />
+          <ScalarProperty Name="ka_einkaeufer_mobil" ColumnName="ka_einkaeufer_mobil" />
+          <ScalarProperty Name="ka_einkaeufer_anrede" ColumnName="ka_einkaeufer_anrede" />
+          <ScalarProperty Name="ka_kundengruppe" ColumnName="ka_kundengruppe" />
+          <ScalarProperty Name="ka_vertreter" ColumnName="ka_vertreter" />
+          <ScalarProperty Name="ka_kundenkommentar" ColumnName="ka_kundenkommentar" />
+          <ScalarProperty Name="ka_einkaeufer_ID" ColumnName="ka_einkaeufer_ID" />
+          <ScalarProperty Name="ka_offen_vertrieb" ColumnName="ka_offen_vertrieb" />
+          <ScalarProperty Name="ka_offen_te" ColumnName="ka_offen_te" />
+          <ScalarProperty Name="ka_vk_angefordert" ColumnName="ka_vk_angefordert" />
+          <ScalarProperty Name="ka_vk_kommentar" ColumnName="ka_vk_kommentar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kg_kundengruppe">
+      <EntityTypeMapping TypeName="angebotserstellungModel.kg_kundengruppe">
+        <MappingFragment StoreEntitySet="kg_kundengruppe">
+          <ScalarProperty Name="kg_kundengruppe_ID" ColumnName="kg_kundengruppe_ID" />
+          <ScalarProperty Name="kg_bezeichnung" ColumnName="kg_bezeichnung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_mengenpos">
+      <EntityTypeMapping TypeName="angebotserstellungModel.m_mengenpos">
+        <MappingFragment StoreEntitySet="m_mengenpos">
+          <ScalarProperty Name="m_nummer" ColumnName="m_nummer" />
+          <ScalarProperty Name="m_mengenPos_ID" ColumnName="m_mengenPos_ID" />
+          <ScalarProperty Name="m_jahresmenge" ColumnName="m_jahresmenge" />
+          <ScalarProperty Name="m_anfragenummer" ColumnName="m_anfragenummer" />
+          <ScalarProperty Name="m_status" ColumnName="m_status" />
+          <ScalarProperty Name="m_ungueltig_am" ColumnName="m_ungueltig_am" />
+          <ScalarProperty Name="m_ungueltig_von" ColumnName="m_ungueltig_von" />
+          <ScalarProperty Name="m_abgelehnt_am" ColumnName="m_abgelehnt_am" />
+          <ScalarProperty Name="m_abgelehnt_von" ColumnName="m_abgelehnt_von" />
+          <ScalarProperty Name="m_preis_vertrieb" ColumnName="m_preis_vertrieb" />
+          <ScalarProperty Name="m_marge" ColumnName="m_marge" />
+          <ScalarProperty Name="m_umsatz" ColumnName="m_umsatz" />
+          <ScalarProperty Name="m_werkzeugkosten" ColumnName="m_werkzeugkosten" />
+          <ScalarProperty Name="m_tonnenerloes" ColumnName="m_tonnenerloes" />
+          <ScalarProperty Name="m_tonage" ColumnName="m_tonage" />
+          <ScalarProperty Name="m_angelegt_am" ColumnName="m_angelegt_am" />
+          <ScalarProperty Name="m_angelegt_von" ColumnName="m_angelegt_von" />
+          <ScalarProperty Name="m_angeboten_am" ColumnName="m_angeboten_am" />
+          <ScalarProperty Name="m_auftrag_erhalten_am" ColumnName="m_auftrag_erhalten_am" />
+          <ScalarProperty Name="m_preis_wettbewerber" ColumnName="m_preis_wettbewerber" />
+          <ScalarProperty Name="m_SOP" ColumnName="m_SOP" />
+          <ScalarProperty Name="m_ablehnungsgrund" ColumnName="m_ablehnungsgrund" />
+          <ScalarProperty Name="m_kundenanfrage_ID" ColumnName="m_kundenanfrage_ID" />
+          <ScalarProperty Name="m_abteilungsstatus" ColumnName="m_abteilungsstatus" />
+          <ScalarProperty Name="m_vk_angefordert" ColumnName="m_vk_angefordert" />
+          <ScalarProperty Name="m_wettbewerber" ColumnName="m_wettbewerber" />
+          <ScalarProperty Name="m_abgelehnt" ColumnName="m_abgelehnt" />
+          <ScalarProperty Name="m_ungueltig" ColumnName="m_ungueltig" />
+          <ScalarProperty Name="m_angeboten" ColumnName="m_angeboten" />
+          <ScalarProperty Name="m_te_email" ColumnName="m_te_email" />
+          <ScalarProperty Name="m_vk_kommentar" ColumnName="m_vk_kommentar" />
+          <ScalarProperty Name="m_herstellbar" ColumnName="m_herstellbar" />
+          <ScalarProperty Name="m_kapazitaet" ColumnName="m_kapazitaet" />
+          <ScalarProperty Name="m_auftrag" ColumnName="m_auftrag" />
+          <ScalarProperty Name="m_abgelehnt_kommentar" ColumnName="m_abgelehnt_kommentar" />
+          <ScalarProperty Name="m_wettbewerber_kommentar" ColumnName="m_wettbewerber_kommentar" />
+          <ScalarProperty Name="m_nachgefasst_kommentar" ColumnName="m_nachgefasst_kommentar" />
+          <ScalarProperty Name="m_gesamtumsatz" ColumnName="m_gesamtumsatz" />
+          <ScalarProperty Name="m_angebotspreis" ColumnName="m_angebotspreis" />
+          <ScalarProperty Name="m_vertriebsstatus" ColumnName="m_vertriebsstatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="me_mengeneinheit">
+      <EntityTypeMapping TypeName="angebotserstellungModel.me_mengeneinheit">
+        <MappingFragment StoreEntitySet="me_mengeneinheit">
+          <ScalarProperty Name="me_mengeneinheit1" ColumnName="me_mengeneinheit" />
+          <ScalarProperty Name="me_faktor" ColumnName="me_faktor" />
+          <ScalarProperty Name="me_leistungsbezeichnung" ColumnName="me_leistungsbezeichnung" />
+          <ScalarProperty Name="me_losgroesseneinheit" ColumnName="me_losgroesseneinheit" />
+          <ScalarProperty Name="me_nummer" ColumnName="me_nummer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mv_mitarbeiter_vertrieb">
+      <EntityTypeMapping TypeName="angebotserstellungModel.mv_mitarbeiter_vertrieb">
+        <MappingFragment StoreEntitySet="mv_mitarbeiter_vertrieb">
+          <ScalarProperty Name="mv_mitarbeiter_ID" ColumnName="mv_mitarbeiter_ID" />
+          <ScalarProperty Name="mv_email" ColumnName="mv_email" />
+          <ScalarProperty Name="mv_name" ColumnName="mv_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pg_produktgruppe">
+      <EntityTypeMapping TypeName="angebotserstellungModel.pg_produktgruppe">
+        <MappingFragment StoreEntitySet="pg_produktgruppe">
+          <ScalarProperty Name="pg_produktgruppe_ID" ColumnName="pg_produktgruppe_ID" />
+          <ScalarProperty Name="pg_bezeichnung" ColumnName="pg_bezeichnung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="s_vertriebsstatus">
+      <EntityTypeMapping TypeName="angebotserstellungModel.s_vertriebsstatus">
+        <MappingFragment StoreEntitySet="s_vertriebsstatus">
+          <ScalarProperty Name="s_vertriebsstatus_ID" ColumnName="s_vertriebsstatus_ID" />
+          <ScalarProperty Name="s_bezeichnung" ColumnName="s_bezeichnung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sk_sonderkostenpreis">
+      <EntityTypeMapping TypeName="angebotserstellungModel.sk_sonderkostenpreis">
+        <MappingFragment StoreEntitySet="sk_sonderkostenpreis">
+          <ScalarProperty Name="sk_sonderkostenpreis_ID" ColumnName="sk_sonderkostenpreis_ID" />
+          <ScalarProperty Name="sk_sonderkostendatensatz_ID" ColumnName="sk_sonderkostendatensatz_ID" />
+          <ScalarProperty Name="sk_nummer" ColumnName="sk_nummer" />
+          <ScalarProperty Name="sk_gruppe" ColumnName="sk_gruppe" />
+          <ScalarProperty Name="sk_bezeichnung" ColumnName="sk_bezeichnung" />
+          <ScalarProperty Name="sk_preis" ColumnName="sk_preis" />
+          <ScalarProperty Name="sk_angelegt_am" ColumnName="sk_angelegt_am" />
+          <ScalarProperty Name="sk_angelegt_von" ColumnName="sk_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="skpos_sonderkostenposition">
+      <EntityTypeMapping TypeName="angebotserstellungModel.skpos_sonderkostenposition">
+        <MappingFragment StoreEntitySet="skpos_sonderkostenposition">
+          <ScalarProperty Name="skpos_sonderkostenposition_ID" ColumnName="skpos_sonderkostenposition_ID" />
+          <ScalarProperty Name="skpos_nummer" ColumnName="skpos_nummer" />
+          <ScalarProperty Name="skpos_gruppe" ColumnName="skpos_gruppe" />
+          <ScalarProperty Name="skpos_bezeichnung" ColumnName="skpos_bezeichnung" />
+          <ScalarProperty Name="skpos_preis" ColumnName="skpos_preis" />
+          <ScalarProperty Name="skpos_kosten" ColumnName="skpos_kosten" />
+          <ScalarProperty Name="skpos_ds_ID" ColumnName="skpos_ds_ID" />
+          <ScalarProperty Name="skpos_angelegt_am" ColumnName="skpos_angelegt_am" />
+          <ScalarProperty Name="skpos_angelegt_von" ColumnName="skpos_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_vertreter">
+      <EntityTypeMapping TypeName="angebotserstellungModel.v_vertreter">
+        <MappingFragment StoreEntitySet="v_vertreter">
+          <ScalarProperty Name="v_vertreter_ID" ColumnName="v_vertreter_ID" />
+          <ScalarProperty Name="v_name" ColumnName="v_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_apos">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_apos">
+        <MappingFragment StoreEntitySet="vk_apos">
+          <ScalarProperty Name="vk_apos_ID" ColumnName="vk_apos_ID" />
+          <ScalarProperty Name="vk_apos_vorkalkulation_ID" ColumnName="vk_apos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_apos_anlagenposition_ID" ColumnName="vk_apos_anlagenposition_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_dpos">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_dpos">
+        <MappingFragment StoreEntitySet="vk_dpos">
+          <ScalarProperty Name="vk_dpos_ID" ColumnName="vk_dpos_ID" />
+          <ScalarProperty Name="vk_dpos_vorkalkulation_ID" ColumnName="vk_dpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_dpos_drahtposition_ID" ColumnName="vk_dpos_drahtposition_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_exdpos">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_exdpos">
+        <MappingFragment StoreEntitySet="vk_exdpos">
+          <ScalarProperty Name="vk_exdpos_ID" ColumnName="vk_exdpos_ID" />
+          <ScalarProperty Name="vk_exdpos_vorkalkulation_ID" ColumnName="vk_exdpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_exdpos_dienstleistungsposition_ID" ColumnName="vk_exdpos_dienstleistungsposition_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_extpos">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_extpos">
+        <MappingFragment StoreEntitySet="vk_extpos">
+          <ScalarProperty Name="vk_extpos_ID" ColumnName="vk_extpos_ID" />
+          <ScalarProperty Name="vk_extpos_vorkalkulation_ID" ColumnName="vk_extpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_extpos_teilposition_ID" ColumnName="vk_extpos_teilposition_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_skpos">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_skpos">
+        <MappingFragment StoreEntitySet="vk_skpos">
+          <ScalarProperty Name="vk_skpos_ID" ColumnName="vk_skpos_ID" />
+          <ScalarProperty Name="vk_skpos_vorkalkulation_ID" ColumnName="vk_skpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_skpos_sonderkostenposition_ID" ColumnName="vk_skpos_sonderkostenposition_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_vorkalkulation">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_vorkalkulation">
+        <MappingFragment StoreEntitySet="vk_vorkalkulation">
+          <ScalarProperty Name="vk_vorkalkulation_ID" ColumnName="vk_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_mengenPos_ID" ColumnName="vk_mengenPos_ID" />
+          <ScalarProperty Name="vk_angelegt_am" ColumnName="vk_angelegt_am" />
+          <ScalarProperty Name="vk_angelegt_von" ColumnName="vk_angelegt_von" />
+          <ScalarProperty Name="vk_bearbeitet_am" ColumnName="vk_bearbeitet_am" />
+          <ScalarProperty Name="vk_bearbeitet_von" ColumnName="vk_bearbeitet_von" />
+          <ScalarProperty Name="vk_abgelehnt_am" ColumnName="vk_abgelehnt_am" />
+          <ScalarProperty Name="vk_abgelehnt_von" ColumnName="vk_abgelehnt_von" />
+          <ScalarProperty Name="vk_status" ColumnName="vk_status" />
+          <ScalarProperty Name="vk_ungültig_am" ColumnName="vk_ungültig_am" />
+          <ScalarProperty Name="vk_ungültig_von" ColumnName="vk_ungültig_von" />
+          <ScalarProperty Name="vk_kommentar_vertrieb" ColumnName="vk_kommentar_vertrieb" />
+          <ScalarProperty Name="vk_kommentar_te" ColumnName="vk_kommentar_te" />
+          <ScalarProperty Name="vk_gueltigkeit_tage" ColumnName="vk_gueltigkeit_tage" />
+          <ScalarProperty Name="vk_gueltigkeit_datum" ColumnName="vk_gueltigkeit_datum" />
+          <ScalarProperty Name="vk_ta_te_anfrage_ID" ColumnName="vk_ta_te_anfrage_ID" />
+          <ScalarProperty Name="vk_anlagendatensatz_ID" ColumnName="vk_anlagendatensatz_ID" />
+          <ScalarProperty Name="vk_lieferzeit_in_wochen" ColumnName="vk_lieferzeit_in_wochen" />
+          <ScalarProperty Name="vk_rohstoffkosten" ColumnName="vk_rohstoffkosten" />
+          <ScalarProperty Name="vk_dienstleistungskosten" ColumnName="vk_dienstleistungskosten" />
+          <ScalarProperty Name="vk_werkzeugkosten" ColumnName="vk_werkzeugkosten" />
+          <ScalarProperty Name="vk_teilkosten" ColumnName="vk_teilkosten" />
+          <ScalarProperty Name="vk_materialkosten" ColumnName="vk_materialkosten" />
+          <ScalarProperty Name="vk_produktionskosten" ColumnName="vk_produktionskosten" />
+          <ScalarProperty Name="vk_ruestkosten" ColumnName="vk_ruestkosten" />
+          <ScalarProperty Name="vk_fertigungskosten" ColumnName="vk_fertigungskosten" />
+          <ScalarProperty Name="vk_grenzherstellkosten" ColumnName="vk_grenzherstellkosten" />
+          <ScalarProperty Name="vk_herstellkosten" ColumnName="vk_herstellkosten" />
+          <ScalarProperty Name="vk_verwaltungsgemeinkosten" ColumnName="vk_verwaltungsgemeinkosten" />
+          <ScalarProperty Name="vk_selbstkosten" ColumnName="vk_selbstkosten" />
+          <ScalarProperty Name="vk_sonderkosten" ColumnName="vk_sonderkosten" />
+          <ScalarProperty Name="vk_drahtpreisdatensatz_ID" ColumnName="vk_drahtpreisdatensatz_ID" />
+          <ScalarProperty Name="vk_gemeinkostendatensatz_ID" ColumnName="vk_gemeinkostendatensatz_ID" />
+          <ScalarProperty Name="vk_dienstleistungsdatensatz_ID" ColumnName="vk_dienstleistungsdatensatz_ID" />
+          <ScalarProperty Name="vk_werkzeugdatensatz_ID" ColumnName="vk_werkzeugdatensatz_ID" />
+          <ScalarProperty Name="vk_teildatensatz_ID" ColumnName="vk_teildatensatz_ID" />
+          <ScalarProperty Name="vk_sonderkostendatensatz_ID" ColumnName="vk_sonderkostendatensatz_ID" />
+          <ScalarProperty Name="vk_dspr1" ColumnName="vk_dspr1" />
+          <ScalarProperty Name="vk_dspr2" ColumnName="vk_dspr2" />
+          <ScalarProperty Name="vk_dspr3" ColumnName="vk_dspr3" />
+          <ScalarProperty Name="vk_dspr4" ColumnName="vk_dspr4" />
+          <ScalarProperty Name="vk_dspr5" ColumnName="vk_dspr5" />
+          <ScalarProperty Name="vk_dspr6" ColumnName="vk_dspr6" />
+          <ScalarProperty Name="vk_dspr7" ColumnName="vk_dspr7" />
+          <ScalarProperty Name="vk_dspr8" ColumnName="vk_dspr8" />
+          <ScalarProperty Name="vk_geschlossen" ColumnName="vk_geschlossen" />
+          <ScalarProperty Name="vk_abgelehnt" ColumnName="vk_abgelehnt" />
+          <ScalarProperty Name="vk_gf_freigabe" ColumnName="vk_gf_freigabe" />
+          <ScalarProperty Name="vk_freigegeben" ColumnName="vk_freigegeben" />
+          <ScalarProperty Name="vk_veroeffentlicht" ColumnName="vk_veroeffentlicht" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_wzpos">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_wzpos">
+        <MappingFragment StoreEntitySet="vk_wzpos">
+          <ScalarProperty Name="vk_wzpos_ID" ColumnName="vk_wzpos_ID" />
+          <ScalarProperty Name="vk_wzpos_vorkalkulation_ID" ColumnName="vk_wzpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_wzpos_werkzeugposition_ID" ColumnName="vk_wzpos_werkzeugposition_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wz_werkzeugpreis">
+      <EntityTypeMapping TypeName="angebotserstellungModel.wz_werkzeugpreis">
+        <MappingFragment StoreEntitySet="wz_werkzeugpreis">
+          <ScalarProperty Name="wz_werkzeugpreis_ID" ColumnName="wz_werkzeugpreis_ID" />
+          <ScalarProperty Name="wz_werkzeugdatensatz_ID" ColumnName="wz_werkzeugdatensatz_ID" />
+          <ScalarProperty Name="wz_nummer" ColumnName="wz_nummer" />
+          <ScalarProperty Name="wz_gruppe" ColumnName="wz_gruppe" />
+          <ScalarProperty Name="wz_bezeichnung" ColumnName="wz_bezeichnung" />
+          <ScalarProperty Name="wz_standzeit" ColumnName="wz_standzeit" />
+          <ScalarProperty Name="wz_preis" ColumnName="wz_preis" />
+          <ScalarProperty Name="wz_angelegt_am" ColumnName="wz_angelegt_am" />
+          <ScalarProperty Name="wz_angelegt_von" ColumnName="wz_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wzpos_werkzeugposition">
+      <EntityTypeMapping TypeName="angebotserstellungModel.wzpos_werkzeugposition">
+        <MappingFragment StoreEntitySet="wzpos_werkzeugposition">
+          <ScalarProperty Name="wzpos_werkzeugposition_ID" ColumnName="wzpos_werkzeugposition_ID" />
+          <ScalarProperty Name="wzpos_nummer" ColumnName="wzpos_nummer" />
+          <ScalarProperty Name="wzpos_werkzeugpositioncol" ColumnName="wzpos_werkzeugpositioncol" />
+          <ScalarProperty Name="wzpos_gruppe" ColumnName="wzpos_gruppe" />
+          <ScalarProperty Name="wzpos_bezeichnung" ColumnName="wzpos_bezeichnung" />
+          <ScalarProperty Name="wzpos_stufe" ColumnName="wzpos_stufe" />
+          <ScalarProperty Name="wzpos_standzeit" ColumnName="wzpos_standzeit" />
+          <ScalarProperty Name="wzpos_preis" ColumnName="wzpos_preis" />
+          <ScalarProperty Name="wzpos_mgk3_faktor" ColumnName="wzpos_mgk3_faktor" />
+          <ScalarProperty Name="wzpos_anzahl" ColumnName="wzpos_anzahl" />
+          <ScalarProperty Name="wzpos_kosten" ColumnName="wzpos_kosten" />
+          <ScalarProperty Name="wzpos_anzahl_bereinigt" ColumnName="wzpos_anzahl_bereinigt" />
+          <ScalarProperty Name="wzpos_ds_ID" ColumnName="wzpos_ds_ID" />
+          <ScalarProperty Name="wzpos_angelegt_von" ColumnName="wzpos_angelegt_von" />
+          <ScalarProperty Name="wzpos_angelegt_am" ColumnName="wzpos_angelegt_am" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dt_vk_vertrieb_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.dt_vk_vertrieb_join">
+        <MappingFragment StoreEntitySet="dt_vk_vertrieb_join">
+          <ScalarProperty Name="vk_vorkalkulation_ID" ColumnName="vk_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_mengenPos_ID" ColumnName="vk_mengenPos_ID" />
+          <ScalarProperty Name="vk_angelegt_am" ColumnName="vk_angelegt_am" />
+          <ScalarProperty Name="vk_angelegt_von" ColumnName="vk_angelegt_von" />
+          <ScalarProperty Name="vk_bearbeitet_am" ColumnName="vk_bearbeitet_am" />
+          <ScalarProperty Name="vk_bearbeitet_von" ColumnName="vk_bearbeitet_von" />
+          <ScalarProperty Name="vk_abgelehnt_am" ColumnName="vk_abgelehnt_am" />
+          <ScalarProperty Name="vk_abgelehnt_von" ColumnName="vk_abgelehnt_von" />
+          <ScalarProperty Name="vk_status" ColumnName="vk_status" />
+          <ScalarProperty Name="vk_ungültig_am" ColumnName="vk_ungültig_am" />
+          <ScalarProperty Name="vk_ungültig_von" ColumnName="vk_ungültig_von" />
+          <ScalarProperty Name="vk_kommentar_vertrieb" ColumnName="vk_kommentar_vertrieb" />
+          <ScalarProperty Name="vk_kommentar_te" ColumnName="vk_kommentar_te" />
+          <ScalarProperty Name="vk_gueltigkeit_tage" ColumnName="vk_gueltigkeit_tage" />
+          <ScalarProperty Name="vk_gueltigkeit_datum" ColumnName="vk_gueltigkeit_datum" />
+          <ScalarProperty Name="vk_ta_te_anfrage_ID" ColumnName="vk_ta_te_anfrage_ID" />
+          <ScalarProperty Name="vk_anlagendatensatz_ID" ColumnName="vk_anlagendatensatz_ID" />
+          <ScalarProperty Name="vk_lieferzeit_in_wochen" ColumnName="vk_lieferzeit_in_wochen" />
+          <ScalarProperty Name="vk_rohstoffkosten" ColumnName="vk_rohstoffkosten" />
+          <ScalarProperty Name="vk_dienstleistungskosten" ColumnName="vk_dienstleistungskosten" />
+          <ScalarProperty Name="vk_werkzeugkosten" ColumnName="vk_werkzeugkosten" />
+          <ScalarProperty Name="vk_teilkosten" ColumnName="vk_teilkosten" />
+          <ScalarProperty Name="vk_materialkosten" ColumnName="vk_materialkosten" />
+          <ScalarProperty Name="vk_produktionskosten" ColumnName="vk_produktionskosten" />
+          <ScalarProperty Name="vk_ruestkosten" ColumnName="vk_ruestkosten" />
+          <ScalarProperty Name="vk_fertigungskosten" ColumnName="vk_fertigungskosten" />
+          <ScalarProperty Name="vk_grenzherstellkosten" ColumnName="vk_grenzherstellkosten" />
+          <ScalarProperty Name="vk_herstellkosten" ColumnName="vk_herstellkosten" />
+          <ScalarProperty Name="vk_verwaltungsgemeinkosten" ColumnName="vk_verwaltungsgemeinkosten" />
+          <ScalarProperty Name="vk_selbstkosten" ColumnName="vk_selbstkosten" />
+          <ScalarProperty Name="vk_sonderkosten" ColumnName="vk_sonderkosten" />
+          <ScalarProperty Name="vk_drahtpreisdatensatz_ID" ColumnName="vk_drahtpreisdatensatz_ID" />
+          <ScalarProperty Name="vk_gemeinkostendatensatz_ID" ColumnName="vk_gemeinkostendatensatz_ID" />
+          <ScalarProperty Name="vk_dienstleistungsdatensatz_ID" ColumnName="vk_dienstleistungsdatensatz_ID" />
+          <ScalarProperty Name="vk_werkzeugdatensatz_ID" ColumnName="vk_werkzeugdatensatz_ID" />
+          <ScalarProperty Name="vk_teildatensatz_ID" ColumnName="vk_teildatensatz_ID" />
+          <ScalarProperty Name="vk_sonderkostendatensatz_ID" ColumnName="vk_sonderkostendatensatz_ID" />
+          <ScalarProperty Name="vk_dspr1" ColumnName="vk_dspr1" />
+          <ScalarProperty Name="vk_dspr2" ColumnName="vk_dspr2" />
+          <ScalarProperty Name="vk_dspr3" ColumnName="vk_dspr3" />
+          <ScalarProperty Name="vk_dspr4" ColumnName="vk_dspr4" />
+          <ScalarProperty Name="vk_dspr5" ColumnName="vk_dspr5" />
+          <ScalarProperty Name="vk_dspr6" ColumnName="vk_dspr6" />
+          <ScalarProperty Name="vk_dspr7" ColumnName="vk_dspr7" />
+          <ScalarProperty Name="vk_dspr8" ColumnName="vk_dspr8" />
+          <ScalarProperty Name="vk_geschlossen" ColumnName="vk_geschlossen" />
+          <ScalarProperty Name="vk_abgelehnt" ColumnName="vk_abgelehnt" />
+          <ScalarProperty Name="vk_gf_freigabe" ColumnName="vk_gf_freigabe" />
+          <ScalarProperty Name="vk_freigegeben" ColumnName="vk_freigegeben" />
+          <ScalarProperty Name="vk_veroeffentlicht" ColumnName="vk_veroeffentlicht" />
+          <ScalarProperty Name="m_nummer" ColumnName="m_nummer" />
+          <ScalarProperty Name="m_mengenPos_ID" ColumnName="m_mengenPos_ID" />
+          <ScalarProperty Name="m_jahresmenge" ColumnName="m_jahresmenge" />
+          <ScalarProperty Name="m_anfragenummer" ColumnName="m_anfragenummer" />
+          <ScalarProperty Name="m_status" ColumnName="m_status" />
+          <ScalarProperty Name="m_ungueltig_am" ColumnName="m_ungueltig_am" />
+          <ScalarProperty Name="m_ungueltig_von" ColumnName="m_ungueltig_von" />
+          <ScalarProperty Name="m_abgelehnt_am" ColumnName="m_abgelehnt_am" />
+          <ScalarProperty Name="m_abgelehnt_von" ColumnName="m_abgelehnt_von" />
+          <ScalarProperty Name="m_preis_vertrieb" ColumnName="m_preis_vertrieb" />
+          <ScalarProperty Name="m_marge" ColumnName="m_marge" />
+          <ScalarProperty Name="m_umsatz" ColumnName="m_umsatz" />
+          <ScalarProperty Name="m_werkzeugkosten" ColumnName="m_werkzeugkosten" />
+          <ScalarProperty Name="m_tonnenerloes" ColumnName="m_tonnenerloes" />
+          <ScalarProperty Name="m_tonage" ColumnName="m_tonage" />
+          <ScalarProperty Name="m_angelegt_am" ColumnName="m_angelegt_am" />
+          <ScalarProperty Name="m_angelegt_von" ColumnName="m_angelegt_von" />
+          <ScalarProperty Name="m_angeboten_am" ColumnName="m_angeboten_am" />
+          <ScalarProperty Name="m_auftrag_erhalten_am" ColumnName="m_auftrag_erhalten_am" />
+          <ScalarProperty Name="m_preis_wettbewerber" ColumnName="m_preis_wettbewerber" />
+          <ScalarProperty Name="m_SOP" ColumnName="m_SOP" />
+          <ScalarProperty Name="m_ablehnungsgrund" ColumnName="m_ablehnungsgrund" />
+          <ScalarProperty Name="m_kundenanfrage_ID" ColumnName="m_kundenanfrage_ID" />
+          <ScalarProperty Name="m_abteilungsstatus" ColumnName="m_abteilungsstatus" />
+          <ScalarProperty Name="m_vk_angefordert" ColumnName="m_vk_angefordert" />
+          <ScalarProperty Name="m_wettbewerber" ColumnName="m_wettbewerber" />
+          <ScalarProperty Name="m_abgelehnt" ColumnName="m_abgelehnt" />
+          <ScalarProperty Name="m_ungueltig" ColumnName="m_ungueltig" />
+          <ScalarProperty Name="m_angeboten" ColumnName="m_angeboten" />
+          <ScalarProperty Name="m_te_email" ColumnName="m_te_email" />
+          <ScalarProperty Name="m_vk_kommentar" ColumnName="m_vk_kommentar" />
+          <ScalarProperty Name="m_herstellbar" ColumnName="m_herstellbar" />
+          <ScalarProperty Name="m_kapazitaet" ColumnName="m_kapazitaet" />
+          <ScalarProperty Name="m_auftrag" ColumnName="m_auftrag" />
+          <ScalarProperty Name="m_abgelehnt_kommentar" ColumnName="m_abgelehnt_kommentar" />
+          <ScalarProperty Name="m_wettbewerber_kommentar" ColumnName="m_wettbewerber_kommentar" />
+          <ScalarProperty Name="m_nachgefasst_kommentar" ColumnName="m_nachgefasst_kommentar" />
+          <ScalarProperty Name="m_gesamtumsatz" ColumnName="m_gesamtumsatz" />
+          <ScalarProperty Name="m_angebotspreis" ColumnName="m_angebotspreis" />
+          <ScalarProperty Name="m_vertriebsstatus" ColumnName="m_vertriebsstatus" />
+          <ScalarProperty Name="ka_kundenanfrage_ID" ColumnName="ka_kundenanfrage_ID" />
+          <ScalarProperty Name="ka_anfragenummer" ColumnName="ka_anfragenummer" />
+          <ScalarProperty Name="ka_artikelnummer" ColumnName="ka_artikelnummer" />
+          <ScalarProperty Name="ka_verwendung" ColumnName="ka_verwendung" />
+          <ScalarProperty Name="ka_kommentar" ColumnName="ka_kommentar" />
+          <ScalarProperty Name="ka_angefragt_am" ColumnName="ka_angefragt_am" />
+          <ScalarProperty Name="ka_angebotsfrist" ColumnName="ka_angebotsfrist" />
+          <ScalarProperty Name="ka_hersteller" ColumnName="ka_hersteller" />
+          <ScalarProperty Name="ka_zustaendig" ColumnName="ka_zustaendig" />
+          <ScalarProperty Name="ka_angelegt_am" ColumnName="ka_angelegt_am" />
+          <ScalarProperty Name="ka_angelegt_von" ColumnName="ka_angelegt_von" />
+          <ScalarProperty Name="ka_status" ColumnName="ka_status" />
+          <ScalarProperty Name="ka_ungueltig_am" ColumnName="ka_ungueltig_am" />
+          <ScalarProperty Name="ka_ungueltig_von" ColumnName="ka_ungueltig_von" />
+          <ScalarProperty Name="ka_modus" ColumnName="ka_modus" />
+          <ScalarProperty Name="ka_kunde" ColumnName="ka_kunde" />
+          <ScalarProperty Name="ka_produktgruppe" ColumnName="ka_produktgruppe" />
+          <ScalarProperty Name="ka_artikelbezeichnung" ColumnName="ka_artikelbezeichnung" />
+          <ScalarProperty Name="ka_guete" ColumnName="ka_guete" />
+          <ScalarProperty Name="ka_zeichnungsnummer" ColumnName="ka_zeichnungsnummer" />
+          <ScalarProperty Name="ka_aenderungsindex" ColumnName="ka_aenderungsindex" />
+          <ScalarProperty Name="ka_durchmesser" ColumnName="ka_durchmesser" />
+          <ScalarProperty Name="ka_laenge" ColumnName="ka_laenge" />
+          <ScalarProperty Name="ka_gewindesteigung" ColumnName="ka_gewindesteigung" />
+          <ScalarProperty Name="ka_fertiggewicht" ColumnName="ka_fertiggewicht" />
+          <ScalarProperty Name="ka_einsatzgewicht" ColumnName="ka_einsatzgewicht" />
+          <ScalarProperty Name="ka_abc_artikelnummer" ColumnName="ka_abc_artikelnummer" />
+          <ScalarProperty Name="ka_einkaeufer_name" ColumnName="ka_einkaeufer_name" />
+          <ScalarProperty Name="ka_einkaeufer_email" ColumnName="ka_einkaeufer_email" />
+          <ScalarProperty Name="ka_einkaeufer_telefon" ColumnName="ka_einkaeufer_telefon" />
+          <ScalarProperty Name="ka_einkaeufer_fax" ColumnName="ka_einkaeufer_fax" />
+          <ScalarProperty Name="ka_einkaeufer_mobil" ColumnName="ka_einkaeufer_mobil" />
+          <ScalarProperty Name="ka_einkaeufer_anrede" ColumnName="ka_einkaeufer_anrede" />
+          <ScalarProperty Name="ka_kundengruppe" ColumnName="ka_kundengruppe" />
+          <ScalarProperty Name="ka_vertreter" ColumnName="ka_vertreter" />
+          <ScalarProperty Name="ka_kundenkommentar" ColumnName="ka_kundenkommentar" />
+          <ScalarProperty Name="ka_einkaeufer_ID" ColumnName="ka_einkaeufer_ID" />
+          <ScalarProperty Name="ka_offen_vertrieb" ColumnName="ka_offen_vertrieb" />
+          <ScalarProperty Name="ka_offen_te" ColumnName="ka_offen_te" />
+          <ScalarProperty Name="ka_vk_angefordert" ColumnName="ka_vk_angefordert" />
+          <ScalarProperty Name="ka_vk_kommentar" ColumnName="ka_vk_kommentar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ka_kundenanfrage_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ka_kundenanfrage_join">
+        <MappingFragment StoreEntitySet="ka_kundenanfrage_join">
+          <ScalarProperty Name="ka_kundenanfrage_ID" ColumnName="ka_kundenanfrage_ID" />
+          <ScalarProperty Name="ka_anfragenummer" ColumnName="ka_anfragenummer" />
+          <ScalarProperty Name="ka_artikelnummer" ColumnName="ka_artikelnummer" />
+          <ScalarProperty Name="ka_verwendung" ColumnName="ka_verwendung" />
+          <ScalarProperty Name="ka_kommentar" ColumnName="ka_kommentar" />
+          <ScalarProperty Name="ka_angefragt_am" ColumnName="ka_angefragt_am" />
+          <ScalarProperty Name="ka_angebotsfrist" ColumnName="ka_angebotsfrist" />
+          <ScalarProperty Name="ka_hersteller" ColumnName="ka_hersteller" />
+          <ScalarProperty Name="ka_zustaendig" ColumnName="ka_zustaendig" />
+          <ScalarProperty Name="ka_angelegt_am" ColumnName="ka_angelegt_am" />
+          <ScalarProperty Name="ka_angelegt_von" ColumnName="ka_angelegt_von" />
+          <ScalarProperty Name="ka_status" ColumnName="ka_status" />
+          <ScalarProperty Name="ka_ungueltig_am" ColumnName="ka_ungueltig_am" />
+          <ScalarProperty Name="ka_ungueltig_von" ColumnName="ka_ungueltig_von" />
+          <ScalarProperty Name="ka_modus" ColumnName="ka_modus" />
+          <ScalarProperty Name="ka_kunde" ColumnName="ka_kunde" />
+          <ScalarProperty Name="ka_produktgruppe" ColumnName="ka_produktgruppe" />
+          <ScalarProperty Name="ka_artikelbezeichnung" ColumnName="ka_artikelbezeichnung" />
+          <ScalarProperty Name="ka_guete" ColumnName="ka_guete" />
+          <ScalarProperty Name="ka_zeichnungsnummer" ColumnName="ka_zeichnungsnummer" />
+          <ScalarProperty Name="ka_aenderungsindex" ColumnName="ka_aenderungsindex" />
+          <ScalarProperty Name="ka_durchmesser" ColumnName="ka_durchmesser" />
+          <ScalarProperty Name="ka_laenge" ColumnName="ka_laenge" />
+          <ScalarProperty Name="ka_gewindesteigung" ColumnName="ka_gewindesteigung" />
+          <ScalarProperty Name="ka_fertiggewicht" ColumnName="ka_fertiggewicht" />
+          <ScalarProperty Name="ka_einsatzgewicht" ColumnName="ka_einsatzgewicht" />
+          <ScalarProperty Name="ka_abc_artikelnummer" ColumnName="ka_abc_artikelnummer" />
+          <ScalarProperty Name="ka_einkaeufer_name" ColumnName="ka_einkaeufer_name" />
+          <ScalarProperty Name="ka_einkaeufer_email" ColumnName="ka_einkaeufer_email" />
+          <ScalarProperty Name="ka_einkaeufer_telefon" ColumnName="ka_einkaeufer_telefon" />
+          <ScalarProperty Name="ka_einkaeufer_fax" ColumnName="ka_einkaeufer_fax" />
+          <ScalarProperty Name="ka_einkaeufer_mobil" ColumnName="ka_einkaeufer_mobil" />
+          <ScalarProperty Name="ka_einkaeufer_anrede" ColumnName="ka_einkaeufer_anrede" />
+          <ScalarProperty Name="ka_kundengruppe" ColumnName="ka_kundengruppe" />
+          <ScalarProperty Name="ka_vertreter" ColumnName="ka_vertreter" />
+          <ScalarProperty Name="ka_kundenkommentar" ColumnName="ka_kundenkommentar" />
+          <ScalarProperty Name="ka_einkaeufer_ID" ColumnName="ka_einkaeufer_ID" />
+          <ScalarProperty Name="ka_offen_vertrieb" ColumnName="ka_offen_vertrieb" />
+          <ScalarProperty Name="ka_offen_te" ColumnName="ka_offen_te" />
+          <ScalarProperty Name="ka_vk_angefordert" ColumnName="ka_vk_angefordert" />
+          <ScalarProperty Name="ka_vk_kommentar" ColumnName="ka_vk_kommentar" />
+          <ScalarProperty Name="k_kunde_ID" ColumnName="k_kunde_ID" />
+          <ScalarProperty Name="k_kunde" ColumnName="k_kunde" />
+          <ScalarProperty Name="k_angelegt_am" ColumnName="k_angelegt_am" />
+          <ScalarProperty Name="k_angelegt_von" ColumnName="k_angelegt_von" />
+          <ScalarProperty Name="k_status" ColumnName="k_status" />
+          <ScalarProperty Name="k_kundengruppe" ColumnName="k_kundengruppe" />
+          <ScalarProperty Name="k_vertreter" ColumnName="k_vertreter" />
+          <ScalarProperty Name="k_ungueltig_am" ColumnName="k_ungueltig_am" />
+          <ScalarProperty Name="k_ungueltig_von" ColumnName="k_ungueltig_von" />
+          <ScalarProperty Name="k_kommentar" ColumnName="k_kommentar" />
+          <ScalarProperty Name="e_einkaeufer_ID" ColumnName="e_einkaeufer_ID" />
+          <ScalarProperty Name="e_kunde_ID" ColumnName="e_kunde_ID" />
+          <ScalarProperty Name="e_anrede" ColumnName="e_anrede" />
+          <ScalarProperty Name="e_einkaeufer" ColumnName="e_einkaeufer" />
+          <ScalarProperty Name="e_email" ColumnName="e_email" />
+          <ScalarProperty Name="e_telefon" ColumnName="e_telefon" />
+          <ScalarProperty Name="e_mobil" ColumnName="e_mobil" />
+          <ScalarProperty Name="e_fax" ColumnName="e_fax" />
+          <ScalarProperty Name="e_kommentar" ColumnName="e_kommentar" />
+          <ScalarProperty Name="e_angelegt_am" ColumnName="e_angelegt_am" />
+          <ScalarProperty Name="e_angelegt_von" ColumnName="e_angelegt_von" />
+          <ScalarProperty Name="e_status" ColumnName="e_status" />
+          <ScalarProperty Name="e_ungueltig_am" ColumnName="e_ungueltig_am" />
+          <ScalarProperty Name="e_ungueltig_von" ColumnName="e_ungueltig_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ka_kundenanfrage_mengenpos_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.ka_kundenanfrage_mengenpos_join">
+        <MappingFragment StoreEntitySet="ka_kundenanfrage_mengenpos_join">
+          <ScalarProperty Name="ka_kundenanfrage_ID" ColumnName="ka_kundenanfrage_ID" />
+          <ScalarProperty Name="ka_anfragenummer" ColumnName="ka_anfragenummer" />
+          <ScalarProperty Name="ka_artikelnummer" ColumnName="ka_artikelnummer" />
+          <ScalarProperty Name="ka_verwendung" ColumnName="ka_verwendung" />
+          <ScalarProperty Name="ka_kommentar" ColumnName="ka_kommentar" />
+          <ScalarProperty Name="ka_angefragt_am" ColumnName="ka_angefragt_am" />
+          <ScalarProperty Name="ka_angebotsfrist" ColumnName="ka_angebotsfrist" />
+          <ScalarProperty Name="ka_hersteller" ColumnName="ka_hersteller" />
+          <ScalarProperty Name="ka_zustaendig" ColumnName="ka_zustaendig" />
+          <ScalarProperty Name="ka_angelegt_am" ColumnName="ka_angelegt_am" />
+          <ScalarProperty Name="ka_angelegt_von" ColumnName="ka_angelegt_von" />
+          <ScalarProperty Name="ka_status" ColumnName="ka_status" />
+          <ScalarProperty Name="ka_ungueltig_am" ColumnName="ka_ungueltig_am" />
+          <ScalarProperty Name="ka_ungueltig_von" ColumnName="ka_ungueltig_von" />
+          <ScalarProperty Name="ka_modus" ColumnName="ka_modus" />
+          <ScalarProperty Name="ka_kunde" ColumnName="ka_kunde" />
+          <ScalarProperty Name="ka_produktgruppe" ColumnName="ka_produktgruppe" />
+          <ScalarProperty Name="ka_artikelbezeichnung" ColumnName="ka_artikelbezeichnung" />
+          <ScalarProperty Name="ka_guete" ColumnName="ka_guete" />
+          <ScalarProperty Name="ka_zeichnungsnummer" ColumnName="ka_zeichnungsnummer" />
+          <ScalarProperty Name="ka_aenderungsindex" ColumnName="ka_aenderungsindex" />
+          <ScalarProperty Name="ka_durchmesser" ColumnName="ka_durchmesser" />
+          <ScalarProperty Name="ka_laenge" ColumnName="ka_laenge" />
+          <ScalarProperty Name="ka_gewindesteigung" ColumnName="ka_gewindesteigung" />
+          <ScalarProperty Name="ka_fertiggewicht" ColumnName="ka_fertiggewicht" />
+          <ScalarProperty Name="ka_einsatzgewicht" ColumnName="ka_einsatzgewicht" />
+          <ScalarProperty Name="ka_abc_artikelnummer" ColumnName="ka_abc_artikelnummer" />
+          <ScalarProperty Name="ka_einkaeufer_name" ColumnName="ka_einkaeufer_name" />
+          <ScalarProperty Name="ka_einkaeufer_email" ColumnName="ka_einkaeufer_email" />
+          <ScalarProperty Name="ka_einkaeufer_telefon" ColumnName="ka_einkaeufer_telefon" />
+          <ScalarProperty Name="ka_einkaeufer_fax" ColumnName="ka_einkaeufer_fax" />
+          <ScalarProperty Name="ka_einkaeufer_mobil" ColumnName="ka_einkaeufer_mobil" />
+          <ScalarProperty Name="ka_einkaeufer_anrede" ColumnName="ka_einkaeufer_anrede" />
+          <ScalarProperty Name="ka_kundengruppe" ColumnName="ka_kundengruppe" />
+          <ScalarProperty Name="ka_vertreter" ColumnName="ka_vertreter" />
+          <ScalarProperty Name="ka_kundenkommentar" ColumnName="ka_kundenkommentar" />
+          <ScalarProperty Name="ka_einkaeufer_ID" ColumnName="ka_einkaeufer_ID" />
+          <ScalarProperty Name="ka_offen_vertrieb" ColumnName="ka_offen_vertrieb" />
+          <ScalarProperty Name="ka_offen_te" ColumnName="ka_offen_te" />
+          <ScalarProperty Name="ka_vk_angefordert" ColumnName="ka_vk_angefordert" />
+          <ScalarProperty Name="ka_vk_kommentar" ColumnName="ka_vk_kommentar" />
+          <ScalarProperty Name="m_nummer" ColumnName="m_nummer" />
+          <ScalarProperty Name="m_mengenPos_ID" ColumnName="m_mengenPos_ID" />
+          <ScalarProperty Name="m_jahresmenge" ColumnName="m_jahresmenge" />
+          <ScalarProperty Name="m_anfragenummer" ColumnName="m_anfragenummer" />
+          <ScalarProperty Name="m_status" ColumnName="m_status" />
+          <ScalarProperty Name="m_ungueltig_am" ColumnName="m_ungueltig_am" />
+          <ScalarProperty Name="m_ungueltig_von" ColumnName="m_ungueltig_von" />
+          <ScalarProperty Name="m_abgelehnt_am" ColumnName="m_abgelehnt_am" />
+          <ScalarProperty Name="m_abgelehnt_von" ColumnName="m_abgelehnt_von" />
+          <ScalarProperty Name="m_preis_vertrieb" ColumnName="m_preis_vertrieb" />
+          <ScalarProperty Name="m_marge" ColumnName="m_marge" />
+          <ScalarProperty Name="m_umsatz" ColumnName="m_umsatz" />
+          <ScalarProperty Name="m_werkzeugkosten" ColumnName="m_werkzeugkosten" />
+          <ScalarProperty Name="m_tonnenerloes" ColumnName="m_tonnenerloes" />
+          <ScalarProperty Name="m_tonage" ColumnName="m_tonage" />
+          <ScalarProperty Name="m_angelegt_am" ColumnName="m_angelegt_am" />
+          <ScalarProperty Name="m_angelegt_von" ColumnName="m_angelegt_von" />
+          <ScalarProperty Name="m_angeboten_am" ColumnName="m_angeboten_am" />
+          <ScalarProperty Name="m_auftrag_erhalten_am" ColumnName="m_auftrag_erhalten_am" />
+          <ScalarProperty Name="m_preis_wettbewerber" ColumnName="m_preis_wettbewerber" />
+          <ScalarProperty Name="m_SOP" ColumnName="m_SOP" />
+          <ScalarProperty Name="m_ablehnungsgrund" ColumnName="m_ablehnungsgrund" />
+          <ScalarProperty Name="m_kundenanfrage_ID" ColumnName="m_kundenanfrage_ID" />
+          <ScalarProperty Name="m_abteilungsstatus" ColumnName="m_abteilungsstatus" />
+          <ScalarProperty Name="m_vk_angefordert" ColumnName="m_vk_angefordert" />
+          <ScalarProperty Name="m_wettbewerber" ColumnName="m_wettbewerber" />
+          <ScalarProperty Name="m_abgelehnt" ColumnName="m_abgelehnt" />
+          <ScalarProperty Name="m_ungueltig" ColumnName="m_ungueltig" />
+          <ScalarProperty Name="m_angeboten" ColumnName="m_angeboten" />
+          <ScalarProperty Name="m_te_email" ColumnName="m_te_email" />
+          <ScalarProperty Name="m_vk_kommentar" ColumnName="m_vk_kommentar" />
+          <ScalarProperty Name="m_herstellbar" ColumnName="m_herstellbar" />
+          <ScalarProperty Name="m_kapazitaet" ColumnName="m_kapazitaet" />
+          <ScalarProperty Name="m_auftrag" ColumnName="m_auftrag" />
+          <ScalarProperty Name="m_abgelehnt_kommentar" ColumnName="m_abgelehnt_kommentar" />
+          <ScalarProperty Name="m_wettbewerber_kommentar" ColumnName="m_wettbewerber_kommentar" />
+          <ScalarProperty Name="m_nachgefasst_kommentar" ColumnName="m_nachgefasst_kommentar" />
+          <ScalarProperty Name="m_gesamtumsatz" ColumnName="m_gesamtumsatz" />
+          <ScalarProperty Name="m_angebotspreis" ColumnName="m_angebotspreis" />
+          <ScalarProperty Name="m_vertriebsstatus" ColumnName="m_vertriebsstatus" />
+          <ScalarProperty Name="e_einkaeufer_ID" ColumnName="e_einkaeufer_ID" />
+          <ScalarProperty Name="e_kunde_ID" ColumnName="e_kunde_ID" />
+          <ScalarProperty Name="e_anrede" ColumnName="e_anrede" />
+          <ScalarProperty Name="e_einkaeufer" ColumnName="e_einkaeufer" />
+          <ScalarProperty Name="e_email" ColumnName="e_email" />
+          <ScalarProperty Name="e_telefon" ColumnName="e_telefon" />
+          <ScalarProperty Name="e_mobil" ColumnName="e_mobil" />
+          <ScalarProperty Name="e_fax" ColumnName="e_fax" />
+          <ScalarProperty Name="e_kommentar" ColumnName="e_kommentar" />
+          <ScalarProperty Name="e_angelegt_am" ColumnName="e_angelegt_am" />
+          <ScalarProperty Name="e_angelegt_von" ColumnName="e_angelegt_von" />
+          <ScalarProperty Name="e_status" ColumnName="e_status" />
+          <ScalarProperty Name="e_ungueltig_am" ColumnName="e_ungueltig_am" />
+          <ScalarProperty Name="e_ungueltig_von" ColumnName="e_ungueltig_von" />
+          <ScalarProperty Name="k_kunde_ID" ColumnName="k_kunde_ID" />
+          <ScalarProperty Name="k_kunde" ColumnName="k_kunde" />
+          <ScalarProperty Name="k_angelegt_am" ColumnName="k_angelegt_am" />
+          <ScalarProperty Name="k_angelegt_von" ColumnName="k_angelegt_von" />
+          <ScalarProperty Name="k_status" ColumnName="k_status" />
+          <ScalarProperty Name="k_kundengruppe" ColumnName="k_kundengruppe" />
+          <ScalarProperty Name="k_vertreter" ColumnName="k_vertreter" />
+          <ScalarProperty Name="k_ungueltig_am" ColumnName="k_ungueltig_am" />
+          <ScalarProperty Name="k_ungueltig_von" ColumnName="k_ungueltig_von" />
+          <ScalarProperty Name="k_kommentar" ColumnName="k_kommentar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kunde_einkaeufer_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.kunde_einkaeufer_join">
+        <MappingFragment StoreEntitySet="kunde_einkaeufer_join">
+          <ScalarProperty Name="ka_kundenanfrage_ID" ColumnName="ka_kundenanfrage_ID" />
+          <ScalarProperty Name="ka_anfragenummer" ColumnName="ka_anfragenummer" />
+          <ScalarProperty Name="ka_artikelnummer" ColumnName="ka_artikelnummer" />
+          <ScalarProperty Name="ka_verwendung" ColumnName="ka_verwendung" />
+          <ScalarProperty Name="ka_kommentar" ColumnName="ka_kommentar" />
+          <ScalarProperty Name="ka_angefragt_am" ColumnName="ka_angefragt_am" />
+          <ScalarProperty Name="ka_angebotsfrist" ColumnName="ka_angebotsfrist" />
+          <ScalarProperty Name="ka_hersteller" ColumnName="ka_hersteller" />
+          <ScalarProperty Name="ka_zustaendig" ColumnName="ka_zustaendig" />
+          <ScalarProperty Name="ka_angelegt_am" ColumnName="ka_angelegt_am" />
+          <ScalarProperty Name="ka_angelegt_von" ColumnName="ka_angelegt_von" />
+          <ScalarProperty Name="ka_status" ColumnName="ka_status" />
+          <ScalarProperty Name="ka_ungueltig_am" ColumnName="ka_ungueltig_am" />
+          <ScalarProperty Name="ka_ungueltig_von" ColumnName="ka_ungueltig_von" />
+          <ScalarProperty Name="ka_modus" ColumnName="ka_modus" />
+          <ScalarProperty Name="ka_kunde" ColumnName="ka_kunde" />
+          <ScalarProperty Name="ka_produktgruppe" ColumnName="ka_produktgruppe" />
+          <ScalarProperty Name="ka_artikelbezeichnung" ColumnName="ka_artikelbezeichnung" />
+          <ScalarProperty Name="ka_guete" ColumnName="ka_guete" />
+          <ScalarProperty Name="ka_zeichnungsnummer" ColumnName="ka_zeichnungsnummer" />
+          <ScalarProperty Name="ka_aenderungsindex" ColumnName="ka_aenderungsindex" />
+          <ScalarProperty Name="ka_durchmesser" ColumnName="ka_durchmesser" />
+          <ScalarProperty Name="ka_laenge" ColumnName="ka_laenge" />
+          <ScalarProperty Name="ka_gewindesteigung" ColumnName="ka_gewindesteigung" />
+          <ScalarProperty Name="ka_fertiggewicht" ColumnName="ka_fertiggewicht" />
+          <ScalarProperty Name="ka_einsatzgewicht" ColumnName="ka_einsatzgewicht" />
+          <ScalarProperty Name="ka_abc_artikelnummer" ColumnName="ka_abc_artikelnummer" />
+          <ScalarProperty Name="ka_einkaeufer_name" ColumnName="ka_einkaeufer_name" />
+          <ScalarProperty Name="ka_einkaeufer_email" ColumnName="ka_einkaeufer_email" />
+          <ScalarProperty Name="ka_einkaeufer_telefon" ColumnName="ka_einkaeufer_telefon" />
+          <ScalarProperty Name="ka_einkaeufer_fax" ColumnName="ka_einkaeufer_fax" />
+          <ScalarProperty Name="ka_einkaeufer_mobil" ColumnName="ka_einkaeufer_mobil" />
+          <ScalarProperty Name="ka_einkaeufer_anrede" ColumnName="ka_einkaeufer_anrede" />
+          <ScalarProperty Name="ka_kundengruppe" ColumnName="ka_kundengruppe" />
+          <ScalarProperty Name="ka_vertreter" ColumnName="ka_vertreter" />
+          <ScalarProperty Name="ka_kundenkommentar" ColumnName="ka_kundenkommentar" />
+          <ScalarProperty Name="ka_einkaeufer_ID" ColumnName="ka_einkaeufer_ID" />
+          <ScalarProperty Name="ka_offen_vertrieb" ColumnName="ka_offen_vertrieb" />
+          <ScalarProperty Name="ka_offen_te" ColumnName="ka_offen_te" />
+          <ScalarProperty Name="ka_vk_angefordert" ColumnName="ka_vk_angefordert" />
+          <ScalarProperty Name="ka_vk_kommentar" ColumnName="ka_vk_kommentar" />
+          <ScalarProperty Name="k_kunde_ID" ColumnName="k_kunde_ID" />
+          <ScalarProperty Name="k_kunde" ColumnName="k_kunde" />
+          <ScalarProperty Name="k_angelegt_am" ColumnName="k_angelegt_am" />
+          <ScalarProperty Name="k_angelegt_von" ColumnName="k_angelegt_von" />
+          <ScalarProperty Name="k_status" ColumnName="k_status" />
+          <ScalarProperty Name="k_kundengruppe" ColumnName="k_kundengruppe" />
+          <ScalarProperty Name="k_vertreter" ColumnName="k_vertreter" />
+          <ScalarProperty Name="k_ungueltig_am" ColumnName="k_ungueltig_am" />
+          <ScalarProperty Name="k_ungueltig_von" ColumnName="k_ungueltig_von" />
+          <ScalarProperty Name="k_kommentar" ColumnName="k_kommentar" />
+          <ScalarProperty Name="e_einkaeufer_ID" ColumnName="e_einkaeufer_ID" />
+          <ScalarProperty Name="e_kunde_ID" ColumnName="e_kunde_ID" />
+          <ScalarProperty Name="e_anrede" ColumnName="e_anrede" />
+          <ScalarProperty Name="e_einkaeufer" ColumnName="e_einkaeufer" />
+          <ScalarProperty Name="e_email" ColumnName="e_email" />
+          <ScalarProperty Name="e_telefon" ColumnName="e_telefon" />
+          <ScalarProperty Name="e_mobil" ColumnName="e_mobil" />
+          <ScalarProperty Name="e_fax" ColumnName="e_fax" />
+          <ScalarProperty Name="e_kommentar" ColumnName="e_kommentar" />
+          <ScalarProperty Name="e_angelegt_am" ColumnName="e_angelegt_am" />
+          <ScalarProperty Name="e_angelegt_von" ColumnName="e_angelegt_von" />
+          <ScalarProperty Name="e_status" ColumnName="e_status" />
+          <ScalarProperty Name="e_ungueltig_am" ColumnName="e_ungueltig_am" />
+          <ScalarProperty Name="e_ungueltig_von" ColumnName="e_ungueltig_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_apos_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_apos_join">
+        <MappingFragment StoreEntitySet="vk_apos_join">
+          <ScalarProperty Name="vk_apos_ID" ColumnName="vk_apos_ID" />
+          <ScalarProperty Name="vk_apos_vorkalkulation_ID" ColumnName="vk_apos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_apos_anlagenposition_ID" ColumnName="vk_apos_anlagenposition_ID" />
+          <ScalarProperty Name="apos_anlagenposition_ID" ColumnName="apos_anlagenposition_ID" />
+          <ScalarProperty Name="apos_anlagennummer" ColumnName="apos_anlagennummer" />
+          <ScalarProperty Name="apos_avonr" ColumnName="apos_avonr" />
+          <ScalarProperty Name="apos_anlagengruppe" ColumnName="apos_anlagengruppe" />
+          <ScalarProperty Name="apos_anlagenbezeichnung" ColumnName="apos_anlagenbezeichnung" />
+          <ScalarProperty Name="apos_tarif_anlage_pro_std" ColumnName="apos_tarif_anlage_pro_std" />
+          <ScalarProperty Name="apos_tarif_personal_pro_std" ColumnName="apos_tarif_personal_pro_std" />
+          <ScalarProperty Name="apos_nennleistung_in_me" ColumnName="apos_nennleistung_in_me" />
+          <ScalarProperty Name="apos_losgroesse_in_me" ColumnName="apos_losgroesse_in_me" />
+          <ScalarProperty Name="apos_ruestdauer_in_std" ColumnName="apos_ruestdauer_in_std" />
+          <ScalarProperty Name="apos_anlagenverfuegbarkeit" ColumnName="apos_anlagenverfuegbarkeit" />
+          <ScalarProperty Name="apos_betreuungsaufwand_produktiv" ColumnName="apos_betreuungsaufwand_produktiv" />
+          <ScalarProperty Name="apos_betreuungsaufwand_ruesten" ColumnName="apos_betreuungsaufwand_ruesten" />
+          <ScalarProperty Name="apos_schichten" ColumnName="apos_schichten" />
+          <ScalarProperty Name="apos_ausschussquote" ColumnName="apos_ausschussquote" />
+          <ScalarProperty Name="apos_angelegt_am" ColumnName="apos_angelegt_am" />
+          <ScalarProperty Name="apos_angelegt_von" ColumnName="apos_angelegt_von" />
+          <ScalarProperty Name="apos_status" ColumnName="apos_status" />
+          <ScalarProperty Name="apos_ungültig_von" ColumnName="apos_ungültig_von" />
+          <ScalarProperty Name="apos_ruestkosten" ColumnName="apos_ruestkosten" />
+          <ScalarProperty Name="apos_produktionskosten_pro_me" ColumnName="apos_produktionskosten_pro_me" />
+          <ScalarProperty Name="apos_ruestkosten_pro_st_kg" ColumnName="apos_ruestkosten_pro_st_kg" />
+          <ScalarProperty Name="apos_ruestkosten_pro_los" ColumnName="apos_ruestkosten_pro_los" />
+          <ScalarProperty Name="apos_produktionskosten" ColumnName="apos_produktionskosten" />
+          <ScalarProperty Name="apos_maschinenkosten_pro_me" ColumnName="apos_maschinenkosten_pro_me" />
+          <ScalarProperty Name="apos_personalkosten_pro_me" ColumnName="apos_personalkosten_pro_me" />
+          <ScalarProperty Name="apos_fgk_faktor" ColumnName="apos_fgk_faktor" />
+          <ScalarProperty Name="apos_mengeneinheit" ColumnName="apos_mengeneinheit" />
+          <ScalarProperty Name="apos_menge_in_me" ColumnName="apos_menge_in_me" />
+          <ScalarProperty Name="apos_ds_ID" ColumnName="apos_ds_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_dpos_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_dpos_join">
+        <MappingFragment StoreEntitySet="vk_dpos_join">
+          <ScalarProperty Name="vk_dpos_ID" ColumnName="vk_dpos_ID" />
+          <ScalarProperty Name="vk_dpos_vorkalkulation_ID" ColumnName="vk_dpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_dpos_drahtposition_ID" ColumnName="vk_dpos_drahtposition_ID" />
+          <ScalarProperty Name="dpos_drahtposition_ID" ColumnName="dpos_drahtposition_ID" />
+          <ScalarProperty Name="dpos_nummer" ColumnName="dpos_nummer" />
+          <ScalarProperty Name="dpos_ungültig_von" ColumnName="dpos_ungültig_von" />
+          <ScalarProperty Name="dpos_gruppe" ColumnName="dpos_gruppe" />
+          <ScalarProperty Name="dpos_bezeichnung" ColumnName="dpos_bezeichnung" />
+          <ScalarProperty Name="dpos_lieferant" ColumnName="dpos_lieferant" />
+          <ScalarProperty Name="dpos_preis_pro_tonne" ColumnName="dpos_preis_pro_tonne" />
+          <ScalarProperty Name="dpos_schrottfaktor" ColumnName="dpos_schrottfaktor" />
+          <ScalarProperty Name="dpos_schrotterloes_pro_tonne" ColumnName="dpos_schrotterloes_pro_tonne" />
+          <ScalarProperty Name="dpos_kosten" ColumnName="dpos_kosten" />
+          <ScalarProperty Name="dpos_status" ColumnName="dpos_status" />
+          <ScalarProperty Name="dpos_angelegt_am" ColumnName="dpos_angelegt_am" />
+          <ScalarProperty Name="dpos_mgk_faktor" ColumnName="dpos_mgk_faktor" />
+          <ScalarProperty Name="dpos_einsatzgewicht_in_tonnen" ColumnName="dpos_einsatzgewicht_in_tonnen" />
+          <ScalarProperty Name="dpos_schrottgewicht_einsatzgewicht_in_tonnen" ColumnName="dpos_schrottgewicht_einsatzgewicht_in_tonnen" />
+          <ScalarProperty Name="dpos_gültigkeit" ColumnName="dpos_gültigkeit" />
+          <ScalarProperty Name="dpos_schrottgewicht_diff_in_tonnen" ColumnName="dpos_schrottgewicht_diff_in_tonnen" />
+          <ScalarProperty Name="dpos_angelegt_von" ColumnName="dpos_angelegt_von" />
+          <ScalarProperty Name="dpos_ds_ID" ColumnName="dpos_ds_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_exdpos_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_exdpos_join">
+        <MappingFragment StoreEntitySet="vk_exdpos_join">
+          <ScalarProperty Name="vk_exdpos_ID" ColumnName="vk_exdpos_ID" />
+          <ScalarProperty Name="vk_exdpos_vorkalkulation_ID" ColumnName="vk_exdpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_exdpos_dienstleistungsposition_ID" ColumnName="vk_exdpos_dienstleistungsposition_ID" />
+          <ScalarProperty Name="exdpos_dienstleistungsposition_ID" ColumnName="exdpos_dienstleistungsposition_ID" />
+          <ScalarProperty Name="exdpos_nummer" ColumnName="exdpos_nummer" />
+          <ScalarProperty Name="exdpos_angelegt_am" ColumnName="exdpos_angelegt_am" />
+          <ScalarProperty Name="exdpos_angelegt_von" ColumnName="exdpos_angelegt_von" />
+          <ScalarProperty Name="exdpos_gruppe" ColumnName="exdpos_gruppe" />
+          <ScalarProperty Name="exdpos_bezeichnung" ColumnName="exdpos_bezeichnung" />
+          <ScalarProperty Name="exdpos_abmessung" ColumnName="exdpos_abmessung" />
+          <ScalarProperty Name="exdpos_lieferant" ColumnName="exdpos_lieferant" />
+          <ScalarProperty Name="exdpos_preis_pro_me" ColumnName="exdpos_preis_pro_me" />
+          <ScalarProperty Name="exdpos_kosten" ColumnName="exdpos_kosten" />
+          <ScalarProperty Name="exdpos_leistungsfaktor" ColumnName="exdpos_leistungsfaktor" />
+          <ScalarProperty Name="exdpos_mengeneinheit" ColumnName="exdpos_mengeneinheit" />
+          <ScalarProperty Name="exdpos_mgk2_faktor" ColumnName="exdpos_mgk2_faktor" />
+          <ScalarProperty Name="exdpos_setze_gk_0" ColumnName="exdpos_setze_gk_0" />
+          <ScalarProperty Name="exdpos_ds_ID" ColumnName="exdpos_ds_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_extpos_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_extpos_join">
+        <MappingFragment StoreEntitySet="vk_extpos_join">
+          <ScalarProperty Name="vk_extpos_ID" ColumnName="vk_extpos_ID" />
+          <ScalarProperty Name="vk_extpos_vorkalkulation_ID" ColumnName="vk_extpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_extpos_teilposition_ID" ColumnName="vk_extpos_teilposition_ID" />
+          <ScalarProperty Name="extpos_teilposition_ID" ColumnName="extpos_teilposition_ID" />
+          <ScalarProperty Name="extpos_kundenanfrage_ID" ColumnName="extpos_kundenanfrage_ID" />
+          <ScalarProperty Name="extpos_nummer" ColumnName="extpos_nummer" />
+          <ScalarProperty Name="extpos_gruppe" ColumnName="extpos_gruppe" />
+          <ScalarProperty Name="extpos_bezeichnung" ColumnName="extpos_bezeichnung" />
+          <ScalarProperty Name="extpos_abmessung" ColumnName="extpos_abmessung" />
+          <ScalarProperty Name="extpos_mengeneinheit" ColumnName="extpos_mengeneinheit" />
+          <ScalarProperty Name="extpos_preis_pro_me" ColumnName="extpos_preis_pro_me" />
+          <ScalarProperty Name="extpos_menge_in_me" ColumnName="extpos_menge_in_me" />
+          <ScalarProperty Name="extpos_lieferant" ColumnName="extpos_lieferant" />
+          <ScalarProperty Name="extpos_leistungsfaktor" ColumnName="extpos_leistungsfaktor" />
+          <ScalarProperty Name="extpos_mgk2_faktor" ColumnName="extpos_mgk2_faktor" />
+          <ScalarProperty Name="extpos_kosten" ColumnName="extpos_kosten" />
+          <ScalarProperty Name="extpos_setze_gk_0" ColumnName="extpos_setze_gk_0" />
+          <ScalarProperty Name="extpos_ds_ID" ColumnName="extpos_ds_ID" />
+          <ScalarProperty Name="extpos_angelegt_von" ColumnName="extpos_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_skpos_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_skpos_join">
+        <MappingFragment StoreEntitySet="vk_skpos_join">
+          <ScalarProperty Name="vk_skpos_ID" ColumnName="vk_skpos_ID" />
+          <ScalarProperty Name="vk_skpos_vorkalkulation_ID" ColumnName="vk_skpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_skpos_sonderkostenposition_ID" ColumnName="vk_skpos_sonderkostenposition_ID" />
+          <ScalarProperty Name="skpos_sonderkostenposition_ID" ColumnName="skpos_sonderkostenposition_ID" />
+          <ScalarProperty Name="skpos_nummer" ColumnName="skpos_nummer" />
+          <ScalarProperty Name="skpos_gruppe" ColumnName="skpos_gruppe" />
+          <ScalarProperty Name="skpos_bezeichnung" ColumnName="skpos_bezeichnung" />
+          <ScalarProperty Name="skpos_preis" ColumnName="skpos_preis" />
+          <ScalarProperty Name="skpos_kosten" ColumnName="skpos_kosten" />
+          <ScalarProperty Name="skpos_ds_ID" ColumnName="skpos_ds_ID" />
+          <ScalarProperty Name="skpos_angelegt_am" ColumnName="skpos_angelegt_am" />
+          <ScalarProperty Name="skpos_angelegt_von" ColumnName="skpos_angelegt_von" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_vertrieb_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_vertrieb_join">
+        <MappingFragment StoreEntitySet="vk_vertrieb_join">
+          <ScalarProperty Name="vk_vorkalkulation_ID" ColumnName="vk_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_mengenPos_ID" ColumnName="vk_mengenPos_ID" />
+          <ScalarProperty Name="vk_angelegt_am" ColumnName="vk_angelegt_am" />
+          <ScalarProperty Name="vk_angelegt_von" ColumnName="vk_angelegt_von" />
+          <ScalarProperty Name="vk_bearbeitet_am" ColumnName="vk_bearbeitet_am" />
+          <ScalarProperty Name="vk_bearbeitet_von" ColumnName="vk_bearbeitet_von" />
+          <ScalarProperty Name="vk_abgelehnt_am" ColumnName="vk_abgelehnt_am" />
+          <ScalarProperty Name="vk_abgelehnt_von" ColumnName="vk_abgelehnt_von" />
+          <ScalarProperty Name="vk_status" ColumnName="vk_status" />
+          <ScalarProperty Name="vk_ungültig_am" ColumnName="vk_ungültig_am" />
+          <ScalarProperty Name="vk_ungültig_von" ColumnName="vk_ungültig_von" />
+          <ScalarProperty Name="vk_kommentar_vertrieb" ColumnName="vk_kommentar_vertrieb" />
+          <ScalarProperty Name="vk_kommentar_te" ColumnName="vk_kommentar_te" />
+          <ScalarProperty Name="vk_gueltigkeit_tage" ColumnName="vk_gueltigkeit_tage" />
+          <ScalarProperty Name="vk_gueltigkeit_datum" ColumnName="vk_gueltigkeit_datum" />
+          <ScalarProperty Name="vk_ta_te_anfrage_ID" ColumnName="vk_ta_te_anfrage_ID" />
+          <ScalarProperty Name="vk_anlagendatensatz_ID" ColumnName="vk_anlagendatensatz_ID" />
+          <ScalarProperty Name="vk_lieferzeit_in_wochen" ColumnName="vk_lieferzeit_in_wochen" />
+          <ScalarProperty Name="vk_rohstoffkosten" ColumnName="vk_rohstoffkosten" />
+          <ScalarProperty Name="vk_dienstleistungskosten" ColumnName="vk_dienstleistungskosten" />
+          <ScalarProperty Name="vk_werkzeugkosten" ColumnName="vk_werkzeugkosten" />
+          <ScalarProperty Name="vk_teilkosten" ColumnName="vk_teilkosten" />
+          <ScalarProperty Name="vk_materialkosten" ColumnName="vk_materialkosten" />
+          <ScalarProperty Name="vk_produktionskosten" ColumnName="vk_produktionskosten" />
+          <ScalarProperty Name="vk_ruestkosten" ColumnName="vk_ruestkosten" />
+          <ScalarProperty Name="vk_fertigungskosten" ColumnName="vk_fertigungskosten" />
+          <ScalarProperty Name="vk_grenzherstellkosten" ColumnName="vk_grenzherstellkosten" />
+          <ScalarProperty Name="vk_herstellkosten" ColumnName="vk_herstellkosten" />
+          <ScalarProperty Name="vk_verwaltungsgemeinkosten" ColumnName="vk_verwaltungsgemeinkosten" />
+          <ScalarProperty Name="vk_selbstkosten" ColumnName="vk_selbstkosten" />
+          <ScalarProperty Name="vk_sonderkosten" ColumnName="vk_sonderkosten" />
+          <ScalarProperty Name="vk_drahtpreisdatensatz_ID" ColumnName="vk_drahtpreisdatensatz_ID" />
+          <ScalarProperty Name="vk_gemeinkostendatensatz_ID" ColumnName="vk_gemeinkostendatensatz_ID" />
+          <ScalarProperty Name="vk_dienstleistungsdatensatz_ID" ColumnName="vk_dienstleistungsdatensatz_ID" />
+          <ScalarProperty Name="vk_werkzeugdatensatz_ID" ColumnName="vk_werkzeugdatensatz_ID" />
+          <ScalarProperty Name="vk_teildatensatz_ID" ColumnName="vk_teildatensatz_ID" />
+          <ScalarProperty Name="vk_sonderkostendatensatz_ID" ColumnName="vk_sonderkostendatensatz_ID" />
+          <ScalarProperty Name="vk_dspr1" ColumnName="vk_dspr1" />
+          <ScalarProperty Name="vk_dspr2" ColumnName="vk_dspr2" />
+          <ScalarProperty Name="vk_dspr3" ColumnName="vk_dspr3" />
+          <ScalarProperty Name="vk_dspr4" ColumnName="vk_dspr4" />
+          <ScalarProperty Name="vk_dspr5" ColumnName="vk_dspr5" />
+          <ScalarProperty Name="vk_dspr6" ColumnName="vk_dspr6" />
+          <ScalarProperty Name="vk_dspr7" ColumnName="vk_dspr7" />
+          <ScalarProperty Name="vk_dspr8" ColumnName="vk_dspr8" />
+          <ScalarProperty Name="vk_geschlossen" ColumnName="vk_geschlossen" />
+          <ScalarProperty Name="vk_abgelehnt" ColumnName="vk_abgelehnt" />
+          <ScalarProperty Name="vk_gf_freigabe" ColumnName="vk_gf_freigabe" />
+          <ScalarProperty Name="vk_freigegeben" ColumnName="vk_freigegeben" />
+          <ScalarProperty Name="vk_veroeffentlicht" ColumnName="vk_veroeffentlicht" />
+          <ScalarProperty Name="m_nummer" ColumnName="m_nummer" />
+          <ScalarProperty Name="m_mengenPos_ID" ColumnName="m_mengenPos_ID" />
+          <ScalarProperty Name="m_jahresmenge" ColumnName="m_jahresmenge" />
+          <ScalarProperty Name="m_anfragenummer" ColumnName="m_anfragenummer" />
+          <ScalarProperty Name="m_status" ColumnName="m_status" />
+          <ScalarProperty Name="m_ungueltig_am" ColumnName="m_ungueltig_am" />
+          <ScalarProperty Name="m_ungueltig_von" ColumnName="m_ungueltig_von" />
+          <ScalarProperty Name="m_abgelehnt_am" ColumnName="m_abgelehnt_am" />
+          <ScalarProperty Name="m_abgelehnt_von" ColumnName="m_abgelehnt_von" />
+          <ScalarProperty Name="m_preis_vertrieb" ColumnName="m_preis_vertrieb" />
+          <ScalarProperty Name="m_marge" ColumnName="m_marge" />
+          <ScalarProperty Name="m_umsatz" ColumnName="m_umsatz" />
+          <ScalarProperty Name="m_werkzeugkosten" ColumnName="m_werkzeugkosten" />
+          <ScalarProperty Name="m_tonnenerloes" ColumnName="m_tonnenerloes" />
+          <ScalarProperty Name="m_tonage" ColumnName="m_tonage" />
+          <ScalarProperty Name="m_angelegt_am" ColumnName="m_angelegt_am" />
+          <ScalarProperty Name="m_angelegt_von" ColumnName="m_angelegt_von" />
+          <ScalarProperty Name="m_angeboten_am" ColumnName="m_angeboten_am" />
+          <ScalarProperty Name="m_auftrag_erhalten_am" ColumnName="m_auftrag_erhalten_am" />
+          <ScalarProperty Name="m_preis_wettbewerber" ColumnName="m_preis_wettbewerber" />
+          <ScalarProperty Name="m_SOP" ColumnName="m_SOP" />
+          <ScalarProperty Name="m_ablehnungsgrund" ColumnName="m_ablehnungsgrund" />
+          <ScalarProperty Name="m_kundenanfrage_ID" ColumnName="m_kundenanfrage_ID" />
+          <ScalarProperty Name="m_abteilungsstatus" ColumnName="m_abteilungsstatus" />
+          <ScalarProperty Name="m_vk_angefordert" ColumnName="m_vk_angefordert" />
+          <ScalarProperty Name="m_wettbewerber" ColumnName="m_wettbewerber" />
+          <ScalarProperty Name="m_abgelehnt" ColumnName="m_abgelehnt" />
+          <ScalarProperty Name="m_ungueltig" ColumnName="m_ungueltig" />
+          <ScalarProperty Name="m_angeboten" ColumnName="m_angeboten" />
+          <ScalarProperty Name="m_te_email" ColumnName="m_te_email" />
+          <ScalarProperty Name="m_vk_kommentar" ColumnName="m_vk_kommentar" />
+          <ScalarProperty Name="m_herstellbar" ColumnName="m_herstellbar" />
+          <ScalarProperty Name="m_kapazitaet" ColumnName="m_kapazitaet" />
+          <ScalarProperty Name="m_auftrag" ColumnName="m_auftrag" />
+          <ScalarProperty Name="m_abgelehnt_kommentar" ColumnName="m_abgelehnt_kommentar" />
+          <ScalarProperty Name="m_wettbewerber_kommentar" ColumnName="m_wettbewerber_kommentar" />
+          <ScalarProperty Name="m_nachgefasst_kommentar" ColumnName="m_nachgefasst_kommentar" />
+          <ScalarProperty Name="m_gesamtumsatz" ColumnName="m_gesamtumsatz" />
+          <ScalarProperty Name="m_angebotspreis" ColumnName="m_angebotspreis" />
+          <ScalarProperty Name="m_vertriebsstatus" ColumnName="m_vertriebsstatus" />
+          <ScalarProperty Name="ka_kundenanfrage_ID" ColumnName="ka_kundenanfrage_ID" />
+          <ScalarProperty Name="ka_anfragenummer" ColumnName="ka_anfragenummer" />
+          <ScalarProperty Name="ka_artikelnummer" ColumnName="ka_artikelnummer" />
+          <ScalarProperty Name="ka_verwendung" ColumnName="ka_verwendung" />
+          <ScalarProperty Name="ka_kommentar" ColumnName="ka_kommentar" />
+          <ScalarProperty Name="ka_angefragt_am" ColumnName="ka_angefragt_am" />
+          <ScalarProperty Name="ka_angebotsfrist" ColumnName="ka_angebotsfrist" />
+          <ScalarProperty Name="ka_hersteller" ColumnName="ka_hersteller" />
+          <ScalarProperty Name="ka_zustaendig" ColumnName="ka_zustaendig" />
+          <ScalarProperty Name="ka_angelegt_am" ColumnName="ka_angelegt_am" />
+          <ScalarProperty Name="ka_angelegt_von" ColumnName="ka_angelegt_von" />
+          <ScalarProperty Name="ka_status" ColumnName="ka_status" />
+          <ScalarProperty Name="ka_ungueltig_am" ColumnName="ka_ungueltig_am" />
+          <ScalarProperty Name="ka_ungueltig_von" ColumnName="ka_ungueltig_von" />
+          <ScalarProperty Name="ka_modus" ColumnName="ka_modus" />
+          <ScalarProperty Name="ka_kunde" ColumnName="ka_kunde" />
+          <ScalarProperty Name="ka_produktgruppe" ColumnName="ka_produktgruppe" />
+          <ScalarProperty Name="ka_artikelbezeichnung" ColumnName="ka_artikelbezeichnung" />
+          <ScalarProperty Name="ka_guete" ColumnName="ka_guete" />
+          <ScalarProperty Name="ka_zeichnungsnummer" ColumnName="ka_zeichnungsnummer" />
+          <ScalarProperty Name="ka_aenderungsindex" ColumnName="ka_aenderungsindex" />
+          <ScalarProperty Name="ka_durchmesser" ColumnName="ka_durchmesser" />
+          <ScalarProperty Name="ka_laenge" ColumnName="ka_laenge" />
+          <ScalarProperty Name="ka_gewindesteigung" ColumnName="ka_gewindesteigung" />
+          <ScalarProperty Name="ka_fertiggewicht" ColumnName="ka_fertiggewicht" />
+          <ScalarProperty Name="ka_einsatzgewicht" ColumnName="ka_einsatzgewicht" />
+          <ScalarProperty Name="ka_abc_artikelnummer" ColumnName="ka_abc_artikelnummer" />
+          <ScalarProperty Name="ka_einkaeufer_name" ColumnName="ka_einkaeufer_name" />
+          <ScalarProperty Name="ka_einkaeufer_email" ColumnName="ka_einkaeufer_email" />
+          <ScalarProperty Name="ka_einkaeufer_telefon" ColumnName="ka_einkaeufer_telefon" />
+          <ScalarProperty Name="ka_einkaeufer_fax" ColumnName="ka_einkaeufer_fax" />
+          <ScalarProperty Name="ka_einkaeufer_mobil" ColumnName="ka_einkaeufer_mobil" />
+          <ScalarProperty Name="ka_einkaeufer_anrede" ColumnName="ka_einkaeufer_anrede" />
+          <ScalarProperty Name="ka_kundengruppe" ColumnName="ka_kundengruppe" />
+          <ScalarProperty Name="ka_vertreter" ColumnName="ka_vertreter" />
+          <ScalarProperty Name="ka_kundenkommentar" ColumnName="ka_kundenkommentar" />
+          <ScalarProperty Name="ka_einkaeufer_ID" ColumnName="ka_einkaeufer_ID" />
+          <ScalarProperty Name="ka_offen_vertrieb" ColumnName="ka_offen_vertrieb" />
+          <ScalarProperty Name="ka_offen_te" ColumnName="ka_offen_te" />
+          <ScalarProperty Name="ka_vk_angefordert" ColumnName="ka_vk_angefordert" />
+          <ScalarProperty Name="ka_vk_kommentar" ColumnName="ka_vk_kommentar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_wzpos_join">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_wzpos_join">
+        <MappingFragment StoreEntitySet="vk_wzpos_join">
+          <ScalarProperty Name="vk_wzpos_ID" ColumnName="vk_wzpos_ID" />
+          <ScalarProperty Name="vk_wzpos_vorkalkulation_ID" ColumnName="vk_wzpos_vorkalkulation_ID" />
+          <ScalarProperty Name="vk_wzpos_werkzeugposition_ID" ColumnName="vk_wzpos_werkzeugposition_ID" />
+          <ScalarProperty Name="wzpos_werkzeugposition_ID" ColumnName="wzpos_werkzeugposition_ID" />
+          <ScalarProperty Name="wzpos_nummer" ColumnName="wzpos_nummer" />
+          <ScalarProperty Name="wzpos_werkzeugpositioncol" ColumnName="wzpos_werkzeugpositioncol" />
+          <ScalarProperty Name="wzpos_gruppe" ColumnName="wzpos_gruppe" />
+          <ScalarProperty Name="wzpos_bezeichnung" ColumnName="wzpos_bezeichnung" />
+          <ScalarProperty Name="wzpos_stufe" ColumnName="wzpos_stufe" />
+          <ScalarProperty Name="wzpos_standzeit" ColumnName="wzpos_standzeit" />
+          <ScalarProperty Name="wzpos_preis" ColumnName="wzpos_preis" />
+          <ScalarProperty Name="wzpos_mgk3_faktor" ColumnName="wzpos_mgk3_faktor" />
+          <ScalarProperty Name="wzpos_anzahl" ColumnName="wzpos_anzahl" />
+          <ScalarProperty Name="wzpos_kosten" ColumnName="wzpos_kosten" />
+          <ScalarProperty Name="wzpos_anzahl_bereinigt" ColumnName="wzpos_anzahl_bereinigt" />
+          <ScalarProperty Name="wzpos_ds_ID" ColumnName="wzpos_ds_ID" />
+          <ScalarProperty Name="wzpos_angelegt_von" ColumnName="wzpos_angelegt_von" />
+          <ScalarProperty Name="wzpos_angelegt_am" ColumnName="wzpos_angelegt_am" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vk_te_mitarbeiter">
+      <EntityTypeMapping TypeName="angebotserstellungModel.vk_te_mitarbeiter">
+        <MappingFragment StoreEntitySet="vk_te_mitarbeiter">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nachname" ColumnName="Nachname" />
+          <ScalarProperty Name="Vorname" ColumnName="Vorname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,2013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="angebotserstellungModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="angebotserstellungEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ab_artikelbezeichnung" EntityType="angebotserstellungModel.ab_artikelbezeichnung" />
+    <EntitySet Name="apos_anlagenposition" EntityType="angebotserstellungModel.apos_anlagenposition" />
+    <EntitySet Name="as_abteilungsstatus" EntityType="angebotserstellungModel.as_abteilungsstatus" />
+    <EntitySet Name="at_anlagentarif" EntityType="angebotserstellungModel.at_anlagentarif" />
+    <EntitySet Name="bh_bearbeitungshistorie" EntityType="angebotserstellungModel.bh_bearbeitungshistorie" />
+    <EntitySet Name="d_datei" EntityType="angebotserstellungModel.d_datei" />
+    <EntitySet Name="dp_drahtpreis" EntityType="angebotserstellungModel.dp_drahtpreis" />
+    <EntitySet Name="dpos_drahtposition" EntityType="angebotserstellungModel.dpos_drahtposition" />
+    <EntitySet Name="ds_at_anlagendatensatz" EntityType="angebotserstellungModel.ds_at_anlagendatensatz" />
+    <EntitySet Name="ds_dp_drahtpreisdatensatz" EntityType="angebotserstellungModel.ds_dp_drahtpreisdatensatz" />
+    <EntitySet Name="ds_exd_dienstleistungsdatensatz" EntityType="angebotserstellungModel.ds_exd_dienstleistungsdatensatz" />
+    <EntitySet Name="ds_ext_teildatensatz" EntityType="angebotserstellungModel.ds_ext_teildatensatz" />
+    <EntitySet Name="ds_gk_gemeinkostendatensatz" EntityType="angebotserstellungModel.ds_gk_gemeinkostendatensatz" />
+    <EntitySet Name="ds_sk_sonderkostendatensatz" EntityType="angebotserstellungModel.ds_sk_sonderkostendatensatz" />
+    <EntitySet Name="ds_wz_werkzeugdatensatz" EntityType="angebotserstellungModel.ds_wz_werkzeugdatensatz" />
+    <EntitySet Name="e_einkaeufer" EntityType="angebotserstellungModel.e_einkaeufer" />
+    <EntitySet Name="exd_dienstleistungspreis" EntityType="angebotserstellungModel.exd_dienstleistungspreis" />
+    <EntitySet Name="exdpos_dienstleistungsposition" EntityType="angebotserstellungModel.exdpos_dienstleistungsposition" />
+    <EntitySet Name="ext_teilpreis" EntityType="angebotserstellungModel.ext_teilpreis" />
+    <EntitySet Name="extpos_teilposition" EntityType="angebotserstellungModel.extpos_teilposition" />
+    <EntitySet Name="f_freigabe" EntityType="angebotserstellungModel.f_freigabe" />
+    <EntitySet Name="fb_freigabeberechtigung" EntityType="angebotserstellungModel.fb_freigabeberechtigung" />
+    <EntitySet Name="g_guete" EntityType="angebotserstellungModel.g_guete" />
+    <EntitySet Name="h_hersteller" EntityType="angebotserstellungModel.h_hersteller" />
+    <EntitySet Name="k_kunde" EntityType="angebotserstellungModel.k_kunde" />
+    <EntitySet Name="ka_kundenanfrage" EntityType="angebotserstellungModel.ka_kundenanfrage" />
+    <EntitySet Name="kg_kundengruppe" EntityType="angebotserstellungModel.kg_kundengruppe" />
+    <EntitySet Name="m_mengenpos" EntityType="angebotserstellungModel.m_mengenpos" />
+    <EntitySet Name="me_mengeneinheit" EntityType="angebotserstellungModel.me_mengeneinheit" />
+    <EntitySet Name="mv_mitarbeiter_vertrieb" EntityType="angebotserstellungModel.mv_mitarbeiter_vertrieb" />
+    <EntitySet Name="pg_produktgruppe" EntityType="angebotserstellungModel.pg_produktgruppe" />
+    <EntitySet Name="s_vertriebsstatus" EntityType="angebotserstellungModel.s_vertriebsstatus" />
+    <EntitySet Name="sk_sonderkostenpreis" EntityType="angebotserstellungModel.sk_sonderkostenpreis" />
+    <EntitySet Name="skpos_sonderkostenposition" EntityType="angebotserstellungModel.skpos_sonderkostenposition" />
+    <EntitySet Name="v_vertreter" EntityType="angebotserstellungModel.v_vertreter" />
+    <EntitySet Name="vk_apos" EntityType="angebotserstellungModel.vk_apos" />
+    <EntitySet Name="vk_dpos" EntityType="angebotserstellungModel.vk_dpos" />
+    <EntitySet Name="vk_exdpos" EntityType="angebotserstellungModel.vk_exdpos" />
+    <EntitySet Name="vk_extpos" EntityType="angebotserstellungModel.vk_extpos" />
+    <EntitySet Name="vk_skpos" EntityType="angebotserstellungModel.vk_skpos" />
+    <EntitySet Name="vk_vorkalkulation" EntityType="angebotserstellungModel.vk_vorkalkulation" />
+    <EntitySet Name="vk_wzpos" EntityType="angebotserstellungModel.vk_wzpos" />
+    <EntitySet Name="wz_werkzeugpreis" EntityType="angebotserstellungModel.wz_werkzeugpreis" />
+    <EntitySet Name="wzpos_werkzeugposition" EntityType="angebotserstellungModel.wzpos_werkzeugposition" />
+    <EntitySet Name="dt_vk_vertrieb_join" EntityType="angebotserstellungModel.dt_vk_vertrieb_join" />
+    <EntitySet Name="ka_kundenanfrage_join" EntityType="angebotserstellungModel.ka_kundenanfrage_join" />
+    <EntitySet Name="ka_kundenanfrage_mengenpos_join" EntityType="angebotserstellungModel.ka_kundenanfrage_mengenpos_join" />
+    <EntitySet Name="kunde_einkaeufer_join" EntityType="angebotserstellungModel.kunde_einkaeufer_join" />
+    <EntitySet Name="vk_apos_join" EntityType="angebotserstellungModel.vk_apos_join" />
+    <EntitySet Name="vk_dpos_join" EntityType="angebotserstellungModel.vk_dpos_join" />
+    <EntitySet Name="vk_exdpos_join" EntityType="angebotserstellungModel.vk_exdpos_join" />
+    <EntitySet Name="vk_extpos_join" EntityType="angebotserstellungModel.vk_extpos_join" />
+    <EntitySet Name="vk_skpos_join" EntityType="angebotserstellungModel.vk_skpos_join" />
+    <EntitySet Name="vk_vertrieb_join" EntityType="angebotserstellungModel.vk_vertrieb_join" />
+    <EntitySet Name="vk_wzpos_join" EntityType="angebotserstellungModel.vk_wzpos_join" />
+    <AssociationSet Name="apos_ID_FK" Association="angebotserstellungModel.apos_ID_FK">
+      <End Role="apos_anlagenposition" EntitySet="apos_anlagenposition" />
+      <End Role="vk_apos" EntitySet="vk_apos" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK1" Association="angebotserstellungModel.mengeneinheit_FK1">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="apos_anlagenposition" EntitySet="apos_anlagenposition" />
+    </AssociationSet>
+    <AssociationSet Name="anlagendatensatz_ID" Association="angebotserstellungModel.anlagendatensatz_ID">
+      <End Role="ds_at_anlagendatensatz" EntitySet="ds_at_anlagendatensatz" />
+      <End Role="at_anlagentarif" EntitySet="at_anlagentarif" />
+    </AssociationSet>
+    <AssociationSet Name="kundenanfrage_ID_FK200" Association="angebotserstellungModel.kundenanfrage_ID_FK200">
+      <End Role="ka_kundenanfrage" EntitySet="ka_kundenanfrage" />
+      <End Role="d_datei" EntitySet="d_datei" />
+    </AssociationSet>
+    <AssociationSet Name="drahtpreisdatensatz_ID_FK" Association="angebotserstellungModel.drahtpreisdatensatz_ID_FK">
+      <End Role="ds_dp_drahtpreisdatensatz" EntitySet="ds_dp_drahtpreisdatensatz" />
+      <End Role="dp_drahtpreis" EntitySet="dp_drahtpreis" />
+    </AssociationSet>
+    <AssociationSet Name="dpos_ID_FK" Association="angebotserstellungModel.dpos_ID_FK">
+      <End Role="dpos_drahtposition" EntitySet="dpos_drahtposition" />
+      <End Role="vk_dpos" EntitySet="vk_dpos" />
+    </AssociationSet>
+    <AssociationSet Name="anlagendatensatz_ID_FK0" Association="angebotserstellungModel.anlagendatensatz_ID_FK0">
+      <End Role="ds_at_anlagendatensatz" EntitySet="ds_at_anlagendatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="drahtpreisdatensatz_ID0" Association="angebotserstellungModel.drahtpreisdatensatz_ID0">
+      <End Role="ds_dp_drahtpreisdatensatz" EntitySet="ds_dp_drahtpreisdatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="veredelungsdatensatz_ID_FK" Association="angebotserstellungModel.veredelungsdatensatz_ID_FK">
+      <End Role="ds_exd_dienstleistungsdatensatz" EntitySet="ds_exd_dienstleistungsdatensatz" />
+      <End Role="exd_dienstleistungspreis" EntitySet="exd_dienstleistungspreis" />
+    </AssociationSet>
+    <AssociationSet Name="zukaufdatensatz_ID_FK1" Association="angebotserstellungModel.zukaufdatensatz_ID_FK1">
+      <End Role="ds_ext_teildatensatz" EntitySet="ds_ext_teildatensatz" />
+      <End Role="ext_teilpreis" EntitySet="ext_teilpreis" />
+    </AssociationSet>
+    <AssociationSet Name="zukaufdatensatz_ID0" Association="angebotserstellungModel.zukaufdatensatz_ID0">
+      <End Role="ds_ext_teildatensatz" EntitySet="ds_ext_teildatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="gemeinkostendatensatz_ID0" Association="angebotserstellungModel.gemeinkostendatensatz_ID0">
+      <End Role="ds_gk_gemeinkostendatensatz" EntitySet="ds_gk_gemeinkostendatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="sonderkostendatensatz_ID_FK_99" Association="angebotserstellungModel.sonderkostendatensatz_ID_FK_99">
+      <End Role="ds_sk_sonderkostendatensatz" EntitySet="ds_sk_sonderkostendatensatz" />
+      <End Role="sk_sonderkostenpreis" EntitySet="sk_sonderkostenpreis" />
+    </AssociationSet>
+    <AssociationSet Name="sonderkostendatensatz_ID_FK550" Association="angebotserstellungModel.sonderkostendatensatz_ID_FK550">
+      <End Role="ds_sk_sonderkostendatensatz" EntitySet="ds_sk_sonderkostendatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="werkzeugdatensatz_ID_FK3" Association="angebotserstellungModel.werkzeugdatensatz_ID_FK3">
+      <End Role="ds_wz_werkzeugdatensatz" EntitySet="ds_wz_werkzeugdatensatz" />
+      <End Role="wz_werkzeugpreis" EntitySet="wz_werkzeugpreis" />
+    </AssociationSet>
+    <AssociationSet Name="werkzeugdatensatz_ID0" Association="angebotserstellungModel.werkzeugdatensatz_ID0">
+      <End Role="ds_wz_werkzeugdatensatz" EntitySet="ds_wz_werkzeugdatensatz" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="Einkäufer_ID" Association="angebotserstellungModel.Einkäufer_ID">
+      <End Role="e_einkaeufer" EntitySet="e_einkaeufer" />
+      <End Role="ka_kundenanfrage" EntitySet="ka_kundenanfrage" />
+    </AssociationSet>
+    <AssociationSet Name="kunde_ID_FK3" Association="angebotserstellungModel.kunde_ID_FK3">
+      <End Role="k_kunde" EntitySet="k_kunde" />
+      <End Role="e_einkaeufer" EntitySet="e_einkaeufer" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK_343" Association="angebotserstellungModel.mengeneinheit_FK_343">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="exd_dienstleistungspreis" EntitySet="exd_dienstleistungspreis" />
+    </AssociationSet>
+    <AssociationSet Name="exdpos_ID_FK" Association="angebotserstellungModel.exdpos_ID_FK">
+      <End Role="exdpos_dienstleistungsposition" EntitySet="exdpos_dienstleistungsposition" />
+      <End Role="vk_exdpos" EntitySet="vk_exdpos" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK_11" Association="angebotserstellungModel.mengeneinheit_FK_11">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="exdpos_dienstleistungsposition" EntitySet="exdpos_dienstleistungsposition" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK_231" Association="angebotserstellungModel.mengeneinheit_FK_231">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="ext_teilpreis" EntitySet="ext_teilpreis" />
+    </AssociationSet>
+    <AssociationSet Name="extpos_ID_FK" Association="angebotserstellungModel.extpos_ID_FK">
+      <End Role="extpos_teilposition" EntitySet="extpos_teilposition" />
+      <End Role="vk_extpos" EntitySet="vk_extpos" />
+    </AssociationSet>
+    <AssociationSet Name="kundenanfrage_ID_FK01" Association="angebotserstellungModel.kundenanfrage_ID_FK01">
+      <End Role="ka_kundenanfrage" EntitySet="ka_kundenanfrage" />
+      <End Role="extpos_teilposition" EntitySet="extpos_teilposition" />
+    </AssociationSet>
+    <AssociationSet Name="mengeneinheit_FK5" Association="angebotserstellungModel.mengeneinheit_FK5">
+      <End Role="me_mengeneinheit" EntitySet="me_mengeneinheit" />
+      <End Role="extpos_teilposition" EntitySet="extpos_teilposition" />
+    </AssociationSet>
+    <AssociationSet Name="vorkalkulation_ID_FK_1231" Association="angebotserstellungModel.vorkalkulation_ID_FK_1231">
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+      <End Role="f_freigabe" EntitySet="f_freigabe" />
+    </AssociationSet>
+    <AssociationSet Name="kundenanfrage_ID" Association="angebotserstellungModel.kundenanfrage_ID">
+      <End Role="ka_kundenanfrage" EntitySet="ka_kundenanfrage" />
+      <End Role="m_mengenpos" EntitySet="m_mengenpos" />
+    </AssociationSet>
+    <AssociationSet Name="mengenPos_ID_FK10" Association="angebotserstellungModel.mengenPos_ID_FK10">
+      <End Role="m_mengenpos" EntitySet="m_mengenpos" />
+      <End Role="vk_vorkalkulation" EntitySet="vk_vorkalkulation" />
+    </AssociationSet>
+    <AssociationSet Name="skpos_ID_FK" Association="angebotserstellungModel.skpos_ID_FK">
+      <End Role="skpos_sonderkostenposition" EntitySet="skpos_sonderkostenposition" />
+      <End Role="vk_skpos" EntitySet="vk_skpos" />
+    </AssociationSet>
+    <AssociationSet Name="wzpos_ID_FK" Association="angebotserstellungModel.wzpos_ID_FK">
+      <End Role="wzpos_werkzeugposition" EntitySet="wzpos_werkzeugposition" />
+      <End Role="vk_wzpos" EntitySet="vk_wzpos" />
+    </AssociationSet>
+    <EntitySet Name="vk_te_mitarbeiter" EntityType="angebotserstellungModel.vk_te_mitarbeiter" />
+  </EntityContainer>
+  <EntityType Name="ab_artikelbezeichnung">
+    <Key>
+      <PropertyRef Name="ab_artikelbezeichnung_ID" />
+    </Key>
+    <Property Name="ab_artikelbezeichnung_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ab_artikelbezeichnung1" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ab_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ab_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="apos_anlagenposition">
+    <Key>
+      <PropertyRef Name="apos_anlagenposition_ID" />
+    </Key>
+    <Property Name="apos_anlagenposition_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="apos_anlagennummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apos_avonr" Type="Int32" />
+    <Property Name="apos_anlagengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apos_anlagenbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apos_tarif_anlage_pro_std" Type="Single" />
+    <Property Name="apos_tarif_personal_pro_std" Type="Single" />
+    <Property Name="apos_nennleistung_in_me" Type="Single" />
+    <Property Name="apos_losgroesse_in_me" Type="Int32" />
+    <Property Name="apos_ruestdauer_in_std" Type="Single" />
+    <Property Name="apos_anlagenverfuegbarkeit" Type="Single" />
+    <Property Name="apos_betreuungsaufwand_produktiv" Type="Single" />
+    <Property Name="apos_betreuungsaufwand_ruesten" Type="Single" />
+    <Property Name="apos_schichten" Type="Int32" />
+    <Property Name="apos_ausschussquote" Type="Single" />
+    <Property Name="apos_angelegt_am" Type="DateTime" />
+    <Property Name="apos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apos_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="apos_ungültig_von" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="apos_ruestkosten" Type="Single" />
+    <Property Name="apos_produktionskosten_pro_me" Type="Single" />
+    <Property Name="apos_ruestkosten_pro_st_kg" Type="Single" />
+    <Property Name="apos_ruestkosten_pro_los" Type="Single" />
+    <Property Name="apos_produktionskosten" Type="Single" />
+    <Property Name="apos_maschinenkosten_pro_me" Type="Single" />
+    <Property Name="apos_personalkosten_pro_me" Type="Single" />
+    <Property Name="apos_fgk_faktor" Type="Single" />
+    <Property Name="apos_mengeneinheit" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="apos_menge_in_me" Type="Single" />
+    <Property Name="apos_ds_ID" Type="Int32" />
+    <NavigationProperty Name="vk_apos" Relationship="angebotserstellungModel.apos_ID_FK" FromRole="apos_anlagenposition" ToRole="vk_apos" />
+    <NavigationProperty Name="me_mengeneinheit" Relationship="angebotserstellungModel.mengeneinheit_FK1" FromRole="apos_anlagenposition" ToRole="me_mengeneinheit" />
+  </EntityType>
+  <EntityType Name="as_abteilungsstatus">
+    <Key>
+      <PropertyRef Name="as_abteilungsstatus_ID" />
+    </Key>
+    <Property Name="as_abteilungsstatus_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="as_bezeichnung" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="at_anlagentarif">
+    <Key>
+      <PropertyRef Name="at_anlagentarif_ID" />
+    </Key>
+    <Property Name="at_anlagentarif_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="at_anlagendatensatz_ID" Type="Int32" />
+    <Property Name="at_anlagennummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="at_anlagengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="at_anlagenbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="at_tarif_anlage_pro_stunde" Type="Single" />
+    <Property Name="at_tarif_personal_pro_stunde" Type="Single" />
+    <Property Name="at_nennleistung_in_me" Type="Single" />
+    <Property Name="at_losgroesse_in_me" Type="Int32" />
+    <Property Name="at_ruestdauer_in_std" Type="Single" />
+    <Property Name="at_anlagenverfuegbarkeit" Type="Single" />
+    <Property Name="at_betreuungsaufwand_produktiv" Type="Single" />
+    <Property Name="at_betreuungsaufwand_ruesten" Type="Single" />
+    <Property Name="at_schichten" Type="Int32" />
+    <Property Name="at_mengeneinheit" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="at_ausschussquote" Type="Single" />
+    <Property Name="at_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="at_angelegt_am" Type="DateTime" />
+    <NavigationProperty Name="ds_at_anlagendatensatz" Relationship="angebotserstellungModel.anlagendatensatz_ID" FromRole="at_anlagentarif" ToRole="ds_at_anlagendatensatz" />
+  </EntityType>
+  <EntityType Name="bh_bearbeitungshistorie">
+    <Key>
+      <PropertyRef Name="bh_ID" />
+    </Key>
+    <Property Name="bh_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bh_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="bh_am" Type="DateTime" Nullable="false" />
+    <Property Name="bh_sql" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="bh_vorkalkulation_ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="d_datei">
+    <Key>
+      <PropertyRef Name="d_datei_ID" />
+    </Key>
+    <Property Name="d_datei_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="d_pfad" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="d_name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="d_beschreibung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="d_vorkalkulation_ID" Type="Int32" />
+    <Property Name="d_kundenanfrage_ID" Type="Int32" />
+    <Property Name="d_status" Type="String" Nullable="false" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="d_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="d_ungueltig_am" Type="DateTime" />
+    <Property Name="d_angelegt_am" Type="DateTime" />
+    <Property Name="d_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ka_kundenanfrage" Relationship="angebotserstellungModel.kundenanfrage_ID_FK200" FromRole="d_datei" ToRole="ka_kundenanfrage" />
+  </EntityType>
+  <EntityType Name="dp_drahtpreis">
+    <Key>
+      <PropertyRef Name="dp_drahtpreis_ID" />
+    </Key>
+    <Property Name="dp_drahtpreis_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dp_nummer" Type="Int32" />
+    <Property Name="dp_gruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dp_bezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dp_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dp_preis_pro_tonne" Type="Single" />
+    <Property Name="dp_schrottfaktor" Type="Single" />
+    <Property Name="dp_schrotterloes_pro_tonne" Type="Single" />
+    <Property Name="dp_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="dp_drahtpreisdatensatz_ID" Type="Int32" Nullable="false" />
+    <Property Name="dp_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ds_dp_drahtpreisdatensatz" Relationship="angebotserstellungModel.drahtpreisdatensatz_ID_FK" FromRole="dp_drahtpreis" ToRole="ds_dp_drahtpreisdatensatz" />
+  </EntityType>
+  <EntityType Name="dpos_drahtposition">
+    <Key>
+      <PropertyRef Name="dpos_drahtposition_ID" />
+    </Key>
+    <Property Name="dpos_drahtposition_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dpos_nummer" Type="Int32" />
+    <Property Name="dpos_ungültig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_gruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_bezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_preis_pro_tonne" Type="Single" />
+    <Property Name="dpos_schrottfaktor" Type="Single" />
+    <Property Name="dpos_schrotterloes_pro_tonne" Type="Single" />
+    <Property Name="dpos_kosten" Type="Single" />
+    <Property Name="dpos_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_angelegt_am" Type="DateTime" />
+    <Property Name="dpos_mgk_faktor" Type="Single" />
+    <Property Name="dpos_einsatzgewicht_in_tonnen" Type="Single" />
+    <Property Name="dpos_schrottgewicht_einsatzgewicht_in_tonnen" Type="Single" />
+    <Property Name="dpos_gültigkeit" Type="DateTime" />
+    <Property Name="dpos_schrottgewicht_diff_in_tonnen" Type="Single" />
+    <Property Name="dpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_ds_ID" Type="Int32" />
+    <NavigationProperty Name="vk_dpos" Relationship="angebotserstellungModel.dpos_ID_FK" FromRole="dpos_drahtposition" ToRole="vk_dpos" />
+  </EntityType>
+  <EntityType Name="ds_at_anlagendatensatz">
+    <Key>
+      <PropertyRef Name="ds_at_anlagendatensatz_ID" />
+    </Key>
+    <Property Name="ds_at_anlagendatensatz_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ds_at_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ds_at_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="at_anlagentarif" Relationship="angebotserstellungModel.anlagendatensatz_ID" FromRole="ds_at_anlagendatensatz" ToRole="at_anlagentarif" />
+    <NavigationProperty Name="vk_vorkalkulation" Relationship="angebotserstellungModel.anlagendatensatz_ID_FK0" FromRole="ds_at_anlagendatensatz" ToRole="vk_vorkalkulation" />
+  </EntityType>
+  <EntityType Name="ds_dp_drahtpreisdatensatz">
+    <Key>
+      <PropertyRef Name="ds_dp_drahtpreisdatensatz_ID" />
+    </Key>
+    <Property Name="ds_dp_drahtpreisdatensatz_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ds_dp_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ds_dp_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="dp_drahtpreis" Relationship="angebotserstellungModel.drahtpreisdatensatz_ID_FK" FromRole="ds_dp_drahtpreisdatensatz" ToRole="dp_drahtpreis" />
+    <NavigationProperty Name="vk_vorkalkulation" Relationship="angebotserstellungModel.drahtpreisdatensatz_ID0" FromRole="ds_dp_drahtpreisdatensatz" ToRole="vk_vorkalkulation" />
+  </EntityType>
+  <EntityType Name="ds_exd_dienstleistungsdatensatz">
+    <Key>
+      <PropertyRef Name="ds_exd_dienstleistungsdatensatz_ID" />
+    </Key>
+    <Property Name="ds_exd_dienstleistungsdatensatz_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ds_exd_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ds_exd_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="exd_dienstleistungspreis" Relationship="angebotserstellungModel.veredelungsdatensatz_ID_FK" FromRole="ds_exd_dienstleistungsdatensatz" ToRole="exd_dienstleistungspreis" />
+  </EntityType>
+  <EntityType Name="ds_ext_teildatensatz">
+    <Key>
+      <PropertyRef Name="ds_ext_teildatensatz_ID" />
+    </Key>
+    <Property Name="ds_ext_teildatensatz_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ds_ext_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ds_ext_angelegt_am" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="ext_teilpreis" Relationship="angebotserstellungModel.zukaufdatensatz_ID_FK1" FromRole="ds_ext_teildatensatz" ToRole="ext_teilpreis" />
+    <NavigationProperty Name="vk_vorkalkulation" Relationship="angebotserstellungModel.zukaufdatensatz_ID0" FromRole="ds_ext_teildatensatz" ToRole="vk_vorkalkulation" />
+  </EntityType>
+  <EntityType Name="ds_gk_gemeinkostendatensatz">
+    <Key>
+      <PropertyRef Name="ds_gk_gemeinkostendatensatz_ID" />
+    </Key>
+    <Property Name="ds_gk_gemeinkostendatensatz_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ds_gk_mgk1" Type="Single" />
+    <Property Name="ds_gk_mgk2" Type="Single" />
+    <Property Name="ds_gk_mgk3" Type="Single" />
+    <Property Name="ds_gk_fgk" Type="Single" />
+    <Property Name="ds_gk_vwgk" Type="Single" />
+    <Property Name="ds_gk_angelegt_am" Type="DateTime" />
+    <Property Name="ds_gk_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="vk_vorkalkulation" Relationship="angebotserstellungModel.gemeinkostendatensatz_ID0" FromRole="ds_gk_gemeinkostendatensatz" ToRole="vk_vorkalkulation" />
+  </EntityType>
+  <EntityType Name="ds_sk_sonderkostendatensatz">
+    <Key>
+      <PropertyRef Name="ds_sk_sonderkostendatensatz_ID" />
+    </Key>
+    <Property Name="ds_sk_sonderkostendatensatz_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ds_sk_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ds_sk_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="sk_sonderkostenpreis" Relationship="angebotserstellungModel.sonderkostendatensatz_ID_FK_99" FromRole="ds_sk_sonderkostendatensatz" ToRole="sk_sonderkostenpreis" />
+    <NavigationProperty Name="vk_vorkalkulation" Relationship="angebotserstellungModel.sonderkostendatensatz_ID_FK550" FromRole="ds_sk_sonderkostendatensatz" ToRole="vk_vorkalkulation" />
+  </EntityType>
+  <EntityType Name="ds_wz_werkzeugdatensatz">
+    <Key>
+      <PropertyRef Name="ds_wz_werkzeugdatensatz_ID" />
+    </Key>
+    <Property Name="ds_wz_werkzeugdatensatz_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ds_wz_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ds_wz_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="wz_werkzeugpreis" Relationship="angebotserstellungModel.werkzeugdatensatz_ID_FK3" FromRole="ds_wz_werkzeugdatensatz" ToRole="wz_werkzeugpreis" />
+    <NavigationProperty Name="vk_vorkalkulation" Relationship="angebotserstellungModel.werkzeugdatensatz_ID0" FromRole="ds_wz_werkzeugdatensatz" ToRole="vk_vorkalkulation" />
+  </EntityType>
+  <EntityType Name="e_einkaeufer">
+    <Key>
+      <PropertyRef Name="e_einkaeufer_ID" />
+    </Key>
+    <Property Name="e_einkaeufer_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="e_kunde_ID" Type="Int32" Nullable="false" />
+    <Property Name="e_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_einkaeufer1" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="e_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="e_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="e_ungueltig_am" Type="DateTime" />
+    <Property Name="e_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ka_kundenanfrage" Relationship="angebotserstellungModel.Einkäufer_ID" FromRole="e_einkaeufer" ToRole="ka_kundenanfrage" />
+    <NavigationProperty Name="k_kunde" Relationship="angebotserstellungModel.kunde_ID_FK3" FromRole="e_einkaeufer" ToRole="k_kunde" />
+  </EntityType>
+  <EntityType Name="exd_dienstleistungspreis">
+    <Key>
+      <PropertyRef Name="exd_dienstleistungspreis_ID" />
+    </Key>
+    <Property Name="exd_dienstleistungspreis_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="exd_nummer" Type="Int32" />
+    <Property Name="exd_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="exd_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="exd_abmessung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exd_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exd_mengeneinheit" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="exd_preis_pro_me" Type="Single" />
+    <Property Name="exd_leistungsfaktor" Type="Single" />
+    <Property Name="exd_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="exd_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exd_dienstleistungsdatensatz_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ds_exd_dienstleistungsdatensatz" Relationship="angebotserstellungModel.veredelungsdatensatz_ID_FK" FromRole="exd_dienstleistungspreis" ToRole="ds_exd_dienstleistungsdatensatz" />
+    <NavigationProperty Name="me_mengeneinheit" Relationship="angebotserstellungModel.mengeneinheit_FK_343" FromRole="exd_dienstleistungspreis" ToRole="me_mengeneinheit" />
+  </EntityType>
+  <EntityType Name="exdpos_dienstleistungsposition">
+    <Key>
+      <PropertyRef Name="exdpos_dienstleistungsposition_ID" />
+    </Key>
+    <Property Name="exdpos_dienstleistungsposition_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="exdpos_nummer" Type="Int32" />
+    <Property Name="exdpos_angelegt_am" Type="DateTime" />
+    <Property Name="exdpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_abmessung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_preis_pro_me" Type="Single" />
+    <Property Name="exdpos_kosten" Type="Single" />
+    <Property Name="exdpos_leistungsfaktor" Type="Single" />
+    <Property Name="exdpos_mengeneinheit" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_mgk2_faktor" Type="Single" />
+    <Property Name="exdpos_setze_gk_0" Type="Int32" />
+    <Property Name="exdpos_ds_ID" Type="Int32" />
+    <NavigationProperty Name="vk_exdpos" Relationship="angebotserstellungModel.exdpos_ID_FK" FromRole="exdpos_dienstleistungsposition" ToRole="vk_exdpos" />
+    <NavigationProperty Name="me_mengeneinheit" Relationship="angebotserstellungModel.mengeneinheit_FK_11" FromRole="exdpos_dienstleistungsposition" ToRole="me_mengeneinheit" />
+  </EntityType>
+  <EntityType Name="ext_teilpreis">
+    <Key>
+      <PropertyRef Name="ext_teilpreis_ID" />
+    </Key>
+    <Property Name="ext_teilpreis_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ext_teildatensatz_ID" Type="Int32" />
+    <Property Name="ext_nummer" Type="Int32" />
+    <Property Name="ext_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ext_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ext_abmessung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ext_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ext_mengeneinheit" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="ext_preis_pro_me" Type="Single" />
+    <Property Name="ext_leistungsfaktor" Type="Single" />
+    <Property Name="ext_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ext_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ext_teilpreiscol" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ds_ext_teildatensatz" Relationship="angebotserstellungModel.zukaufdatensatz_ID_FK1" FromRole="ext_teilpreis" ToRole="ds_ext_teildatensatz" />
+    <NavigationProperty Name="me_mengeneinheit" Relationship="angebotserstellungModel.mengeneinheit_FK_231" FromRole="ext_teilpreis" ToRole="me_mengeneinheit" />
+  </EntityType>
+  <EntityType Name="extpos_teilposition">
+    <Key>
+      <PropertyRef Name="extpos_teilposition_ID" />
+    </Key>
+    <Property Name="extpos_teilposition_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="extpos_kundenanfrage_ID" Type="Int32" />
+    <Property Name="extpos_nummer" Type="Int32" />
+    <Property Name="extpos_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_abmessung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_mengeneinheit" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_preis_pro_me" Type="Single" />
+    <Property Name="extpos_menge_in_me" Type="Single" />
+    <Property Name="extpos_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_leistungsfaktor" Type="Single" />
+    <Property Name="extpos_mgk2_faktor" Type="Single" />
+    <Property Name="extpos_kosten" Type="Single" />
+    <Property Name="extpos_setze_gk_0" Type="Int32" />
+    <Property Name="extpos_ds_ID" Type="Int32" />
+    <Property Name="extpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="vk_extpos" Relationship="angebotserstellungModel.extpos_ID_FK" FromRole="extpos_teilposition" ToRole="vk_extpos" />
+    <NavigationProperty Name="ka_kundenanfrage" Relationship="angebotserstellungModel.kundenanfrage_ID_FK01" FromRole="extpos_teilposition" ToRole="ka_kundenanfrage" />
+    <NavigationProperty Name="me_mengeneinheit" Relationship="angebotserstellungModel.mengeneinheit_FK5" FromRole="extpos_teilposition" ToRole="me_mengeneinheit" />
+  </EntityType>
+  <EntityType Name="f_freigabe">
+    <Key>
+      <PropertyRef Name="f_freigabe_ID" />
+    </Key>
+    <Property Name="f_freigabe_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="f_vorkalkulation_ID" Type="Int32" Nullable="false" />
+    <Property Name="f_kommentar" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="f_status" Type="String" Nullable="false" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="f_ungueltig_am" Type="DateTime" />
+    <Property Name="f_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="f_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="f_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="vk_vorkalkulation" Relationship="angebotserstellungModel.vorkalkulation_ID_FK_1231" FromRole="f_freigabe" ToRole="vk_vorkalkulation" />
+  </EntityType>
+  <EntityType Name="fb_freigabeberechtigung">
+    <Key>
+      <PropertyRef Name="fb_freigabeberechtigung_ID" />
+    </Key>
+    <Property Name="fb_freigabeberechtigung_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fb_login" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="fb_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="fb_name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="g_guete">
+    <Key>
+      <PropertyRef Name="g_guete_ID" />
+    </Key>
+    <Property Name="g_guete_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="g_guete1" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="g_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="g_angelegt_am" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="h_hersteller">
+    <Key>
+      <PropertyRef Name="h_hersteller_ID" />
+    </Key>
+    <Property Name="h_hersteller_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="h_hersteller1" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="k_kunde">
+    <Key>
+      <PropertyRef Name="k_kunde_ID" />
+    </Key>
+    <Property Name="k_kunde_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="k_kunde1" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="k_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="k_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_ungueltig_am" Type="DateTime" Nullable="false" />
+    <Property Name="k_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="e_einkaeufer" Relationship="angebotserstellungModel.kunde_ID_FK3" FromRole="k_kunde" ToRole="e_einkaeufer" />
+  </EntityType>
+  <EntityType Name="ka_kundenanfrage">
+    <Key>
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+    </Key>
+    <Property Name="ka_kundenanfrage_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ka_anfragenummer" Type="Int32" />
+    <Property Name="ka_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_verwendung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angefragt_am" Type="DateTime" />
+    <Property Name="ka_angebotsfrist" Type="DateTime" />
+    <Property Name="ka_hersteller" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zustaendig" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="ka_ungueltig_am" Type="DateTime" />
+    <Property Name="ka_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_modus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_produktgruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_artikelbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_guete" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zeichnungsnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_aenderungsindex" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_durchmesser" Type="Single" />
+    <Property Name="ka_laenge" Type="Single" />
+    <Property Name="ka_gewindesteigung" Type="Single" />
+    <Property Name="ka_fertiggewicht" Type="Single" />
+    <Property Name="ka_einsatzgewicht" Type="Single" />
+    <Property Name="ka_abc_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundenkommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_ID" Type="Int32" />
+    <Property Name="ka_offen_vertrieb" Type="Int32" />
+    <Property Name="ka_offen_te" Type="Int32" />
+    <Property Name="ka_vk_angefordert" Type="Int32" />
+    <Property Name="ka_vk_kommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="d_datei" Relationship="angebotserstellungModel.kundenanfrage_ID_FK200" FromRole="ka_kundenanfrage" ToRole="d_datei" />
+    <NavigationProperty Name="e_einkaeufer" Relationship="angebotserstellungModel.Einkäufer_ID" FromRole="ka_kundenanfrage" ToRole="e_einkaeufer" />
+    <NavigationProperty Name="extpos_teilposition" Relationship="angebotserstellungModel.kundenanfrage_ID_FK01" FromRole="ka_kundenanfrage" ToRole="extpos_teilposition" />
+    <NavigationProperty Name="m_mengenpos" Relationship="angebotserstellungModel.kundenanfrage_ID" FromRole="ka_kundenanfrage" ToRole="m_mengenpos" />
+    <Property Type="String" Name="ka_potenzial" MaxLength="65532" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="kg_kundengruppe">
+    <Key>
+      <PropertyRef Name="kg_kundengruppe_ID" />
+    </Key>
+    <Property Name="kg_kundengruppe_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kg_bezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="m_mengenpos">
+    <Key>
+      <PropertyRef Name="m_mengenPos_ID" />
+    </Key>
+    <Property Name="m_nummer" Type="Int32" />
+    <Property Name="m_mengenPos_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="m_jahresmenge" Type="Int32" />
+    <Property Name="m_anfragenummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="m_ungueltig_am" Type="DateTime" />
+    <Property Name="m_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_abgelehnt_am" Type="DateTime" />
+    <Property Name="m_abgelehnt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_preis_vertrieb" Type="Single" />
+    <Property Name="m_marge" Type="Single" />
+    <Property Name="m_umsatz" Type="Single" />
+    <Property Name="m_werkzeugkosten" Type="Single" />
+    <Property Name="m_tonnenerloes" Type="Single" />
+    <Property Name="m_tonage" Type="Single" />
+    <Property Name="m_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="m_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_angeboten_am" Type="DateTime" />
+    <Property Name="m_auftrag_erhalten_am" Type="DateTime" />
+    <Property Name="m_preis_wettbewerber" Type="Single" />
+    <Property Name="m_SOP" Type="DateTime" />
+    <Property Name="m_ablehnungsgrund" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_kundenanfrage_ID" Type="Int32" />
+    <Property Name="m_abteilungsstatus" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="m_vk_angefordert" Type="Int32" />
+    <Property Name="m_wettbewerber" Type="Int32" />
+    <Property Name="m_abgelehnt" Type="Int32" />
+    <Property Name="m_ungueltig" Type="Int32" />
+    <Property Name="m_angeboten" Type="Int32" />
+    <Property Name="m_te_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_vk_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_herstellbar" Type="Int32" />
+    <Property Name="m_kapazitaet" Type="Int32" />
+    <Property Name="m_auftrag" Type="Int32" />
+    <Property Name="m_abgelehnt_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_wettbewerber_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_nachgefasst_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_gesamtumsatz" Type="Single" />
+    <Property Name="m_angebotspreis" Type="Single" />
+    <Property Name="m_vertriebsstatus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ka_kundenanfrage" Relationship="angebotserstellungModel.kundenanfrage_ID" FromRole="m_mengenpos" ToRole="ka_kundenanfrage" />
+    <NavigationProperty Name="vk_vorkalkulation" Relationship="angebotserstellungModel.mengenPos_ID_FK10" FromRole="m_mengenpos" ToRole="vk_vorkalkulation" />
+  </EntityType>
+  <EntityType Name="me_mengeneinheit">
+    <Key>
+      <PropertyRef Name="me_mengeneinheit1" />
+    </Key>
+    <Property Name="me_mengeneinheit1" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="me_faktor" Type="Single" />
+    <Property Name="me_leistungsbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="me_losgroesseneinheit" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="me_nummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="apos_anlagenposition" Relationship="angebotserstellungModel.mengeneinheit_FK1" FromRole="me_mengeneinheit" ToRole="apos_anlagenposition" />
+    <NavigationProperty Name="exd_dienstleistungspreis" Relationship="angebotserstellungModel.mengeneinheit_FK_343" FromRole="me_mengeneinheit" ToRole="exd_dienstleistungspreis" />
+    <NavigationProperty Name="exdpos_dienstleistungsposition" Relationship="angebotserstellungModel.mengeneinheit_FK_11" FromRole="me_mengeneinheit" ToRole="exdpos_dienstleistungsposition" />
+    <NavigationProperty Name="ext_teilpreis" Relationship="angebotserstellungModel.mengeneinheit_FK_231" FromRole="me_mengeneinheit" ToRole="ext_teilpreis" />
+    <NavigationProperty Name="extpos_teilposition" Relationship="angebotserstellungModel.mengeneinheit_FK5" FromRole="me_mengeneinheit" ToRole="extpos_teilposition" />
+  </EntityType>
+  <EntityType Name="mv_mitarbeiter_vertrieb">
+    <Key>
+      <PropertyRef Name="mv_mitarbeiter_ID" />
+    </Key>
+    <Property Name="mv_mitarbeiter_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mv_email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="mv_name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pg_produktgruppe">
+    <Key>
+      <PropertyRef Name="pg_produktgruppe_ID" />
+    </Key>
+    <Property Name="pg_produktgruppe_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pg_bezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="s_vertriebsstatus">
+    <Key>
+      <PropertyRef Name="s_vertriebsstatus_ID" />
+    </Key>
+    <Property Name="s_vertriebsstatus_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="s_bezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sk_sonderkostenpreis">
+    <Key>
+      <PropertyRef Name="sk_sonderkostenpreis_ID" />
+    </Key>
+    <Property Name="sk_sonderkostenpreis_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sk_sonderkostendatensatz_ID" Type="Int32" Nullable="false" />
+    <Property Name="sk_nummer" Type="Int32" />
+    <Property Name="sk_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="sk_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="sk_preis" Type="Single" />
+    <Property Name="sk_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="sk_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ds_sk_sonderkostendatensatz" Relationship="angebotserstellungModel.sonderkostendatensatz_ID_FK_99" FromRole="sk_sonderkostenpreis" ToRole="ds_sk_sonderkostendatensatz" />
+  </EntityType>
+  <EntityType Name="skpos_sonderkostenposition">
+    <Key>
+      <PropertyRef Name="skpos_sonderkostenposition_ID" />
+    </Key>
+    <Property Name="skpos_sonderkostenposition_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="skpos_nummer" Type="Int32" />
+    <Property Name="skpos_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="skpos_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="skpos_preis" Type="Single" />
+    <Property Name="skpos_kosten" Type="Single" />
+    <Property Name="skpos_ds_ID" Type="Int32" />
+    <Property Name="skpos_angelegt_am" Type="DateTime" />
+    <Property Name="skpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="vk_skpos" Relationship="angebotserstellungModel.skpos_ID_FK" FromRole="skpos_sonderkostenposition" ToRole="vk_skpos" />
+  </EntityType>
+  <EntityType Name="v_vertreter">
+    <Key>
+      <PropertyRef Name="v_vertreter_ID" />
+    </Key>
+    <Property Name="v_vertreter_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="v_name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vk_apos">
+    <Key>
+      <PropertyRef Name="vk_apos_ID" />
+    </Key>
+    <Property Name="vk_apos_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vk_apos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_apos_anlagenposition_ID" Type="Int32" />
+    <NavigationProperty Name="apos_anlagenposition" Relationship="angebotserstellungModel.apos_ID_FK" FromRole="vk_apos" ToRole="apos_anlagenposition" />
+  </EntityType>
+  <EntityType Name="vk_dpos">
+    <Key>
+      <PropertyRef Name="vk_dpos_ID" />
+    </Key>
+    <Property Name="vk_dpos_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vk_dpos_vorkalkulation_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_dpos_drahtposition_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="dpos_drahtposition" Relationship="angebotserstellungModel.dpos_ID_FK" FromRole="vk_dpos" ToRole="dpos_drahtposition" />
+  </EntityType>
+  <EntityType Name="vk_exdpos">
+    <Key>
+      <PropertyRef Name="vk_exdpos_ID" />
+    </Key>
+    <Property Name="vk_exdpos_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vk_exdpos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_exdpos_dienstleistungsposition_ID" Type="Int32" />
+    <NavigationProperty Name="exdpos_dienstleistungsposition" Relationship="angebotserstellungModel.exdpos_ID_FK" FromRole="vk_exdpos" ToRole="exdpos_dienstleistungsposition" />
+  </EntityType>
+  <EntityType Name="vk_extpos">
+    <Key>
+      <PropertyRef Name="vk_extpos_ID" />
+    </Key>
+    <Property Name="vk_extpos_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vk_extpos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_extpos_teilposition_ID" Type="Int32" />
+    <NavigationProperty Name="extpos_teilposition" Relationship="angebotserstellungModel.extpos_ID_FK" FromRole="vk_extpos" ToRole="extpos_teilposition" />
+  </EntityType>
+  <EntityType Name="vk_skpos">
+    <Key>
+      <PropertyRef Name="vk_skpos_ID" />
+    </Key>
+    <Property Name="vk_skpos_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vk_skpos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_skpos_sonderkostenposition_ID" Type="Int32" />
+    <NavigationProperty Name="skpos_sonderkostenposition" Relationship="angebotserstellungModel.skpos_ID_FK" FromRole="vk_skpos" ToRole="skpos_sonderkostenposition" />
+  </EntityType>
+  <EntityType Name="vk_vorkalkulation">
+    <Key>
+      <PropertyRef Name="vk_vorkalkulation_ID" />
+    </Key>
+    <Property Name="vk_vorkalkulation_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vk_mengenPos_ID" Type="Int32" />
+    <Property Name="vk_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="vk_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_bearbeitet_am" Type="DateTime" />
+    <Property Name="vk_bearbeitet_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_abgelehnt_am" Type="DateTime" />
+    <Property Name="vk_abgelehnt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_status" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_ungültig_am" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_ungültig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_kommentar_vertrieb" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="vk_kommentar_te" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="vk_gueltigkeit_tage" Type="Int32" />
+    <Property Name="vk_gueltigkeit_datum" Type="DateTime" />
+    <Property Name="vk_ta_te_anfrage_ID" Type="Int32" />
+    <Property Name="vk_anlagendatensatz_ID" Type="Int32" />
+    <Property Name="vk_lieferzeit_in_wochen" Type="Single" />
+    <Property Name="vk_rohstoffkosten" Type="Single" />
+    <Property Name="vk_dienstleistungskosten" Type="Single" />
+    <Property Name="vk_werkzeugkosten" Type="Single" />
+    <Property Name="vk_teilkosten" Type="Single" />
+    <Property Name="vk_materialkosten" Type="Single" />
+    <Property Name="vk_produktionskosten" Type="Single" />
+    <Property Name="vk_ruestkosten" Type="Single" />
+    <Property Name="vk_fertigungskosten" Type="Single" />
+    <Property Name="vk_grenzherstellkosten" Type="Single" />
+    <Property Name="vk_herstellkosten" Type="Single" />
+    <Property Name="vk_verwaltungsgemeinkosten" Type="Single" />
+    <Property Name="vk_selbstkosten" Type="Single" />
+    <Property Name="vk_sonderkosten" Type="Single" />
+    <Property Name="vk_drahtpreisdatensatz_ID" Type="Int32" />
+    <Property Name="vk_gemeinkostendatensatz_ID" Type="Int32" />
+    <Property Name="vk_dienstleistungsdatensatz_ID" Type="Int32" />
+    <Property Name="vk_werkzeugdatensatz_ID" Type="Int32" />
+    <Property Name="vk_teildatensatz_ID" Type="Int32" />
+    <Property Name="vk_sonderkostendatensatz_ID" Type="Int32" />
+    <Property Name="vk_dspr1" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr2" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr3" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr4" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr5" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr6" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr7" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr8" Type="Boolean" Nullable="false" />
+    <Property Name="vk_geschlossen" Type="Int32" />
+    <Property Name="vk_abgelehnt" Type="Int32" />
+    <Property Name="vk_gf_freigabe" Type="Int32" />
+    <Property Name="vk_freigegeben" Type="Int32" />
+    <Property Name="vk_veroeffentlicht" Type="Int32" />
+    <NavigationProperty Name="ds_at_anlagendatensatz" Relationship="angebotserstellungModel.anlagendatensatz_ID_FK0" FromRole="vk_vorkalkulation" ToRole="ds_at_anlagendatensatz" />
+    <NavigationProperty Name="ds_dp_drahtpreisdatensatz" Relationship="angebotserstellungModel.drahtpreisdatensatz_ID0" FromRole="vk_vorkalkulation" ToRole="ds_dp_drahtpreisdatensatz" />
+    <NavigationProperty Name="ds_ext_teildatensatz" Relationship="angebotserstellungModel.zukaufdatensatz_ID0" FromRole="vk_vorkalkulation" ToRole="ds_ext_teildatensatz" />
+    <NavigationProperty Name="ds_gk_gemeinkostendatensatz" Relationship="angebotserstellungModel.gemeinkostendatensatz_ID0" FromRole="vk_vorkalkulation" ToRole="ds_gk_gemeinkostendatensatz" />
+    <NavigationProperty Name="ds_sk_sonderkostendatensatz" Relationship="angebotserstellungModel.sonderkostendatensatz_ID_FK550" FromRole="vk_vorkalkulation" ToRole="ds_sk_sonderkostendatensatz" />
+    <NavigationProperty Name="ds_wz_werkzeugdatensatz" Relationship="angebotserstellungModel.werkzeugdatensatz_ID0" FromRole="vk_vorkalkulation" ToRole="ds_wz_werkzeugdatensatz" />
+    <NavigationProperty Name="f_freigabe" Relationship="angebotserstellungModel.vorkalkulation_ID_FK_1231" FromRole="vk_vorkalkulation" ToRole="f_freigabe" />
+    <NavigationProperty Name="m_mengenpos" Relationship="angebotserstellungModel.mengenPos_ID_FK10" FromRole="vk_vorkalkulation" ToRole="m_mengenpos" />
+  </EntityType>
+  <EntityType Name="vk_wzpos">
+    <Key>
+      <PropertyRef Name="vk_wzpos_ID" />
+    </Key>
+    <Property Name="vk_wzpos_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vk_wzpos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_wzpos_werkzeugposition_ID" Type="Int32" />
+    <NavigationProperty Name="wzpos_werkzeugposition" Relationship="angebotserstellungModel.wzpos_ID_FK" FromRole="vk_wzpos" ToRole="wzpos_werkzeugposition" />
+  </EntityType>
+  <EntityType Name="wz_werkzeugpreis">
+    <Key>
+      <PropertyRef Name="wz_werkzeugpreis_ID" />
+    </Key>
+    <Property Name="wz_werkzeugpreis_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="wz_werkzeugdatensatz_ID" Type="Int32" Nullable="false" />
+    <Property Name="wz_nummer" Type="Int32" />
+    <Property Name="wz_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="wz_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="wz_standzeit" Type="Single" />
+    <Property Name="wz_preis" Type="Single" />
+    <Property Name="wz_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="wz_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ds_wz_werkzeugdatensatz" Relationship="angebotserstellungModel.werkzeugdatensatz_ID_FK3" FromRole="wz_werkzeugpreis" ToRole="ds_wz_werkzeugdatensatz" />
+  </EntityType>
+  <EntityType Name="wzpos_werkzeugposition">
+    <Key>
+      <PropertyRef Name="wzpos_werkzeugposition_ID" />
+    </Key>
+    <Property Name="wzpos_werkzeugposition_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="wzpos_nummer" Type="Int32" />
+    <Property Name="wzpos_werkzeugpositioncol" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="wzpos_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="wzpos_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="wzpos_stufe" Type="Int32" />
+    <Property Name="wzpos_standzeit" Type="Single" />
+    <Property Name="wzpos_preis" Type="Single" />
+    <Property Name="wzpos_mgk3_faktor" Type="Single" />
+    <Property Name="wzpos_anzahl" Type="Int32" />
+    <Property Name="wzpos_kosten" Type="Single" />
+    <Property Name="wzpos_anzahl_bereinigt" Type="Int32" />
+    <Property Name="wzpos_ds_ID" Type="Int32" />
+    <Property Name="wzpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="wzpos_angelegt_am" Type="DateTime" />
+    <NavigationProperty Name="vk_wzpos" Relationship="angebotserstellungModel.wzpos_ID_FK" FromRole="wzpos_werkzeugposition" ToRole="vk_wzpos" />
+  </EntityType>
+  <EntityType Name="dt_vk_vertrieb_join">
+    <Key>
+      <PropertyRef Name="vk_vorkalkulation_ID" />
+      <PropertyRef Name="vk_angelegt_am" />
+      <PropertyRef Name="vk_angelegt_von" />
+      <PropertyRef Name="vk_dspr1" />
+      <PropertyRef Name="vk_dspr2" />
+      <PropertyRef Name="vk_dspr3" />
+      <PropertyRef Name="vk_dspr4" />
+      <PropertyRef Name="vk_dspr5" />
+      <PropertyRef Name="vk_dspr6" />
+      <PropertyRef Name="vk_dspr7" />
+      <PropertyRef Name="vk_dspr8" />
+      <PropertyRef Name="m_mengenPos_ID" />
+      <PropertyRef Name="m_angelegt_am" />
+      <PropertyRef Name="m_angelegt_von" />
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+    </Key>
+    <Property Name="vk_vorkalkulation_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_mengenPos_ID" Type="Int32" />
+    <Property Name="vk_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="vk_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_bearbeitet_am" Type="DateTime" />
+    <Property Name="vk_bearbeitet_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_abgelehnt_am" Type="DateTime" />
+    <Property Name="vk_abgelehnt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_status" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_ungültig_am" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_ungültig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_kommentar_vertrieb" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="vk_kommentar_te" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="vk_gueltigkeit_tage" Type="Int32" />
+    <Property Name="vk_gueltigkeit_datum" Type="DateTime" />
+    <Property Name="vk_ta_te_anfrage_ID" Type="Int32" />
+    <Property Name="vk_anlagendatensatz_ID" Type="Int32" />
+    <Property Name="vk_lieferzeit_in_wochen" Type="Single" />
+    <Property Name="vk_rohstoffkosten" Type="Single" />
+    <Property Name="vk_dienstleistungskosten" Type="Single" />
+    <Property Name="vk_werkzeugkosten" Type="Single" />
+    <Property Name="vk_teilkosten" Type="Single" />
+    <Property Name="vk_materialkosten" Type="Single" />
+    <Property Name="vk_produktionskosten" Type="Single" />
+    <Property Name="vk_ruestkosten" Type="Single" />
+    <Property Name="vk_fertigungskosten" Type="Single" />
+    <Property Name="vk_grenzherstellkosten" Type="Single" />
+    <Property Name="vk_herstellkosten" Type="Single" />
+    <Property Name="vk_verwaltungsgemeinkosten" Type="Single" />
+    <Property Name="vk_selbstkosten" Type="Single" />
+    <Property Name="vk_sonderkosten" Type="Single" />
+    <Property Name="vk_drahtpreisdatensatz_ID" Type="Int32" />
+    <Property Name="vk_gemeinkostendatensatz_ID" Type="Int32" />
+    <Property Name="vk_dienstleistungsdatensatz_ID" Type="Int32" />
+    <Property Name="vk_werkzeugdatensatz_ID" Type="Int32" />
+    <Property Name="vk_teildatensatz_ID" Type="Int32" />
+    <Property Name="vk_sonderkostendatensatz_ID" Type="Int32" />
+    <Property Name="vk_dspr1" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr2" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr3" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr4" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr5" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr6" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr7" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr8" Type="Boolean" Nullable="false" />
+    <Property Name="vk_geschlossen" Type="Int32" />
+    <Property Name="vk_abgelehnt" Type="Int32" />
+    <Property Name="vk_gf_freigabe" Type="Int32" />
+    <Property Name="vk_freigegeben" Type="Int32" />
+    <Property Name="vk_veroeffentlicht" Type="Int32" />
+    <Property Name="m_nummer" Type="Int32" />
+    <Property Name="m_mengenPos_ID" Type="Int32" Nullable="false" />
+    <Property Name="m_jahresmenge" Type="Int32" />
+    <Property Name="m_anfragenummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="m_ungueltig_am" Type="DateTime" />
+    <Property Name="m_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_abgelehnt_am" Type="DateTime" />
+    <Property Name="m_abgelehnt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_preis_vertrieb" Type="Single" />
+    <Property Name="m_marge" Type="Single" />
+    <Property Name="m_umsatz" Type="Single" />
+    <Property Name="m_werkzeugkosten" Type="Single" />
+    <Property Name="m_tonnenerloes" Type="Single" />
+    <Property Name="m_tonage" Type="Single" />
+    <Property Name="m_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="m_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_angeboten_am" Type="DateTime" />
+    <Property Name="m_auftrag_erhalten_am" Type="DateTime" />
+    <Property Name="m_preis_wettbewerber" Type="Single" />
+    <Property Name="m_SOP" Type="DateTime" />
+    <Property Name="m_ablehnungsgrund" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_kundenanfrage_ID" Type="Int32" />
+    <Property Name="m_abteilungsstatus" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="m_vk_angefordert" Type="Int32" />
+    <Property Name="m_wettbewerber" Type="Int32" />
+    <Property Name="m_abgelehnt" Type="Int32" />
+    <Property Name="m_ungueltig" Type="Int32" />
+    <Property Name="m_angeboten" Type="Int32" />
+    <Property Name="m_te_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_vk_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_herstellbar" Type="Int32" />
+    <Property Name="m_kapazitaet" Type="Int32" />
+    <Property Name="m_auftrag" Type="Int32" />
+    <Property Name="m_abgelehnt_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_wettbewerber_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_nachgefasst_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_gesamtumsatz" Type="Single" />
+    <Property Name="m_angebotspreis" Type="Single" />
+    <Property Name="m_vertriebsstatus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundenanfrage_ID" Type="Int32" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="Int32" />
+    <Property Name="ka_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_verwendung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angefragt_am" Type="DateTime" />
+    <Property Name="ka_angebotsfrist" Type="DateTime" />
+    <Property Name="ka_hersteller" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zustaendig" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="ka_ungueltig_am" Type="DateTime" />
+    <Property Name="ka_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_modus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_produktgruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_artikelbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_guete" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zeichnungsnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_aenderungsindex" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_durchmesser" Type="Single" />
+    <Property Name="ka_laenge" Type="Single" />
+    <Property Name="ka_gewindesteigung" Type="Single" />
+    <Property Name="ka_fertiggewicht" Type="Single" />
+    <Property Name="ka_einsatzgewicht" Type="Single" />
+    <Property Name="ka_abc_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundenkommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_ID" Type="Int32" />
+    <Property Name="ka_offen_vertrieb" Type="Int32" />
+    <Property Name="ka_offen_te" Type="Int32" />
+    <Property Name="ka_vk_angefordert" Type="Int32" />
+    <Property Name="ka_vk_kommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ka_kundenanfrage_join">
+    <Key>
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+      <PropertyRef Name="k_kunde_ID" />
+      <PropertyRef Name="k_angelegt_am" />
+      <PropertyRef Name="k_angelegt_von" />
+      <PropertyRef Name="k_ungueltig_am" />
+      <PropertyRef Name="e_einkaeufer_ID" />
+      <PropertyRef Name="e_kunde_ID" />
+      <PropertyRef Name="e_angelegt_am" />
+      <PropertyRef Name="e_angelegt_von" />
+    </Key>
+    <Property Name="ka_kundenanfrage_ID" Type="Int32" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="Int32" />
+    <Property Name="ka_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_verwendung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angefragt_am" Type="DateTime" />
+    <Property Name="ka_angebotsfrist" Type="DateTime" />
+    <Property Name="ka_hersteller" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zustaendig" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="ka_ungueltig_am" Type="DateTime" />
+    <Property Name="ka_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_modus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_produktgruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_artikelbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_guete" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zeichnungsnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_aenderungsindex" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_durchmesser" Type="Single" />
+    <Property Name="ka_laenge" Type="Single" />
+    <Property Name="ka_gewindesteigung" Type="Single" />
+    <Property Name="ka_fertiggewicht" Type="Single" />
+    <Property Name="ka_einsatzgewicht" Type="Single" />
+    <Property Name="ka_abc_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundenkommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_ID" Type="Int32" />
+    <Property Name="ka_offen_vertrieb" Type="Int32" />
+    <Property Name="ka_offen_te" Type="Int32" />
+    <Property Name="ka_vk_angefordert" Type="Int32" />
+    <Property Name="ka_vk_kommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_kunde_ID" Type="Int32" Nullable="false" />
+    <Property Name="k_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="k_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="k_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_ungueltig_am" Type="DateTime" Nullable="false" />
+    <Property Name="k_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="e_einkaeufer_ID" Type="Int32" Nullable="false" />
+    <Property Name="e_kunde_ID" Type="Int32" Nullable="false" />
+    <Property Name="e_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_einkaeufer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="e_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="e_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="e_ungueltig_am" Type="DateTime" />
+    <Property Name="e_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ka_kundenanfrage_mengenpos_join">
+    <Key>
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+      <PropertyRef Name="m_mengenPos_ID" />
+      <PropertyRef Name="m_angelegt_am" />
+      <PropertyRef Name="m_angelegt_von" />
+      <PropertyRef Name="e_einkaeufer_ID" />
+      <PropertyRef Name="e_kunde_ID" />
+      <PropertyRef Name="e_angelegt_am" />
+      <PropertyRef Name="e_angelegt_von" />
+      <PropertyRef Name="k_kunde_ID" />
+      <PropertyRef Name="k_angelegt_am" />
+      <PropertyRef Name="k_angelegt_von" />
+      <PropertyRef Name="k_ungueltig_am" />
+    </Key>
+    <Property Name="ka_kundenanfrage_ID" Type="Int32" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="Int32" />
+    <Property Name="ka_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_verwendung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angefragt_am" Type="DateTime" />
+    <Property Name="ka_angebotsfrist" Type="DateTime" />
+    <Property Name="ka_hersteller" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zustaendig" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="ka_ungueltig_am" Type="DateTime" />
+    <Property Name="ka_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_modus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_produktgruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_artikelbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_guete" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zeichnungsnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_aenderungsindex" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_durchmesser" Type="Single" />
+    <Property Name="ka_laenge" Type="Single" />
+    <Property Name="ka_gewindesteigung" Type="Single" />
+    <Property Name="ka_fertiggewicht" Type="Single" />
+    <Property Name="ka_einsatzgewicht" Type="Single" />
+    <Property Name="ka_abc_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundenkommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_ID" Type="Int32" />
+    <Property Name="ka_offen_vertrieb" Type="Int32" />
+    <Property Name="ka_offen_te" Type="Int32" />
+    <Property Name="ka_vk_angefordert" Type="Int32" />
+    <Property Name="ka_vk_kommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_nummer" Type="Int32" />
+    <Property Name="m_mengenPos_ID" Type="Int32" Nullable="false" />
+    <Property Name="m_jahresmenge" Type="Int32" />
+    <Property Name="m_anfragenummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="m_ungueltig_am" Type="DateTime" />
+    <Property Name="m_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_abgelehnt_am" Type="DateTime" />
+    <Property Name="m_abgelehnt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_preis_vertrieb" Type="Single" />
+    <Property Name="m_marge" Type="Single" />
+    <Property Name="m_umsatz" Type="Single" />
+    <Property Name="m_werkzeugkosten" Type="Single" />
+    <Property Name="m_tonnenerloes" Type="Single" />
+    <Property Name="m_tonage" Type="Single" />
+    <Property Name="m_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="m_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_angeboten_am" Type="DateTime" />
+    <Property Name="m_auftrag_erhalten_am" Type="DateTime" />
+    <Property Name="m_preis_wettbewerber" Type="Single" />
+    <Property Name="m_SOP" Type="DateTime" />
+    <Property Name="m_ablehnungsgrund" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_kundenanfrage_ID" Type="Int32" />
+    <Property Name="m_abteilungsstatus" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="m_vk_angefordert" Type="Int32" />
+    <Property Name="m_wettbewerber" Type="Int32" />
+    <Property Name="m_abgelehnt" Type="Int32" />
+    <Property Name="m_ungueltig" Type="Int32" />
+    <Property Name="m_angeboten" Type="Int32" />
+    <Property Name="m_te_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_vk_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_herstellbar" Type="Int32" />
+    <Property Name="m_kapazitaet" Type="Int32" />
+    <Property Name="m_auftrag" Type="Int32" />
+    <Property Name="m_abgelehnt_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_wettbewerber_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_nachgefasst_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_gesamtumsatz" Type="Single" />
+    <Property Name="m_angebotspreis" Type="Single" />
+    <Property Name="m_vertriebsstatus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_einkaeufer_ID" Type="Int32" Nullable="false" />
+    <Property Name="e_kunde_ID" Type="Int32" Nullable="false" />
+    <Property Name="e_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_einkaeufer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="e_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="e_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="e_ungueltig_am" Type="DateTime" />
+    <Property Name="e_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_kunde_ID" Type="Int32" Nullable="false" />
+    <Property Name="k_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="k_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="k_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_ungueltig_am" Type="DateTime" Nullable="false" />
+    <Property Name="k_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="kunde_einkaeufer_join">
+    <Key>
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+      <PropertyRef Name="k_kunde_ID" />
+      <PropertyRef Name="k_angelegt_am" />
+      <PropertyRef Name="k_angelegt_von" />
+      <PropertyRef Name="k_ungueltig_am" />
+      <PropertyRef Name="e_einkaeufer_ID" />
+      <PropertyRef Name="e_kunde_ID" />
+      <PropertyRef Name="e_angelegt_am" />
+      <PropertyRef Name="e_angelegt_von" />
+    </Key>
+    <Property Name="ka_kundenanfrage_ID" Type="Int32" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="Int32" />
+    <Property Name="ka_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_verwendung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angefragt_am" Type="DateTime" />
+    <Property Name="ka_angebotsfrist" Type="DateTime" />
+    <Property Name="ka_hersteller" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zustaendig" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="ka_ungueltig_am" Type="DateTime" />
+    <Property Name="ka_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_modus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_produktgruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_artikelbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_guete" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zeichnungsnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_aenderungsindex" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_durchmesser" Type="Single" />
+    <Property Name="ka_laenge" Type="Single" />
+    <Property Name="ka_gewindesteigung" Type="Single" />
+    <Property Name="ka_fertiggewicht" Type="Single" />
+    <Property Name="ka_einsatzgewicht" Type="Single" />
+    <Property Name="ka_abc_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundenkommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_ID" Type="Int32" />
+    <Property Name="ka_offen_vertrieb" Type="Int32" />
+    <Property Name="ka_offen_te" Type="Int32" />
+    <Property Name="ka_vk_angefordert" Type="Int32" />
+    <Property Name="ka_vk_kommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_kunde_ID" Type="Int32" Nullable="false" />
+    <Property Name="k_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="k_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="k_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_ungueltig_am" Type="DateTime" Nullable="false" />
+    <Property Name="k_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="k_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="e_einkaeufer_ID" Type="Int32" Nullable="false" />
+    <Property Name="e_kunde_ID" Type="Int32" Nullable="false" />
+    <Property Name="e_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_einkaeufer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="e_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="e_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="e_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="e_ungueltig_am" Type="DateTime" />
+    <Property Name="e_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vk_apos_join">
+    <Key>
+      <PropertyRef Name="vk_apos_ID" />
+      <PropertyRef Name="apos_anlagenposition_ID" />
+    </Key>
+    <Property Name="vk_apos_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_apos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_apos_anlagenposition_ID" Type="Int32" />
+    <Property Name="apos_anlagenposition_ID" Type="Int32" Nullable="false" />
+    <Property Name="apos_anlagennummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apos_avonr" Type="Int32" />
+    <Property Name="apos_anlagengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apos_anlagenbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apos_tarif_anlage_pro_std" Type="Single" />
+    <Property Name="apos_tarif_personal_pro_std" Type="Single" />
+    <Property Name="apos_nennleistung_in_me" Type="Single" />
+    <Property Name="apos_losgroesse_in_me" Type="Int32" />
+    <Property Name="apos_ruestdauer_in_std" Type="Single" />
+    <Property Name="apos_anlagenverfuegbarkeit" Type="Single" />
+    <Property Name="apos_betreuungsaufwand_produktiv" Type="Single" />
+    <Property Name="apos_betreuungsaufwand_ruesten" Type="Single" />
+    <Property Name="apos_schichten" Type="Int32" />
+    <Property Name="apos_ausschussquote" Type="Single" />
+    <Property Name="apos_angelegt_am" Type="DateTime" />
+    <Property Name="apos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apos_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="apos_ungültig_von" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="apos_ruestkosten" Type="Single" />
+    <Property Name="apos_produktionskosten_pro_me" Type="Single" />
+    <Property Name="apos_ruestkosten_pro_st_kg" Type="Single" />
+    <Property Name="apos_ruestkosten_pro_los" Type="Single" />
+    <Property Name="apos_produktionskosten" Type="Single" />
+    <Property Name="apos_maschinenkosten_pro_me" Type="Single" />
+    <Property Name="apos_personalkosten_pro_me" Type="Single" />
+    <Property Name="apos_fgk_faktor" Type="Single" />
+    <Property Name="apos_mengeneinheit" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="apos_menge_in_me" Type="Single" />
+    <Property Name="apos_ds_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vk_dpos_join">
+    <Key>
+      <PropertyRef Name="vk_dpos_ID" />
+      <PropertyRef Name="vk_dpos_vorkalkulation_ID" />
+      <PropertyRef Name="vk_dpos_drahtposition_ID" />
+      <PropertyRef Name="dpos_drahtposition_ID" />
+    </Key>
+    <Property Name="vk_dpos_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_dpos_vorkalkulation_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_dpos_drahtposition_ID" Type="Int32" Nullable="false" />
+    <Property Name="dpos_drahtposition_ID" Type="Int32" Nullable="false" />
+    <Property Name="dpos_nummer" Type="Int32" />
+    <Property Name="dpos_ungültig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_gruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_bezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_preis_pro_tonne" Type="Single" />
+    <Property Name="dpos_schrottfaktor" Type="Single" />
+    <Property Name="dpos_schrotterloes_pro_tonne" Type="Single" />
+    <Property Name="dpos_kosten" Type="Single" />
+    <Property Name="dpos_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_angelegt_am" Type="DateTime" />
+    <Property Name="dpos_mgk_faktor" Type="Single" />
+    <Property Name="dpos_einsatzgewicht_in_tonnen" Type="Single" />
+    <Property Name="dpos_schrottgewicht_einsatzgewicht_in_tonnen" Type="Single" />
+    <Property Name="dpos_gültigkeit" Type="DateTime" />
+    <Property Name="dpos_schrottgewicht_diff_in_tonnen" Type="Single" />
+    <Property Name="dpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dpos_ds_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vk_exdpos_join">
+    <Key>
+      <PropertyRef Name="vk_exdpos_ID" />
+      <PropertyRef Name="exdpos_dienstleistungsposition_ID" />
+    </Key>
+    <Property Name="vk_exdpos_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_exdpos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_exdpos_dienstleistungsposition_ID" Type="Int32" />
+    <Property Name="exdpos_dienstleistungsposition_ID" Type="Int32" Nullable="false" />
+    <Property Name="exdpos_nummer" Type="Int32" />
+    <Property Name="exdpos_angelegt_am" Type="DateTime" />
+    <Property Name="exdpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_abmessung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_preis_pro_me" Type="Single" />
+    <Property Name="exdpos_kosten" Type="Single" />
+    <Property Name="exdpos_leistungsfaktor" Type="Single" />
+    <Property Name="exdpos_mengeneinheit" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="exdpos_mgk2_faktor" Type="Single" />
+    <Property Name="exdpos_setze_gk_0" Type="Int32" />
+    <Property Name="exdpos_ds_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vk_extpos_join">
+    <Key>
+      <PropertyRef Name="vk_extpos_ID" />
+      <PropertyRef Name="extpos_teilposition_ID" />
+    </Key>
+    <Property Name="vk_extpos_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_extpos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_extpos_teilposition_ID" Type="Int32" />
+    <Property Name="extpos_teilposition_ID" Type="Int32" Nullable="false" />
+    <Property Name="extpos_kundenanfrage_ID" Type="Int32" />
+    <Property Name="extpos_nummer" Type="Int32" />
+    <Property Name="extpos_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_abmessung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_mengeneinheit" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_preis_pro_me" Type="Single" />
+    <Property Name="extpos_menge_in_me" Type="Single" />
+    <Property Name="extpos_lieferant" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="extpos_leistungsfaktor" Type="Single" />
+    <Property Name="extpos_mgk2_faktor" Type="Single" />
+    <Property Name="extpos_kosten" Type="Single" />
+    <Property Name="extpos_setze_gk_0" Type="Int32" />
+    <Property Name="extpos_ds_ID" Type="Int32" />
+    <Property Name="extpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vk_skpos_join">
+    <Key>
+      <PropertyRef Name="vk_skpos_ID" />
+      <PropertyRef Name="skpos_sonderkostenposition_ID" />
+    </Key>
+    <Property Name="vk_skpos_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_skpos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_skpos_sonderkostenposition_ID" Type="Int32" />
+    <Property Name="skpos_sonderkostenposition_ID" Type="Int32" Nullable="false" />
+    <Property Name="skpos_nummer" Type="Int32" />
+    <Property Name="skpos_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="skpos_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="skpos_preis" Type="Single" />
+    <Property Name="skpos_kosten" Type="Single" />
+    <Property Name="skpos_ds_ID" Type="Int32" />
+    <Property Name="skpos_angelegt_am" Type="DateTime" />
+    <Property Name="skpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vk_vertrieb_join">
+    <Key>
+      <PropertyRef Name="vk_vorkalkulation_ID" />
+      <PropertyRef Name="vk_angelegt_am" />
+      <PropertyRef Name="vk_angelegt_von" />
+      <PropertyRef Name="vk_dspr1" />
+      <PropertyRef Name="vk_dspr2" />
+      <PropertyRef Name="vk_dspr3" />
+      <PropertyRef Name="vk_dspr4" />
+      <PropertyRef Name="vk_dspr5" />
+      <PropertyRef Name="vk_dspr6" />
+      <PropertyRef Name="vk_dspr7" />
+      <PropertyRef Name="vk_dspr8" />
+      <PropertyRef Name="m_mengenPos_ID" />
+      <PropertyRef Name="m_angelegt_am" />
+      <PropertyRef Name="m_angelegt_von" />
+      <PropertyRef Name="ka_kundenanfrage_ID" />
+      <PropertyRef Name="ka_angelegt_am" />
+      <PropertyRef Name="ka_angelegt_von" />
+    </Key>
+    <Property Name="vk_vorkalkulation_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_mengenPos_ID" Type="Int32" />
+    <Property Name="vk_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="vk_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_bearbeitet_am" Type="DateTime" />
+    <Property Name="vk_bearbeitet_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_abgelehnt_am" Type="DateTime" />
+    <Property Name="vk_abgelehnt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_status" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_ungültig_am" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_ungültig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="vk_kommentar_vertrieb" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="vk_kommentar_te" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="vk_gueltigkeit_tage" Type="Int32" />
+    <Property Name="vk_gueltigkeit_datum" Type="DateTime" />
+    <Property Name="vk_ta_te_anfrage_ID" Type="Int32" />
+    <Property Name="vk_anlagendatensatz_ID" Type="Int32" />
+    <Property Name="vk_lieferzeit_in_wochen" Type="Single" />
+    <Property Name="vk_rohstoffkosten" Type="Single" />
+    <Property Name="vk_dienstleistungskosten" Type="Single" />
+    <Property Name="vk_werkzeugkosten" Type="Single" />
+    <Property Name="vk_teilkosten" Type="Single" />
+    <Property Name="vk_materialkosten" Type="Single" />
+    <Property Name="vk_produktionskosten" Type="Single" />
+    <Property Name="vk_ruestkosten" Type="Single" />
+    <Property Name="vk_fertigungskosten" Type="Single" />
+    <Property Name="vk_grenzherstellkosten" Type="Single" />
+    <Property Name="vk_herstellkosten" Type="Single" />
+    <Property Name="vk_verwaltungsgemeinkosten" Type="Single" />
+    <Property Name="vk_selbstkosten" Type="Single" />
+    <Property Name="vk_sonderkosten" Type="Single" />
+    <Property Name="vk_drahtpreisdatensatz_ID" Type="Int32" />
+    <Property Name="vk_gemeinkostendatensatz_ID" Type="Int32" />
+    <Property Name="vk_dienstleistungsdatensatz_ID" Type="Int32" />
+    <Property Name="vk_werkzeugdatensatz_ID" Type="Int32" />
+    <Property Name="vk_teildatensatz_ID" Type="Int32" />
+    <Property Name="vk_sonderkostendatensatz_ID" Type="Int32" />
+    <Property Name="vk_dspr1" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr2" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr3" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr4" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr5" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr6" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr7" Type="Boolean" Nullable="false" />
+    <Property Name="vk_dspr8" Type="Boolean" Nullable="false" />
+    <Property Name="vk_geschlossen" Type="Int32" />
+    <Property Name="vk_abgelehnt" Type="Int32" />
+    <Property Name="vk_gf_freigabe" Type="Int32" />
+    <Property Name="vk_freigegeben" Type="Int32" />
+    <Property Name="vk_veroeffentlicht" Type="Int32" />
+    <Property Name="m_nummer" Type="Int32" />
+    <Property Name="m_mengenPos_ID" Type="Int32" Nullable="false" />
+    <Property Name="m_jahresmenge" Type="Int32" />
+    <Property Name="m_anfragenummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="m_ungueltig_am" Type="DateTime" />
+    <Property Name="m_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_abgelehnt_am" Type="DateTime" />
+    <Property Name="m_abgelehnt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_preis_vertrieb" Type="Single" />
+    <Property Name="m_marge" Type="Single" />
+    <Property Name="m_umsatz" Type="Single" />
+    <Property Name="m_werkzeugkosten" Type="Single" />
+    <Property Name="m_tonnenerloes" Type="Single" />
+    <Property Name="m_tonage" Type="Single" />
+    <Property Name="m_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="m_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_angeboten_am" Type="DateTime" />
+    <Property Name="m_auftrag_erhalten_am" Type="DateTime" />
+    <Property Name="m_preis_wettbewerber" Type="Single" />
+    <Property Name="m_SOP" Type="DateTime" />
+    <Property Name="m_ablehnungsgrund" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_kundenanfrage_ID" Type="Int32" />
+    <Property Name="m_abteilungsstatus" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="m_vk_angefordert" Type="Int32" />
+    <Property Name="m_wettbewerber" Type="Int32" />
+    <Property Name="m_abgelehnt" Type="Int32" />
+    <Property Name="m_ungueltig" Type="Int32" />
+    <Property Name="m_angeboten" Type="Int32" />
+    <Property Name="m_te_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="m_vk_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_herstellbar" Type="Int32" />
+    <Property Name="m_kapazitaet" Type="Int32" />
+    <Property Name="m_auftrag" Type="Int32" />
+    <Property Name="m_abgelehnt_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_wettbewerber_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_nachgefasst_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="m_gesamtumsatz" Type="Single" />
+    <Property Name="m_angebotspreis" Type="Single" />
+    <Property Name="m_vertriebsstatus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundenanfrage_ID" Type="Int32" Nullable="false" />
+    <Property Name="ka_anfragenummer" Type="Int32" />
+    <Property Name="ka_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_verwendung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kommentar" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angefragt_am" Type="DateTime" />
+    <Property Name="ka_angebotsfrist" Type="DateTime" />
+    <Property Name="ka_hersteller" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zustaendig" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_angelegt_am" Type="DateTime" Nullable="false" />
+    <Property Name="ka_angelegt_von" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_status" Type="String" MaxLength="65532" Unicode="false" FixedLength="false" />
+    <Property Name="ka_ungueltig_am" Type="DateTime" />
+    <Property Name="ka_ungueltig_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_modus" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kunde" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_produktgruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_artikelbezeichnung" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_guete" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_zeichnungsnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_aenderungsindex" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_durchmesser" Type="Single" />
+    <Property Name="ka_laenge" Type="Single" />
+    <Property Name="ka_gewindesteigung" Type="Single" />
+    <Property Name="ka_fertiggewicht" Type="Single" />
+    <Property Name="ka_einsatzgewicht" Type="Single" />
+    <Property Name="ka_abc_artikelnummer" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_telefon" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_fax" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_mobil" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_anrede" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundengruppe" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_vertreter" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_kundenkommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ka_einkaeufer_ID" Type="Int32" />
+    <Property Name="ka_offen_vertrieb" Type="Int32" />
+    <Property Name="ka_offen_te" Type="Int32" />
+    <Property Name="ka_vk_angefordert" Type="Int32" />
+    <Property Name="ka_vk_kommentar" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vk_wzpos_join">
+    <Key>
+      <PropertyRef Name="vk_wzpos_ID" />
+      <PropertyRef Name="wzpos_werkzeugposition_ID" />
+    </Key>
+    <Property Name="vk_wzpos_ID" Type="Int32" Nullable="false" />
+    <Property Name="vk_wzpos_vorkalkulation_ID" Type="Int32" />
+    <Property Name="vk_wzpos_werkzeugposition_ID" Type="Int32" />
+    <Property Name="wzpos_werkzeugposition_ID" Type="Int32" Nullable="false" />
+    <Property Name="wzpos_nummer" Type="Int32" />
+    <Property Name="wzpos_werkzeugpositioncol" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="wzpos_gruppe" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="wzpos_bezeichnung" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="wzpos_stufe" Type="Int32" />
+    <Property Name="wzpos_standzeit" Type="Single" />
+    <Property Name="wzpos_preis" Type="Single" />
+    <Property Name="wzpos_mgk3_faktor" Type="Single" />
+    <Property Name="wzpos_anzahl" Type="Int32" />
+    <Property Name="wzpos_kosten" Type="Single" />
+    <Property Name="wzpos_anzahl_bereinigt" Type="Int32" />
+    <Property Name="wzpos_ds_ID" Type="Int32" />
+    <Property Name="wzpos_angelegt_von" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="wzpos_angelegt_am" Type="DateTime" />
+  </EntityType>
+  <Association Name="apos_ID_FK">
+    <End Role="apos_anlagenposition" Type="angebotserstellungModel.apos_anlagenposition" Multiplicity="0..1" />
+    <End Role="vk_apos" Type="angebotserstellungModel.vk_apos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="apos_anlagenposition">
+        <PropertyRef Name="apos_anlagenposition_ID" />
+      </Principal>
+      <Dependent Role="vk_apos">
+        <PropertyRef Name="vk_apos_anlagenposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK1">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.me_mengeneinheit" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="apos_anlagenposition" Type="angebotserstellungModel.apos_anlagenposition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit1" />
+      </Principal>
+      <Dependent Role="apos_anlagenposition">
+        <PropertyRef Name="apos_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="anlagendatensatz_ID">
+    <End Role="ds_at_anlagendatensatz" Type="angebotserstellungModel.ds_at_anlagendatensatz" Multiplicity="0..1" />
+    <End Role="at_anlagentarif" Type="angebotserstellungModel.at_anlagentarif" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_at_anlagendatensatz">
+        <PropertyRef Name="ds_at_anlagendatensatz_ID" />
+      </Principal>
+      <Dependent Role="at_anlagentarif">
+        <PropertyRef Name="at_anlagendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kundenanfrage_ID_FK200">
+    <End Role="ka_kundenanfrage" Type="angebotserstellungModel.ka_kundenanfrage" Multiplicity="0..1" />
+    <End Role="d_datei" Type="angebotserstellungModel.d_datei" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ka_kundenanfrage">
+        <PropertyRef Name="ka_kundenanfrage_ID" />
+      </Principal>
+      <Dependent Role="d_datei">
+        <PropertyRef Name="d_kundenanfrage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="drahtpreisdatensatz_ID_FK">
+    <End Role="ds_dp_drahtpreisdatensatz" Type="angebotserstellungModel.ds_dp_drahtpreisdatensatz" Multiplicity="1" />
+    <End Role="dp_drahtpreis" Type="angebotserstellungModel.dp_drahtpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_dp_drahtpreisdatensatz">
+        <PropertyRef Name="ds_dp_drahtpreisdatensatz_ID" />
+      </Principal>
+      <Dependent Role="dp_drahtpreis">
+        <PropertyRef Name="dp_drahtpreisdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="dpos_ID_FK">
+    <End Role="dpos_drahtposition" Type="angebotserstellungModel.dpos_drahtposition" Multiplicity="1" />
+    <End Role="vk_dpos" Type="angebotserstellungModel.vk_dpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dpos_drahtposition">
+        <PropertyRef Name="dpos_drahtposition_ID" />
+      </Principal>
+      <Dependent Role="vk_dpos">
+        <PropertyRef Name="vk_dpos_drahtposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="anlagendatensatz_ID_FK0">
+    <End Role="ds_at_anlagendatensatz" Type="angebotserstellungModel.ds_at_anlagendatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_at_anlagendatensatz">
+        <PropertyRef Name="ds_at_anlagendatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_anlagendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="drahtpreisdatensatz_ID0">
+    <End Role="ds_dp_drahtpreisdatensatz" Type="angebotserstellungModel.ds_dp_drahtpreisdatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_dp_drahtpreisdatensatz">
+        <PropertyRef Name="ds_dp_drahtpreisdatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_drahtpreisdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="veredelungsdatensatz_ID_FK">
+    <End Role="ds_exd_dienstleistungsdatensatz" Type="angebotserstellungModel.ds_exd_dienstleistungsdatensatz" Multiplicity="1" />
+    <End Role="exd_dienstleistungspreis" Type="angebotserstellungModel.exd_dienstleistungspreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_exd_dienstleistungsdatensatz">
+        <PropertyRef Name="ds_exd_dienstleistungsdatensatz_ID" />
+      </Principal>
+      <Dependent Role="exd_dienstleistungspreis">
+        <PropertyRef Name="exd_dienstleistungsdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="zukaufdatensatz_ID_FK1">
+    <End Role="ds_ext_teildatensatz" Type="angebotserstellungModel.ds_ext_teildatensatz" Multiplicity="0..1" />
+    <End Role="ext_teilpreis" Type="angebotserstellungModel.ext_teilpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_ext_teildatensatz">
+        <PropertyRef Name="ds_ext_teildatensatz_ID" />
+      </Principal>
+      <Dependent Role="ext_teilpreis">
+        <PropertyRef Name="ext_teildatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="zukaufdatensatz_ID0">
+    <End Role="ds_ext_teildatensatz" Type="angebotserstellungModel.ds_ext_teildatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_ext_teildatensatz">
+        <PropertyRef Name="ds_ext_teildatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_teildatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="gemeinkostendatensatz_ID0">
+    <End Role="ds_gk_gemeinkostendatensatz" Type="angebotserstellungModel.ds_gk_gemeinkostendatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_gk_gemeinkostendatensatz">
+        <PropertyRef Name="ds_gk_gemeinkostendatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_gemeinkostendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sonderkostendatensatz_ID_FK_99">
+    <End Role="ds_sk_sonderkostendatensatz" Type="angebotserstellungModel.ds_sk_sonderkostendatensatz" Multiplicity="1" />
+    <End Role="sk_sonderkostenpreis" Type="angebotserstellungModel.sk_sonderkostenpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_sk_sonderkostendatensatz">
+        <PropertyRef Name="ds_sk_sonderkostendatensatz_ID" />
+      </Principal>
+      <Dependent Role="sk_sonderkostenpreis">
+        <PropertyRef Name="sk_sonderkostendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sonderkostendatensatz_ID_FK550">
+    <End Role="ds_sk_sonderkostendatensatz" Type="angebotserstellungModel.ds_sk_sonderkostendatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_sk_sonderkostendatensatz">
+        <PropertyRef Name="ds_sk_sonderkostendatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_sonderkostendatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="werkzeugdatensatz_ID_FK3">
+    <End Role="ds_wz_werkzeugdatensatz" Type="angebotserstellungModel.ds_wz_werkzeugdatensatz" Multiplicity="1" />
+    <End Role="wz_werkzeugpreis" Type="angebotserstellungModel.wz_werkzeugpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_wz_werkzeugdatensatz">
+        <PropertyRef Name="ds_wz_werkzeugdatensatz_ID" />
+      </Principal>
+      <Dependent Role="wz_werkzeugpreis">
+        <PropertyRef Name="wz_werkzeugdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="werkzeugdatensatz_ID0">
+    <End Role="ds_wz_werkzeugdatensatz" Type="angebotserstellungModel.ds_wz_werkzeugdatensatz" Multiplicity="0..1" />
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ds_wz_werkzeugdatensatz">
+        <PropertyRef Name="ds_wz_werkzeugdatensatz_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_werkzeugdatensatz_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Einkäufer_ID">
+    <End Role="e_einkaeufer" Type="angebotserstellungModel.e_einkaeufer" Multiplicity="0..1" />
+    <End Role="ka_kundenanfrage" Type="angebotserstellungModel.ka_kundenanfrage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="e_einkaeufer">
+        <PropertyRef Name="e_einkaeufer_ID" />
+      </Principal>
+      <Dependent Role="ka_kundenanfrage">
+        <PropertyRef Name="ka_einkaeufer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kunde_ID_FK3">
+    <End Role="k_kunde" Type="angebotserstellungModel.k_kunde" Multiplicity="1" />
+    <End Role="e_einkaeufer" Type="angebotserstellungModel.e_einkaeufer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="k_kunde">
+        <PropertyRef Name="k_kunde_ID" />
+      </Principal>
+      <Dependent Role="e_einkaeufer">
+        <PropertyRef Name="e_kunde_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK_343">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.me_mengeneinheit" Multiplicity="0..1" />
+    <End Role="exd_dienstleistungspreis" Type="angebotserstellungModel.exd_dienstleistungspreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit1" />
+      </Principal>
+      <Dependent Role="exd_dienstleistungspreis">
+        <PropertyRef Name="exd_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="exdpos_ID_FK">
+    <End Role="exdpos_dienstleistungsposition" Type="angebotserstellungModel.exdpos_dienstleistungsposition" Multiplicity="0..1" />
+    <End Role="vk_exdpos" Type="angebotserstellungModel.vk_exdpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exdpos_dienstleistungsposition">
+        <PropertyRef Name="exdpos_dienstleistungsposition_ID" />
+      </Principal>
+      <Dependent Role="vk_exdpos">
+        <PropertyRef Name="vk_exdpos_dienstleistungsposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK_11">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.me_mengeneinheit" Multiplicity="0..1" />
+    <End Role="exdpos_dienstleistungsposition" Type="angebotserstellungModel.exdpos_dienstleistungsposition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit1" />
+      </Principal>
+      <Dependent Role="exdpos_dienstleistungsposition">
+        <PropertyRef Name="exdpos_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK_231">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.me_mengeneinheit" Multiplicity="0..1" />
+    <End Role="ext_teilpreis" Type="angebotserstellungModel.ext_teilpreis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit1" />
+      </Principal>
+      <Dependent Role="ext_teilpreis">
+        <PropertyRef Name="ext_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="extpos_ID_FK">
+    <End Role="extpos_teilposition" Type="angebotserstellungModel.extpos_teilposition" Multiplicity="0..1" />
+    <End Role="vk_extpos" Type="angebotserstellungModel.vk_extpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="extpos_teilposition">
+        <PropertyRef Name="extpos_teilposition_ID" />
+      </Principal>
+      <Dependent Role="vk_extpos">
+        <PropertyRef Name="vk_extpos_teilposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kundenanfrage_ID_FK01">
+    <End Role="ka_kundenanfrage" Type="angebotserstellungModel.ka_kundenanfrage" Multiplicity="0..1" />
+    <End Role="extpos_teilposition" Type="angebotserstellungModel.extpos_teilposition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ka_kundenanfrage">
+        <PropertyRef Name="ka_kundenanfrage_ID" />
+      </Principal>
+      <Dependent Role="extpos_teilposition">
+        <PropertyRef Name="extpos_kundenanfrage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengeneinheit_FK5">
+    <End Role="me_mengeneinheit" Type="angebotserstellungModel.me_mengeneinheit" Multiplicity="0..1" />
+    <End Role="extpos_teilposition" Type="angebotserstellungModel.extpos_teilposition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="me_mengeneinheit">
+        <PropertyRef Name="me_mengeneinheit1" />
+      </Principal>
+      <Dependent Role="extpos_teilposition">
+        <PropertyRef Name="extpos_mengeneinheit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vorkalkulation_ID_FK_1231">
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.vk_vorkalkulation" Multiplicity="1" />
+    <End Role="f_freigabe" Type="angebotserstellungModel.f_freigabe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_vorkalkulation_ID" />
+      </Principal>
+      <Dependent Role="f_freigabe">
+        <PropertyRef Name="f_vorkalkulation_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kundenanfrage_ID">
+    <End Role="ka_kundenanfrage" Type="angebotserstellungModel.ka_kundenanfrage" Multiplicity="0..1" />
+    <End Role="m_mengenpos" Type="angebotserstellungModel.m_mengenpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ka_kundenanfrage">
+        <PropertyRef Name="ka_kundenanfrage_ID" />
+      </Principal>
+      <Dependent Role="m_mengenpos">
+        <PropertyRef Name="m_kundenanfrage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="mengenPos_ID_FK10">
+    <End Role="m_mengenpos" Type="angebotserstellungModel.m_mengenpos" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="vk_vorkalkulation" Type="angebotserstellungModel.vk_vorkalkulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="m_mengenpos">
+        <PropertyRef Name="m_mengenPos_ID" />
+      </Principal>
+      <Dependent Role="vk_vorkalkulation">
+        <PropertyRef Name="vk_mengenPos_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="skpos_ID_FK">
+    <End Role="skpos_sonderkostenposition" Type="angebotserstellungModel.skpos_sonderkostenposition" Multiplicity="0..1" />
+    <End Role="vk_skpos" Type="angebotserstellungModel.vk_skpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="skpos_sonderkostenposition">
+        <PropertyRef Name="skpos_sonderkostenposition_ID" />
+      </Principal>
+      <Dependent Role="vk_skpos">
+        <PropertyRef Name="vk_skpos_sonderkostenposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="wzpos_ID_FK">
+    <End Role="wzpos_werkzeugposition" Type="angebotserstellungModel.wzpos_werkzeugposition" Multiplicity="0..1" />
+    <End Role="vk_wzpos" Type="angebotserstellungModel.vk_wzpos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="wzpos_werkzeugposition">
+        <PropertyRef Name="wzpos_werkzeugposition_ID" />
+      </Principal>
+      <Dependent Role="vk_wzpos">
+        <PropertyRef Name="vk_wzpos_werkzeugposition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vk_te_mitarbeiter">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vorname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nachname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IsActive" Nullable="false" MaxLength="65532" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>
